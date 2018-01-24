@@ -1,0 +1,2990 @@
+
+@media (min-width: 1200px){
+
+
+/***** UPPER CENTRAL INCISOR ******/
+
+/* *** LEFT *** */
+
+.ladult_upper_central_incisor0{
+	content: url('../../images/AdultTeeth/Left/Left Upper Central Incisor.png');
+	left: 40%; top: 0%; max-width: 10%; position: absolute; z-index: 1;}
+
+
+.ladult_upper_central_incisor1{
+	content: url('../../images/legends/dc/adult left/dc upper central incisor.png');
+	left: 40%; top: 0%; max-width: 10%; position: absolute; z-index: 1;}
+
+.ladult_upper_central_incisor2{
+	content: url('../../images/legends/ife/adult left/ife upper central incisor.png');
+	left: 40%; top: 0%; max-width: 10%; position: absolute; z-index: 1;}
+
+.ladult_upper_central_incisor3{
+	content: url('../../images/legends/rrf/adult left/rrf upper central incisor.png');
+	left: 40%; top: 0%; max-width: 10%; position: absolute; z-index: 1;}
+
+.ladult_upper_central_incisor4{
+	content: url('../../images/legends/mt/adult left/mt upper central incisor.png');
+	left: 40%; top: 0%; max-width: 10%; position: absolute; z-index: 1;}
+
+.ladult_upper_central_incisor5{
+	content: url('../../images/legends/af/adult left/af upper central incisor.png');
+	left: 40%; top: 0%; max-width: 10%; position: absolute; z-index: 1;}
+
+.ladult_upper_central_incisor6{
+	content: url('../../images/legends/ut/adult left/ut upper central incisor.png');
+	left: 40%; top: 0%; max-width: 10%; position: absolute; z-index: 1;}
+
+.ladult_upper_central_incisor7{
+	content: url('../../images/legends/gc/adult left/gc upper central incisor.png');
+	left: 40%; top: 0%; max-width: 10%; position: absolute; z-index: 1;}
+
+.ladult_upper_central_incisor8{
+	content: url('../../images/legends/jc/adult left/jc upper central incisor.png');
+	left: 40%; top: 0%; max-width: 10%; position: absolute; z-index: 1;}
+
+.ladult_upper_central_incisor9{
+	content: url('../../images/legends/lc/adult left/lc upper central incisor.png');
+	left: 40%; top: 0%; max-width: 10%; position: absolute; z-index: 1;}
+
+
+/* *** RIGHT *** */
+
+.radult_upper_central_incisor0{
+	content: url('../../images/AdultTeeth/Right/Right Upper Central Incisor.png');
+	left: 50%; top: 0%; max-width: 10%; position: absolute; z-index: 1;}
+
+.radult_upper_central_incisor1{
+	content: url('../../images/legends/dc/adult right/dc upper central incisor.png');
+	left: 50%; top: 0%; max-width: 10%; position: absolute; z-index: 1;}
+
+.radult_upper_central_incisor2{
+	content: url('../../images/legends/ife/adult right/ife upper central incisor.png');
+	left: 50%; top: 0%; max-width: 10%; position: absolute; z-index: 1;}
+
+.radult_upper_central_incisor3{
+	content: url('../../images/legends/rrf/adult right/rrf upper central incisor.png');
+	left: 50%; top: 0%; max-width: 10%; position: absolute; z-index: 1;}
+
+.radult_upper_central_incisor4{
+	content: url('../../images/legends/mt/adult right/mt upper central incisor.png');
+	left: 50%; top: 0%; max-width: 10%; position: absolute; z-index: 1;}
+
+.radult_upper_central_incisor5{
+	content: url('../../images/legends/af/adult right/af upper central incisor.png');
+	left: 50%; top: 0%; max-width: 10%; position: absolute; z-index: 1;}
+
+.radult_upper_central_incisor6{
+	content: url('../../images/legends/ut/adult right/ut upper central incisor.png');
+	left: 50%; top: 0%; max-width: 10%; position: absolute; z-index: 1;}
+
+.radult_upper_central_incisor7{
+	content: url('../../images/legends/gc/adult right/gc upper central incisor.png');
+	left: 50%; top: 0%; max-width: 10%; position: absolute; z-index: 1;}
+
+.radult_upper_central_incisor8{
+	content: url('../../images/legends/jc/adult right/jc upper central incisor.png');
+	left: 50%; top: 0%; max-width: 10%; position: absolute; z-index: 1;}
+
+.radult_upper_central_incisor9{
+	content: url('../../images/legends/lc/adult right/lc upper central incisor.png');
+	left: 50%; top: 0%; max-width: 10%; position: absolute; z-index: 1;}
+
+
+/***** LOWER CENTRAL INCISOR ******/
+
+/* *** LEFT *** */
+
+.ladult_lower_central_incisor0{
+	content: url('../../images/AdultTeeth/Left/Left Lower Central Incisor.png');
+	max-width: 10%; top: 85%; left: 40%; position: absolute; z-index: 7;}
+
+.ladult_lower_central_incisor1{
+	content: url('../../images/legends/dc/adult left/dc lower central incisor.png');
+	max-width: 10%; top: 85%; left: 40%; position: absolute; z-index: 7;}
+
+.ladult_lower_central_incisor2{
+	content: url('../../images/legends/ife/adult left/ife lower central incisor.png');
+	max-width: 10%; top: 85%; left: 40%; position: absolute; z-index: 7;}
+
+.ladult_lower_central_incisor3{
+	content: url('../../images/legends/rrf/adult left/rrf lower central incisor.png');
+	max-width: 10%; top: 85%; left: 40%; position: absolute; z-index: 7;}
+
+.ladult_lower_central_incisor4{
+	content: url('../../images/legends/mt/adult left/mt lower central incisor.png');
+	max-width: 10%; top: 85%; left: 40%; position: absolute; z-index: 7;}
+
+.ladult_lower_central_incisor5{
+	content: url('../../images/legends/af/adult left/af lower central incisor.png');
+	max-width: 10%; top: 85%; left: 40%; position: absolute; z-index: 7;}
+
+.ladult_lower_central_incisor6{
+	content: url('../../images/legends/ut/adult left/ut lower central incisor.png');
+	max-width: 10%; top: 85%; left: 40%; position: absolute; z-index: 7;}
+
+.ladult_lower_central_incisor7{
+	content: url('../../images/legends/gc/adult left/gc lower central incisor.png');
+	max-width: 10%; top: 85%; left: 40%; position: absolute; z-index: 7;}
+
+.ladult_lower_central_incisor8{
+	content: url('../../images/legends/jc/adult left/jc lower central incisor.png');
+	max-width: 10%; top: 85%; left: 40%; position: absolute; z-index: 7;}
+
+.ladult_lower_central_incisor9{
+	content: url('../../images/legends/lc/adult left/lc lower central incisor.png');
+	max-width: 10%; top: 85%; left: 40%; position: absolute; z-index: 7;}
+
+/* *** RIGHT *** */
+
+.radult_lower_central_incisor0{
+	content: url('../../images/AdultTeeth/Right/Right Lower Central Incisor.png');
+	max-width: 10%; top: 85%; left: 50%; position: absolute; z-index: 7;}
+
+.radult_lower_central_incisor1{
+	content: url('../../images/legends/dc/adult right/dc lower central incisor.png');
+	max-width: 10%; top: 85%; left: 50%; position: absolute; z-index: 7;}
+
+.radult_lower_central_incisor2{
+	content: url('../../images/legends/ife/adult right/ife lower central incisor.png');
+	max-width: 10%; top: 85%; left: 50%; position: absolute; z-index: 7;}
+
+.radult_lower_central_incisor3{
+	content: url('../../images/legends/rrf/adult right/rrf lower central incisor.png');
+	max-width: 10%; top: 85%; left: 50%; position: absolute; z-index: 7;}
+
+.radult_lower_central_incisor4{
+	content: url('../../images/legends/mt/adult right/mt lower central incisor.png');
+	max-width: 10%; top: 85%; left: 50%; position: absolute; z-index: 7;}
+
+.radult_lower_central_incisor5{
+	content: url('../../images/legends/af/adult right/af lower central incisor.png');
+	max-width: 10%; top: 85%; left: 50%; position: absolute; z-index: 7;}
+
+.radult_lower_central_incisor6{
+	content: url('../../images/legends/ut/adult right/ut lower central incisor.png');
+	max-width: 10%; top: 85%; left: 50%; position: absolute; z-index: 7;}
+
+.radult_lower_central_incisor7{
+	content: url('../../images/legends/gc/adult right/gc lower central incisor.png');
+	max-width: 10%; top: 85%; left: 50%; position: absolute; z-index: 7;}
+
+.radult_lower_central_incisor8{
+	content: url('../../images/legends/jc/adult right/jc lower central incisor.png');
+	max-width: 10%; top: 85%; left: 50%; position: absolute; z-index: 7;}
+
+.radult_lower_central_incisor9{
+	content: url('../../images/legends/lc/adult right/lc lower central incisor.png');
+	max-width: 10%; top: 85%; left: 50%; position: absolute; z-index: 7;}
+
+
+
+
+/***** UPPER LATERAL INCISOR ******/
+
+/* *** LEFT *** */
+
+.ladult_upper_lateral_incisor0{
+	content: url('../../images/AdultTeeth/Left/Left Upper Lateral Incisor.png');
+	left: 31.5%; top: 3.5%; max-width: 9%; position: absolute; z-index: 1;}
+
+.ladult_upper_lateral_incisor1{
+	content: url('../../images/legends/dc/adult left/dc upper lateral incisor.png');
+	left: 31.5%; top: 3.5%; max-width: 9%; position: absolute; z-index: 1;}
+
+.ladult_upper_lateral_incisor2{
+	content: url('../../images/legends/ife/adult left/ife upper lateral incisor.png');
+	left: 31.5%; top: 3.5%; max-width: 9%; position: absolute; z-index: 1;}
+
+.ladult_upper_lateral_incisor3{
+	content: url('../../images/legends/rrf/adult left/rrf upper lateral incisor.png');
+	left: 31.5%; top: 3.5%; max-width: 9%; position: absolute; z-index: 1;}
+
+.ladult_upper_lateral_incisor4{
+	content: url('../../images/legends/mt/adult left/mt upper lateral incisor.png');
+	left: 31.5%; top: 3.5%; max-width: 9%; position: absolute; z-index: 1;}
+
+.ladult_upper_lateral_incisor5{
+	content: url('../../images/legends/af/adult left/af upper lateral incisor.png');
+	left: 31.5%; top: 3.5%; max-width: 9%; position: absolute; z-index: 1;}
+
+.ladult_upper_lateral_incisor6{
+	content: url('../../images/legends/ut/adult left/ut upper lateral incisor.png');
+	left: 31.5%; top: 3.5%; max-width: 9%; position: absolute; z-index: 1;}
+
+.ladult_upper_lateral_incisor7{
+	content: url('../../images/legends/gc/adult left/gc upper lateral incisor.png');
+	left: 31.5%; top: 3.5%; max-width: 9%; position: absolute; z-index: 1;}
+
+.ladult_upper_lateral_incisor8{
+	content: url('../../images/legends/jc/adult left/jc upper lateral incisor.png');
+	left: 31.5%; top: 3.5%; max-width: 9%; position: absolute; z-index: 1;}
+
+.ladult_upper_lateral_incisor9{
+	content: url('../../images/legends/lc/adult left/lc upper lateral incisor.png');
+	left: 31.5%; top: 3.5%; max-width: 9%; position: absolute; z-index: 1;}
+
+
+/* *** RIGHT *** */
+
+.radult_upper_lateral_incisor0{
+	content: url('../../images/AdultTeeth/Right/Right Upper Lateral Incisor.png');
+	left: 60.5%; top: 3.5%; max-width: 9%; position: absolute; z-index: 1;}
+
+.radult_upper_lateral_incisor1{
+	content: url('../../images/legends/dc/adult right/dc upper lateral incisor.png');
+	left: 60.5%; top: 3.5%; max-width: 9%; position: absolute; z-index: 1;}
+
+.radult_upper_lateral_incisor2{
+	content: url('../../images/legends/ife/adult right/ife upper lateral incisor.png');
+	left: 60.5%; top: 3.5%; max-width: 9%; position: absolute; z-index: 1;}
+
+.radult_upper_lateral_incisor3{
+	content: url('../../images/legends/rrf/adult right/rrf upper lateral incisor.png');
+	left: 60.5%; top: 3.5%; max-width: 9%; position: absolute; z-index: 1;}
+
+.radult_upper_lateral_incisor4{
+	content: url('../../images/legends/mt/adult right/mt upper lateral incisor.png');
+	left: 60.5%; top: 3.5%; max-width: 9%; position: absolute; z-index: 1;}
+
+.radult_upper_lateral_incisor5{
+	content: url('../../images/legends/af/adult right/af upper lateral incisor.png');
+	left: 60.5%; top: 3.5%; max-width: 9%; position: absolute; z-index: 1;}
+
+.radult_upper_lateral_incisor6{
+	content: url('../../images/legends/ut/adult right/ut upper lateral incisor.png');
+	left: 60.5%; top: 3.5%; max-width: 9%; position: absolute; z-index: 1;}
+
+.radult_upper_lateral_incisor7{
+	content: url('../../images/legends/gc/adult right/gc upper lateral incisor.png');
+	left: 60.5%; top: 3.5%; max-width: 9%; position: absolute; z-index: 1;}
+
+.radult_upper_lateral_incisor8{
+	content: url('../../images/legends/jc/adult right/jc upper lateral incisor.png');
+	left: 60.5%; top: 3.5%; max-width: 9%; position: absolute; z-index: 1;}
+
+.radult_upper_lateral_incisor9{
+	content: url('../../images/legends/lc/adult right/lc upper lateral incisor.png');
+	left: 60.5%; top: 3.5%; max-width: 9%; position: absolute; z-index: 1;}	
+
+
+/***** LOWER LATERAL INCISOR ******/
+
+/* *** LEFT *** */
+
+.ladult_lower_lateral_incisor0{
+	content: url('../../images/AdultTeeth/Left/Left Lower Lateral Incisor.png');
+	max-width: 11%; top: 82%; left: 31%; position: absolute; z-index: 6;}
+
+.ladult_lower_lateral_incisor1{
+	content: url('../../images/legends/dc/adult left/dc lower lateral incisor.png');
+	max-width: 11%; top: 82%; left: 31%; position: absolute; z-index: 6;}
+
+.ladult_lower_lateral_incisor2{
+	content: url('../../images/legends/ife/adult left/ife lower lateral incisor.png');
+	max-width: 11%; top: 82%; left: 31%; position: absolute; z-index: 6;}
+
+.ladult_lower_lateral_incisor3{
+	content: url('../../images/legends/rrf/adult left/rrf lower lateral incisor.png');
+	max-width: 11%; top: 82%; left: 31%; position: absolute; z-index: 6;}
+
+.ladult_lower_lateral_incisor4{
+	content: url('../../images/legends/mt/adult left/mt lower lateral incisor.png');
+	max-width: 11%; top: 82%; left: 31%; position: absolute; z-index: 6;}
+
+.ladult_lower_lateral_incisor5{
+	content: url('../../images/legends/af/adult left/af lower lateral incisor.png');
+	max-width: 11%; top: 82%; left: 31%; position: absolute; z-index: 6;}
+
+.ladult_lower_lateral_incisor6{
+	content: url('../../images/legends/ut/adult left/ut lower lateral incisor.png');
+	max-width: 11%; top: 82%; left: 31%; position: absolute; z-index: 6;}
+
+.ladult_lower_lateral_incisor7{
+	content: url('../../images/legends/gc/adult left/gc lower lateral incisor.png');
+	max-width: 11%; top: 82%; left: 31%; position: absolute; z-index: 6;}
+
+.ladult_lower_lateral_incisor8{
+	content: url('../../images/legends/jc/adult left/jc lower lateral incisor.png');
+	max-width: 11%; top: 82%; left: 31%; position: absolute; z-index: 6;}
+
+.ladult_lower_lateral_incisor9{
+	content: url('../../images/legends/lc/adult left/lc lower lateral incisor.png');
+	max-width: 11%; top: 82%; left: 31%; position: absolute; z-index: 6;}
+
+
+
+/* *** RIGHT *** */
+
+.radult_lower_lateral_incisor0{
+	content: url('../../images/AdultTeeth/Right/Right Lower Lateral Incisor.png');
+	max-width: 11%; top: 81%; left: 57%; position: absolute; z-index: 6;}
+
+.radult_lower_lateral_incisor1{
+	content: url('../../images/legends/dc/adult right/dc lower lateral incisor.png');
+	max-width: 11%; top: 81%; left: 57%; position: absolute; z-index: 6;}
+
+.radult_lower_lateral_incisor2{
+	content: url('../../images/legends/ife/adult right/ife lower lateral incisor.png');
+	max-width: 11%; top: 81%; left: 57%; position: absolute; z-index: 6;}
+
+.radult_lower_lateral_incisor3{
+	content: url('../../images/legends/rrf/adult right/rrf lower lateral incisor.png');
+	max-width: 11%; top: 81%; left: 57%; position: absolute; z-index: 6;}
+
+.radult_lower_lateral_incisor4{
+	content: url('../../images/legends/mt/adult right/mt lower lateral incisor.png');
+	max-width: 11%; top: 81%; left: 57%; position: absolute; z-index: 6;}
+
+.radult_lower_lateral_incisor5{
+	content: url('../../images/legends/af/adult right/af lower lateral incisor.png');
+	max-width: 11%; top: 81%; left: 57%; position: absolute; z-index: 6;}
+
+.radult_lower_lateral_incisor6{
+	content: url('../../images/legends/ut/adult right/ut lower lateral incisor.png');
+	max-width: 11%; top: 81%; left: 57%; position: absolute; z-index: 6;}
+
+.radult_lower_lateral_incisor7{
+	content: url('../../images/legends/gc/adult right/gc lower lateral incisor.png');
+	max-width: 11%; top: 81%; left: 57%; position: absolute; z-index: 6;}
+
+.radult_lower_lateral_incisor8{
+	content: url('../../images/legends/jc/adult right/jc lower lateral incisor.png');
+	max-width: 11%; top: 81%; left: 57%; position: absolute; z-index: 6;}
+
+.radult_lower_lateral_incisor9{
+	content: url('../../images/legends/lc/adult right/lc lower lateral incisor.png');
+	max-width: 11%; top: 81%; left: 57%; position: absolute; z-index: 6;}
+
+
+
+
+/***** UPPER CUSPID ******/
+
+/* *** LEFT *** */
+
+.ladult_upper_cuspid0{
+	content: url('../../images/AdultTeeth/Left/Left Upper Cuspid.png');
+	left: 24.5%; top: 11.5%; max-width: 9%; position: absolute;}
+
+.ladult_upper_cuspid1{
+	content: url('../../images/legends/dc/adult left/dc upper cuspid.png');
+	left: 24.5%; top: 11.5%; max-width: 9%; position: absolute;}
+
+.ladult_upper_cuspid2{
+	content: url('../../images/legends/ife/adult left/ife upper cuspid.png');
+	left: 24.5%; top: 11.5%; max-width: 9%; position: absolute;}
+
+.ladult_upper_cuspid3{
+	content: url('../../images/legends/rrf/adult left/rrf upper cuspid.png');
+	left: 24.5%; top: 11.5%; max-width: 9%; position: absolute;}
+
+.ladult_upper_cuspid4{
+	content: url('../../images/legends/mt/adult left/mt upper cuspid.png');
+	left: 24.5%; top: 11.5%; max-width: 9%; position: absolute;}
+
+.ladult_upper_cuspid5{
+	content: url('../../images/legends/af/adult left/af upper cuspid.png');
+	left: 24.5%; top: 11.5%; max-width: 9%; position: absolute;}
+
+.ladult_upper_cuspid6{
+	content: url('../../images/legends/ut/adult left/ut upper cuspid.png');
+	left: 24.5%; top: 11.5%; max-width: 9%; position: absolute;}
+
+.ladult_upper_cuspid7{
+	content: url('../../images/legends/gc/adult left/gc upper cuspid.png');
+	left: 24.5%; top: 11.5%; max-width: 9%; position: absolute;}
+
+.ladult_upper_cuspid8{
+	content: url('../../images/legends/jc/adult left/jc upper cuspid.png');
+	left: 24.5%; top: 11.5%; max-width: 9%; position: absolute;}
+
+.ladult_upper_cuspid9{
+	content: url('../../images/legends/lc/adult left/lc upper cuspid.png');
+	left: 24.5%; top: 11.5%; max-width: 9%; position: absolute;}
+
+
+/* *** RIGHT *** */
+
+.radult_upper_cuspid0{
+	content: url('../../images/AdultTeeth/Right/Right Upper Cuspid.png');
+	left: 67.5%; top: 11.5%; max-width: 9%; position: absolute;}
+
+.radult_upper_cuspid1{
+	content: url('../../images/legends/dc/adult right/dc upper cuspid.png');
+	left: 67.5%; top: 11.5%; max-width: 9%; position: absolute;}
+
+.radult_upper_cuspid2{
+	content: url('../../images/legends/ife/adult right/ife upper cuspid.png');
+	left: 67.5%; top: 11.5%; max-width: 9%; position: absolute;}
+
+.radult_upper_cuspid3{
+	content: url('../../images/legends/rrf/adult right/rrf upper cuspid.png');
+	left: 67.5%; top: 11.5%; max-width: 9%; position: absolute;}
+
+.radult_upper_cuspid4{
+	content: url('../../images/legends/mt/adult right/mt upper cuspid.png');
+	left: 67.5%; top: 11.5%; max-width: 9%; position: absolute;}
+
+.radult_upper_cuspid5{
+	content: url('../../images/legends/af/adult right/af upper cuspid.png');
+	left: 67.5%; top: 11.5%; max-width: 9%; position: absolute;}
+
+.radult_upper_cuspid6{
+	content: url('../../images/legends/ut/adult right/ut upper cuspid.png');
+	left: 67.5%; top: 11.5%; max-width: 9%; position: absolute;}
+
+.radult_upper_cuspid7{
+	content: url('../../images/legends/gc/adult right/gc upper cuspid.png');
+	left: 67.5%; top: 11.5%; max-width: 9%; position: absolute;}
+
+.radult_upper_cuspid8{
+	content: url('../../images/legends/jc/adult right/jc upper cuspid.png');
+	left: 67.5%; top: 11.5%; max-width: 9%; position: absolute;}
+
+.radult_upper_cuspid9{
+	content: url('../../images/legends/lc/adult right/lc upper cuspid.png');
+	left: 67.5%; top: 11.5%; max-width: 9%; position: absolute;}
+
+
+/***** LOWER CUSPID ******/
+
+/* *** LEFT *** */
+
+.ladult_lower_cuspid0{
+	content: url('../../images/AdultTeeth/Left/Left Lower Cuspid.png');
+	max-width: 10%;  top: 74%; left: 25%; position: absolute; z-index: 5;}
+
+.ladult_lower_cuspid1{
+	content: url('../../images/legends/dc/adult left/dc lower cuspid.png');
+	max-width: 10%;  top: 74%; left: 25%; position: absolute; z-index: 5;}
+
+.ladult_lower_cuspid2{
+	content: url('../../images/legends/ife/adult left/ife lower cuspid.png');
+	max-width: 10%;  top: 74%; left: 25%; position: absolute; z-index: 5;}
+
+.ladult_lower_cuspid3{
+	content: url('../../images/legends/rrf/adult left/rrf lower cuspid.png');
+	max-width: 10%;  top: 74%; left: 25%; position: absolute; z-index: 5;}
+
+.ladult_lower_cuspid4{
+	content: url('../../images/legends/mt/adult left/mt lower cuspid.png');
+	max-width: 10%;  top: 74%; left: 25%; position: absolute; z-index: 5;}
+.ladult_lower_cuspid5{
+	content: url('../../images/legends/af/adult left/af lower cuspid.png');
+	max-width: 10%;  top: 74%; left: 25%; position: absolute; z-index: 5;}
+
+.ladult_lower_cuspid6{
+	content: url('../../images/legends/ut/adult left/ut lower cuspid.png');
+	max-width: 10%;  top: 74%; left: 25%; position: absolute; z-index: 5;}
+
+.ladult_lower_cuspid7{
+	content: url('../../images/legends/gc/adult left/gc lower cuspid.png');
+	max-width: 10%;  top: 74%; left: 25%; position: absolute; z-index: 5;}
+
+.ladult_lower_cuspid8{
+	content: url('../../images/legends/jc/adult left/jc lower cuspid.png');
+	max-width: 10%;  top: 74%; left: 25%; position: absolute; z-index: 5;}
+
+.ladult_lower_cuspid9{
+	content: url('../../images/legends/lc/adult left/lc lower cuspid.png');
+	max-width: 10%;  top: 74%; left: 25%; position: absolute; z-index: 5;}
+
+
+/* *** RIGHT *** */
+
+.radult_lower_cuspid0{
+	content: url('../../images/AdultTeeth/Right/Right Lower Cuspid.png');
+	max-width: 10%;  top: 74%; left: 65%; position: absolute; z-index: 5;}
+
+.radult_lower_cuspid1{
+	content: url('../../images/legends/dc/adult right/dc lower cuspid.png');
+	max-width: 10%;  top: 74%; left: 65%; position: absolute; z-index: 5;}
+
+.radult_lower_cuspid2{
+	content: url('../../images/legends/ife/adult right/ife lower cuspid.png');
+	max-width: 10%;  top: 74%; left: 65%; position: absolute; z-index: 5;}
+
+.radult_lower_cuspid3{
+	content: url('../../images/legends/rrf/adult right/rrf lower cuspid.png');
+	max-width: 10%;  top: 74%; left: 65%; position: absolute; z-index: 5;}
+
+.radult_lower_cuspid4{
+	content: url('../../images/legends/mt/adult right/mt lower cuspid.png');
+	max-width: 10%;  top: 74%; left: 65%; position: absolute; z-index: 5;}
+
+.radult_lower_cuspid5{
+	content: url('../../images/legends/af/adult right/af lower cuspid.png');
+	max-width: 10%;  top: 74%; left: 65%; position: absolute; z-index: 5;}
+
+.radult_lower_cuspid6{
+	content: url('../../images/legends/ut/adult right/ut lower cuspid.png');
+	max-width: 10%;  top: 74%; left: 65%; position: absolute; z-index: 5;}
+
+.radult_lower_cuspid7{
+	content: url('../../images/legends/gc/adult right/gc lower cuspid.png');
+	max-width: 10%;  top: 74%; left: 65%; position: absolute; z-index: 5;}
+
+.radult_lower_cuspid8{
+	content: url('../../images/legends/jc/adult right/jc lower cuspid.png');
+	max-width: 10%;  top: 74%; left: 65%; position: absolute; z-index: 5;}
+
+.radult_lower_cuspid9{
+	content: url('../../images/legends/lc/adult right/lc lower cuspid.png');
+	max-width: 10%;  top: 74%; left: 65%; position: absolute; z-index: 5;}
+
+
+/***** UPPER FIRST BICUSPID ******/
+
+/* *** LEFT *** */
+
+.ladult_upper_1st_bicuspid0{
+	content: url('../../images/AdultTeeth/Left/Left Upper First Bicuspid.png');
+	top: 21%; left: 20%; max-width: 10%; position: absolute;}
+
+.ladult_upper_1st_bicuspid1{
+	content: url('../../images/legends/dc/adult left/dc upper first bicuspid.png');
+	top: 21%; left: 20%; max-width: 10%; position: absolute;}
+
+.ladult_upper_1st_bicuspid2{
+	content: url('../../images/legends/ife/adult left/ife upper first bicuspid.png');
+	top: 21%; left: 20%; max-width: 10%; position: absolute;}
+
+.ladult_upper_1st_bicuspid3{
+	content: url('../../images/legends/rrf/adult left/rrf upper first bicuspid.png');
+	top: 21%; left: 20%; max-width: 10%; position: absolute;}
+
+.ladult_upper_1st_bicuspid4{
+	content: url('../../images/legends/mt/adult left/mt upper first bicuspid.png');
+	top: 21%; left: 20%; max-width: 10%; position: absolute;}
+
+.ladult_upper_1st_bicuspid5{
+	content: url('../../images/legends/af/adult left/af upper first bicuspid.png');
+	top: 21%; left: 20%; max-width: 10%; position: absolute;}
+
+.ladult_upper_1st_bicuspid6{
+	content: url('../../images/legends/ut/adult left/ut upper first bicuspid.png');
+	top: 21%; left: 20%; max-width: 10%; position: absolute;}
+
+.ladult_upper_1st_bicuspid7{
+	content: url('../../images/legends/gc/adult left/gc upper first bicuspid.png');
+	top: 21%; left: 20%; max-width: 10%; position: absolute;}
+
+.ladult_upper_1st_bicuspid8{
+	content: url('../../images/legends/jc/adult left/jc upper first bicuspid.png');
+	top: 21%; left: 20%; max-width: 10%; position: absolute;}
+
+.ladult_upper_1st_bicuspid9{
+	content: url('../../images/legends/lc/adult left/lc upper first bicuspid.png');
+	top: 21%; left: 20%; max-width: 10%; position: absolute;}
+
+/* *** RIGHT *** */
+
+.radult_upper_1st_bicuspid0{
+	content: url('../../images/AdultTeeth/Right/Right Upper First Bicuspid.png');
+	top: 21%; left: 71%; max-width: 10%; position: absolute;}
+
+.radult_upper_1st_bicuspid1{
+	content: url('../../images/legends/dc/adult right/dc upper first bicuspid.png');
+	top: 21%; left: 71%; max-width: 10%; position: absolute;}
+
+.radult_upper_1st_bicuspid2{
+	content: url('../../images/legends/ife/adult right/ife upper first bicuspid.png');
+	top: 21%; left: 71%; max-width: 10%; position: absolute;}
+
+.radult_upper_1st_bicuspid3{
+	content: url('../../images/legends/rrf/adult right/rrf upper first bicuspid.png');
+	top: 21%; left: 71%; max-width: 10%; position: absolute;}
+
+.radult_upper_1st_bicuspid4{
+	content: url('../../images/legends/mt/adult right/mt upper first bicuspid.png');
+	top: 21%; left: 71%; max-width: 10%; position: absolute;}
+
+.radult_upper_1st_bicuspid5{
+	content: url('../../images/legends/af/adult right/af upper first bicuspid.png');
+	top: 21%; left: 71%; max-width: 10%; position: absolute;}
+
+.radult_upper_1st_bicuspid6{
+	content: url('../../images/legends/ut/adult right/ut upper first bicuspid.png');
+	top: 21%; left: 71%; max-width: 10%; position: absolute;}
+
+.radult_upper_1st_bicuspid7{
+	content: url('../../images/legends/gc/adult right/gc upper first bicuspid.png');
+	top: 21%; left: 71%; max-width: 10%; position: absolute;}
+
+.radult_upper_1st_bicuspid8{
+	content: url('../../images/legends/jc/adult right/jc upper first bicuspid.png');
+	top: 21%; left: 71%; max-width: 10%; position: absolute;}
+
+.radult_upper_1st_bicuspid9{
+	content: url('../../images/legends/lc/adult right/lc upper first bicuspid.png');
+	top: 21%; left: 71%; max-width: 10%; position: absolute;}
+
+
+/***** LOWER FIRST BICUSPID ******/
+
+/* *** LEFT *** */
+
+.ladult_lower_1st_bicuspid0{
+content: url('../../images/AdultTeeth/Left/Left Lower First Bicuspid.png');
+max-width: 11%; top: 62%; left: 19.8%; position: absolute; z-index: 4;}
+
+.ladult_lower_1st_bicuspid1{
+content: url('../../images/legends/dc/adult left/dc lower first bicuspid.png');
+max-width: 11%; top: 62%; left: 19.8%; position: absolute; z-index: 4;}
+
+.ladult_lower_1st_bicuspid2{
+content: url('../../images/legends/ife/adult left/ife lower first bicuspid.png');
+max-width: 11%; top: 62%; left: 19.8%; position: absolute; z-index: 4;}
+
+.ladult_lower_1st_bicuspid3{
+content: url('../../images/legends/rrf/adult left/rrf lower first bicuspid.png');
+max-width: 11%; top: 62%; left: 19.8%; position: absolute; z-index: 4;}
+
+.ladult_lower_1st_bicuspid4{
+content: url('../../images/legends/mt/adult left/mt lower first bicuspid.png');
+max-width: 11%; top: 62%; left: 19.8%; position: absolute; z-index: 4;}
+
+.ladult_lower_1st_bicuspid5{
+content: url('../../images/legends/af/adult left/af lower first bicuspid.png');
+max-width: 11%; top: 62%; left: 19.8%; position: absolute; z-index: 4;}
+
+.ladult_lower_1st_bicuspid6{
+content: url('../../images/legends/ut/adult left/ut lower first bicuspid.png');
+max-width: 11%; top: 62%; left: 19.8%; position: absolute; z-index: 4;}
+
+.ladult_lower_1st_bicuspid7{
+content: url('../../images/legends/gc/adult left/gc lower first bicuspid.png');
+max-width: 11%; top: 62%; left: 19.8%; position: absolute; z-index: 4;}
+
+.ladult_lower_1st_bicuspid8{
+content: url('../../images/legends/jc/adult left/jc lower first bicuspid.png');
+max-width: 11%; top: 62%; left: 19.8%; position: absolute; z-index: 4;}
+
+.ladult_lower_1st_bicuspid9{
+content: url('../../images/legends/lc/adult left/lc lower first bicuspid.png');
+max-width: 11%; top: 62%; left: 19.8%; position: absolute; z-index: 4;}
+
+
+/* *** RIGHT *** */
+
+.radult_lower_1st_bicuspid0{
+	content: url('../../images/AdultTeeth/Right/Right Lower First Bicuspid.png');
+	max-width: 11%; top: 61%; left: 70%; position: absolute; z-index: 4;}
+
+.radult_lower_1st_bicuspid1{
+	content: url('../../images/legends/dc/adult right/dc lower first bicuspid.png');
+	max-width: 11%; top: 61%; left: 70%; position: absolute; z-index: 4;}
+
+.radult_lower_1st_bicuspid2{
+	content: url('../../images/legends/ife/adult right/ife lower first bicuspid.png');
+	max-width: 11%; top: 61%; left: 70%; position: absolute; z-index: 4;}
+
+.radult_lower_1st_bicuspid3{
+	content: url('../../images/legends/rrf/adult right/rrf lower first bicuspid.png');
+	max-width: 11%; top: 61%; left: 70%; position: absolute; z-index: 4;}
+
+.radult_lower_1st_bicuspid4{
+	content: url('../../images/legends/mt/adult right/mt lower first bicuspid.png');
+	max-width: 11%; top: 61%; left: 70%; position: absolute; z-index: 4;}
+
+.radult_lower_1st_bicuspid5{
+	content: url('../../images/legends/af/adult right/af lower first bicuspid.png');
+	max-width: 11%; top: 61%; left: 70%; position: absolute; z-index: 4;}
+
+.radult_lower_1st_bicuspid6{
+	content: url('../../images/legends/ut/adult right/ut lower first bicuspid.png');
+	max-width: 11%; top: 61%; left: 70%; position: absolute; z-index: 4;}
+
+.radult_lower_1st_bicuspid7{
+	content: url('../../images/legends/gc/adult right/gc lower first bicuspid.png');
+	max-width: 11%; top: 61%; left: 70%; position: absolute; z-index: 4;}
+
+.radult_lower_1st_bicuspid8{
+	content: url('../../images/legends/jc/adult right/jc lower first bicuspid.png');
+	max-width: 11%; top: 61%; left: 70%; position: absolute; z-index: 4;}
+
+.radult_lower_1st_bicuspid9{
+	content: url('../../images/legends/lc/adult right/lc lower first bicuspid.png');
+	max-width: 11%; top: 61%; left: 70%; position: absolute; z-index: 4;}
+
+
+
+/***** UPPER SECOND BICUSPID ******/
+
+/* *** LEFT *** */
+
+.ladult_upper_2nd_bicuspid0{
+	content: url('../../images/AdultTeeth/Left/Left Upper Second Bicuspid.png');
+	top: 31%; left: 16.5%; max-width: 10%; position: absolute;}
+
+.ladult_upper_2nd_bicuspid1{
+	content: url('../../images/legends/dc/adult left/dc upper second bicuspid.png');
+	top: 31%; left: 16.5%; max-width: 10%; position: absolute;}
+
+.ladult_upper_2nd_bicuspid2{
+	content: url('../../images/legends/ife/adult left/ife upper second bicuspid.png');
+	top: 31%; left: 16.5%; max-width: 10%; position: absolute;}
+
+.ladult_upper_2nd_bicuspid3{
+	content: url('../../images/legends/rrf/adult left/rrf upper second bicuspid.png');
+	top: 31%; left: 16.5%; max-width: 10%; position: absolute;}
+
+.ladult_upper_2nd_bicuspid4{
+	content: url('../../images/legends/mt/adult left/mt upper second bicuspid.png');
+	top: 31%; left: 16.5%; max-width: 10%; position: absolute;}
+.ladult_upper_2nd_bicuspid5{
+	content: url('../../images/legends/af/adult left/af upper second bicuspid.png');
+	top: 31%; left: 16.5%; max-width: 10%; position: absolute;}
+
+.ladult_upper_2nd_bicuspid6{
+	content: url('../../images/legends/ut/adult left/ut upper second bicuspid.png');
+	top: 31%; left: 16.5%; max-width: 10%; position: absolute;}
+
+.ladult_upper_2nd_bicuspid7{
+	content: url('../../images/legends/gc/adult left/gc upper second bicuspid.png');
+	top: 31%; left: 16.5%; max-width: 10%; position: absolute;}
+
+.ladult_upper_2nd_bicuspid8{
+	content: url('../../images/legends/jc/adult left/jc upper second bicuspid.png');
+	top: 31%; left: 16.5%; max-width: 10%; position: absolute;}
+
+.ladult_upper_2nd_bicuspid9{
+	content: url('../../images/legends/lc/adult left/lc upper second bicuspid.png');
+	top: 31%; left: 16.5%; max-width: 10%; position: absolute;}
+
+
+/* *** RIGHT *** */
+
+.radult_upper_2nd_bicuspid0{
+	content: url('../../images/AdultTeeth/Right/Right Upper Second Bicuspid.png');
+	top: 31%; left: 74%; max-width: 10%; position: absolute;}
+
+.radult_upper_2nd_bicuspid1{
+	content: url('../../images/legends/dc/adult right/dc upper second bicuspid.png');
+	top: 31%; left: 74%; max-width: 10%; position: absolute;}
+
+.radult_upper_2nd_bicuspid2{
+	content: url('../../images/legends/ife/adult right/ife upper second bicuspid.png');
+	top: 31%; left: 74%; max-width: 10%; position: absolute;}
+
+.radult_upper_2nd_bicuspid3{
+	content: url('../../images/legends/rrf/adult right/rrf upper second bicuspid.png');
+	top: 31%; left: 74%; max-width: 10%; position: absolute;}
+
+.radult_upper_2nd_bicuspid4{
+	content: url('../../images/legends/mt/adult right/mt upper second bicuspid.png');
+	top: 31%; left: 74%; max-width: 10%; position: absolute;}
+
+.radult_upper_2nd_bicuspid5{
+	content: url('../../images/legends/af/adult right/af upper second bicuspid.png');
+	top: 31%; left: 74%; max-width: 10%; position: absolute;}
+
+.radult_upper_2nd_bicuspid6{
+	content: url('../../images/legends/ut/adult right/ut upper second bicuspid.png');
+	top: 31%; left: 74%; max-width: 10%; position: absolute;}
+
+.radult_upper_2nd_bicuspid7{
+	content: url('../../images/legends/gc/adult right/gc upper second bicuspid.png');
+	top: 31%; left: 74%; max-width: 10%; position: absolute;}
+
+.radult_upper_2nd_bicuspid8{
+	content: url('../../images/legends/jc/adult right/jc upper second bicuspid.png');
+	top: 31%; left: 74%; max-width: 10%; position: absolute;}
+
+.radult_upper_2nd_bicuspid9{
+	content: url('../../images/legends/lc/adult right/lc upper second bicuspid.png');
+	top: 31%; left: 74%; max-width: 10%; position: absolute;}
+
+/***** LOWER SECOND BICUSPID ******/
+
+/* *** LEFT *** */
+
+.ladult_lower_2nd_bicuspid0{
+	content: url('../../images/AdultTeeth/Left/Left Lower Second Bicuspid.png');
+	max-width: 11%; top: 50%; left: 15%; position: absolute; z-index: 3;}
+
+.ladult_lower_2nd_bicuspid1{
+	content: url('../../images/legends/dc/adult left/dc lower second bicuspid.png');
+	max-width: 11%; top: 50%; left: 15%; position: absolute; z-index: 3;}
+
+.ladult_lower_2nd_bicuspid2{
+	content: url('../../images/legends/ife/adult left/ife lower second bicuspid.png');
+	max-width: 11%; top: 50%; left: 15%; position: absolute; z-index: 3;}
+
+.ladult_lower_2nd_bicuspid3{
+	content: url('../../images/legends/rrf/adult left/rrf lower second bicuspid.png');
+	max-width: 11%; top: 50%; left: 15%; position: absolute; z-index: 3;}
+
+.ladult_lower_2nd_bicuspid4{
+	content: url('../../images/legends/mt/adult left/mt lower second bicuspid.png');
+	max-width: 11%; top: 50%; left: 15%; position: absolute; z-index: 3;}
+
+.ladult_lower_2nd_bicuspid5{
+	content: url('../../images/legends/af/adult left/af lower second bicuspid.png');
+	max-width: 11%; top: 50%; left: 15%; position: absolute; z-index: 3;}
+
+.ladult_lower_2nd_bicuspid6{
+	content: url('../../images/legends/ut/adult left/ut lower second bicuspid.png');
+	max-width: 11%; top: 50%; left: 15%; position: absolute; z-index: 3;}
+
+.ladult_lower_2nd_bicuspid7{
+	content: url('../../images/legends/gc/adult left/gc lower second bicuspid.png');
+	max-width: 11%; top: 50%; left: 15%; position: absolute; z-index: 3;}
+
+.ladult_lower_2nd_bicuspid8{
+	content: url('../../images/legends/jc/adult left/jc lower second bicuspid.png');
+	max-width: 11%; top: 50%; left: 15%; position: absolute; z-index: 3;}
+
+.ladult_lower_2nd_bicuspid9{
+	content: url('../../images/legends/lc/adult left/lc lower second bicuspid.png');
+	max-width: 11%; top: 50%; left: 15%; position: absolute; z-index: 3;}
+
+
+/* *** RIGHT *** */
+
+.radult_lower_2nd_bicuspid0{
+	content: url('../../images/AdultTeeth/Right/Right Lower Second Bicuspid.png');
+	max-width: 11%; top: 48%; left: 75%; position: absolute; z-index: 3;}
+
+.radult_lower_2nd_bicuspid1{
+	content: url('../../images/legends/dc/adult right/dc lower second bicuspid.png');
+	max-width: 11%; top: 48%; left: 75%; position: absolute; z-index: 3;}
+
+.radult_lower_2nd_bicuspid2{
+	content: url('../../images/legends/ife/adult right/ife lower second bicsupid.png');
+	max-width: 11%; top: 48%; left: 75%; position: absolute; z-index: 3;}
+
+.radult_lower_2nd_bicuspid3{
+	content: url('../../images/legends/rrf/adult right/rrf lower second bicuspid.png');
+	max-width: 11%; top: 48%; left: 75%; position: absolute; z-index: 3;}
+
+.radult_lower_2nd_bicuspid4{
+	content: url('../../images/legends/mt/adult right/mt lower second bicuspid.png');
+	max-width: 11%; top: 48%; left: 75%; position: absolute; z-index: 3;}
+
+.radult_lower_2nd_bicuspid5{
+	content: url('../../images/legends/af/adult right/af lower second bicuspid.png');
+	max-width: 11%; top: 48%; left: 75%; position: absolute; z-index: 3;}
+
+.radult_lower_2nd_bicuspid6{
+	content: url('../../images/legends/ut/adult right/ut lower second bicuspid.png');
+	max-width: 11%; top: 48%; left: 75%; position: absolute; z-index: 3;}
+
+.radult_lower_2nd_bicuspid7{
+	content: url('../../images/legends/gc/adult right/gc lower second bicuspid.png');
+	max-width: 11%; top: 48%; left: 75%; position: absolute; z-index: 3;}
+
+.radult_lower_2nd_bicuspid8{
+	content: url('../../images/legends/jc/adult right/jc lower second bicuspid.png');
+	max-width: 11%; top: 48%; left: 75%; position: absolute; z-index: 3;}
+
+.radult_lower_2nd_bicuspid9{
+	content: url('../../images/legends/lc/adult right/lc lower second bicuspid.png');
+	max-width: 11%; top: 48%; left: 75%; position: absolute; z-index: 3;}
+
+/***** UPPER FIRST MOLAR ******/
+
+/* *** LEFT *** */
+
+.ladult_upper_1st_molar0{
+	content: url('../../images/AdultTeeth/Left/Left Upper First Molar.png');
+	top:41%; left: 13%; max-width: 11%; position: absolute;}
+
+.ladult_upper_1st_molar1{
+	content: url('../../images/legends/dc/adult left/dc upper first molar.png');
+	top:41%; left: 13%; max-width: 11%; position: absolute;}
+
+.ladult_upper_1st_molar2{
+	content: url('../../images/legends/ife/adult left/ife upper first molar.png');
+	top:41%; left: 13%; max-width: 11%; position: absolute;}
+
+.ladult_upper_1st_molar3{
+	content: url('../../images/legends/rrf/adult left/rrf upper first molar.png');
+	top:41%; left: 13%; max-width: 11%; position: absolute;}
+
+.ladult_upper_1st_molar4{
+	content: url('../../images/legends/mt/adult left/mt upper first molar.png');
+	top:41%; left: 13%; max-width: 11%; position: absolute;}
+
+.ladult_upper_1st_molar5{
+	content: url('../../images/legends/af/adult left/af upper first molar.png');
+	top:41%; left: 13%; max-width: 11%; position: absolute;}
+
+.ladult_upper_1st_molar6{
+	content: url('../../images/legends/ut/adult left/ut upper first molar.png');
+	top:41%; left: 13%; max-width: 11%; position: absolute;}
+
+.ladult_upper_1st_molar7{
+	content: url('../../images/legends/gc/adult left/gc upper first molar.png');
+	top:41%; left: 13%; max-width: 11%; position: absolute;}
+
+.ladult_upper_1st_molar8{
+	content: url('../../images/legends/jc/adult left/jc upper first molar.png');
+	top:41%; left: 13%; max-width: 11%; position: absolute;}
+
+.ladult_upper_1st_molar9{
+	content: url('../../images/legends/lc/adult left/lc upper first molar.png');
+	top:41%; left: 13%; max-width: 11%; position: absolute;}
+
+
+/* *** RIGHT *** */
+
+.radult_upper_1st_molar0{
+	content: url('../../images/AdultTeeth/Right/Right Upper First Molar.png');
+		top:41%; left: 77%; max-width: 11%; position: absolute;}
+
+.radult_upper_1st_molar1{
+	content: url('../../images/legends/dc/adult right/dc upper first molar.png');
+	top:41%; left: 77%; max-width: 11%; position: absolute;}
+
+.radult_upper_1st_molar2{
+	content: url('../../images/legends/ife/adult right/ife upper first molar.png');
+	top:41%; left: 77%; max-width: 11%; position: absolute;}
+
+.radult_upper_1st_molar3{
+	content: url('../../images/legends/rrf/adult right/rrf upper first molar.png');
+	top:41%; left: 77%; max-width: 11%; position: absolute;}
+
+.radult_upper_1st_molar4{
+	content: url('../../images/legends/mt/adult right/mt upper first molar.png');
+	top:41%; left: 77%; max-width: 11%; position: absolute;}
+
+.radult_upper_1st_molar5{
+	content: url('../../images/legends/af/adult right/af upper first molar.png');
+	top:41%; left: 77%; max-width: 11%; position: absolute;}
+
+.radult_upper_1st_molar6{
+	content: url('../../images/legends/ut/adult right/ut upper first molar.png');
+	top:41%; left: 77%; max-width: 11%; position: absolute;}
+
+.radult_upper_1st_molar7{
+	content: url('../../images/legends/gc/adult right/gc upper first molar.png');
+	top:41%; left: 77%; max-width: 11%; position: absolute;}
+
+.radult_upper_1st_molar8{
+	content: url('../../images/legends/jc/adult right/jc upper first molar.png');
+	top:41%; left: 77%; max-width: 11%; position: absolute;}
+
+.radult_upper_1st_molar9{
+	content: url('../../images/legends/lc/adult right/lc upper first molar.png');
+	top:41%; left: 77%; max-width: 11%; position: absolute;}
+
+
+/***** LOWER FIRST MOLAR ******/
+
+/* *** LEFT *** */
+
+.ladult_lower_1st_molar0{
+	content: url('../../images/AdultTeeth/Left/Left Lower First Molar.png');
+	max-width: 10%; top: 36%; left: 12%; position: absolute; z-index: 2;}
+
+.ladult_lower_1st_molar1{
+	content: url('../../images/legends/dc/adult left/dc lower first molar.png');
+	max-width: 10%; top: 36%; left: 12%; position: absolute; z-index: 2;}
+
+.ladult_lower_1st_molar2{
+	content: url('../../images/legends/ife/adult left/ife lower first molar.png');
+	max-width: 10%; top: 36%; left: 12%; position: absolute; z-index: 2;}
+.ladult_lower_1st_molar3{
+	content: url('../../images/legends/rrf/adult left/rrf lower first molar.png');
+	max-width: 10%; top: 36%; left: 12%; position: absolute; z-index: 2;}
+
+.ladult_lower_1st_molar4{
+	content: url('../../images/legends/mt/adult left/mt lower first molar.png');
+	max-width: 10%; top: 36%; left: 12%; position: absolute; z-index: 2;}
+
+.ladult_lower_1st_molar5{
+	content: url('../../images/legends/af/adult left/af lower first molar.png');
+	max-width: 10%; top: 36%; left: 12%; position: absolute; z-index: 2;}
+
+.ladult_lower_1st_molar6{
+	content: url('../../images/legends/ut/adult left/ut lower first molar.png');
+	max-width: 10%; top: 36%; left: 12%; position: absolute; z-index: 2;}
+
+.ladult_lower_1st_molar7{
+	content: url('../../images/legends/gc/adult left/gc lower first molar.png');
+	max-width: 10%; top: 36%; left: 12%; position: absolute; z-index: 2;}
+
+.ladult_lower_1st_molar8{
+	content: url('../../images/legends/jc/adult left/jc lower first molar.png');
+	max-width: 10%; top: 36%; left: 12%; position: absolute; z-index: 2;}
+
+.ladult_lower_1st_molar9{
+	content: url('../../images/legends/lc/adult left/lc lower first molar.png');
+	max-width: 10%; top: 36%; left: 12%; position: absolute; z-index: 2;}
+
+
+
+/* *** RIGHT *** */
+
+.radult_lower_1st_molar0{
+	content: url('../../images/AdultTeeth/Right/Right Lower First Molar.png');
+	max-width: 10%; top: 34%; left: 78%; position: absolute; z-index: 2;}
+
+.radult_lower_1st_molar1{
+	content: url('../../images/legends/dc/adult right/dc lower first molar.png');
+	max-width: 10%; top: 34%; left: 78%; position: absolute; z-index: 2;}
+
+.radult_lower_1st_molar2{
+	content: url('../../images/legends/ife/adult right/ife lower first molar.png');
+	max-width: 10%; top: 34%; left: 78%; position: absolute; z-index: 2;}
+
+.radult_lower_1st_molar3{
+	content: url('../../images/legends/rrf/adult right/rrf lower first molar.png');
+	max-width: 10%; top: 34%; left: 78%; position: absolute; z-index: 2;}
+
+.radult_lower_1st_molar4{
+	content: url('../../images/legends/mt/adult right/mt lower first molar.png');
+	max-width: 10%; top: 34%; left: 78%; position: absolute; z-index: 2;}
+
+.radult_lower_1st_molar5{
+	content: url('../../images/legends/af/adult right/af lower first molar.png');
+	max-width: 10%; top: 34%; left: 78%; position: absolute; z-index: 2;}
+
+.radult_lower_1st_molar6{
+	content: url('../../images/legends/ut/adult right/ut lower first molar.png');
+	max-width: 10%; top: 34%; left: 78%; position: absolute; z-index: 2;}
+
+.radult_lower_1st_molar7{
+	content: url('../../images/legends/gc/adult right/gc lower first molar.png');
+	max-width: 10%; top: 34%; left: 78%; position: absolute; z-index: 2;}
+
+.radult_lower_1st_molar8{
+	content: url('../../images/legends/jc/adult right/jc lower first molar.png');
+	max-width: 10%; top: 34%; left: 78%; position: absolute; z-index: 2;}
+
+.radult_lower_1st_molar9{
+	content: url('../../images/legends/lc/adult right/lc lower first molar.png');
+	max-width: 10%; top: 34%; left: 78%; position: absolute; z-index: 2;}
+
+
+/***** UPPER SECOND MOLAR ******/
+
+/* *** LEFT *** */
+
+.ladult_upper_2nd_molar0{
+	content: url('../../images/AdultTeeth/Left/Left Upper Second Molar.png');
+	top: 52%; left:10%; max-width: 11%; position: absolute;}
+
+.ladult_upper_2nd_molar1{
+	content: url('../../images/legends/dc/adult left/dc upper second molar.png');
+	top: 52%; left:10%; max-width: 11%; position: absolute;}
+
+.ladult_upper_2nd_molar2{
+	content: url('../../images/legends/ife/adult left/ife upper second molar.png');
+	top: 52%; left:10%; max-width: 11%; position: absolute;}
+
+.ladult_upper_2nd_molar3{
+	content: url('../../images/legends/rrf/adult left/rrf upper second molar.png');
+	top: 52%; left:10%; max-width: 11%; position: absolute;}
+
+.ladult_upper_2nd_molar4{
+	content: url('../../images/legends/mt/adult left/mt upper second molar.png');
+	top: 52%; left:10%; max-width: 11%; position: absolute;}
+
+.ladult_upper_2nd_molar5{
+	content: url('../../images/legends/af/adult left/af upper second molar.png');
+	top: 52%; left:10%; max-width: 11%; position: absolute;}
+
+.ladult_upper_2nd_molar6{
+	content: url('../../images/legends/ut/adult left/ut upper second molar.png');
+	top: 52%; left:10%; max-width: 11%; position: absolute;}
+
+.ladult_upper_2nd_molar7{
+	content: url('../../images/legends/gc/adult left/gc upper second molar.png');
+	top: 52%; left:10%; max-width: 11%; position: absolute;}
+
+.ladult_upper_2nd_molar8{
+	content: url('../../images/legends/jc/adult left/jc upper second molar.png');
+	top: 52%; left:10%; max-width: 11%; position: absolute;}
+
+.ladult_upper_2nd_molar9{
+	content: url('../../images/legends/lc/adult left/lc upper second molar.png');
+	top: 52%; left:10%; max-width: 11%; position: absolute;}
+
+
+/* *** RIGHT *** */
+
+.radult_upper_2nd_molar0{
+	content: url('../../images/AdultTeeth/Right/Right Upper Second Molar.png');
+	top: 52%; left:79%; max-width: 11%; position: absolute;}
+
+.radult_upper_2nd_molar1{
+	content: url('../../images/legends/dc/adult right/dc upper second molar.png');
+	top: 52%; left:79%; max-width: 11%; position: absolute;}
+
+.radult_upper_2nd_molar2{
+	content: url('../../images/legends/ife/adult right/ife upper second molar.png');
+	top: 52%; left:79%; max-width: 11%; position: absolute;}
+
+.radult_upper_2nd_molar3{
+	content: url('../../images/legends/rrf/adult right/rrf upper second molar.png');
+	top: 52%; left:79%; max-width: 11%; position: absolute;}
+
+.radult_upper_2nd_molar4{
+	content: url('../../images/legends/mt/adult right/mt upper second molar.png');
+	top: 52%; left:79%; max-width: 11%; position: absolute;}
+
+.radult_upper_2nd_molar5{
+	content: url('../../images/legends/af/adult right/af upper second molar.png');
+	top: 52%; left:79%; max-width: 11%; position: absolute;}
+
+.radult_upper_2nd_molar6{
+	content: url('../../images/legends/ut/adult right/ut upper second molar.png');
+	top: 52%; left:79%; max-width: 11%; position: absolute;}
+
+.radult_upper_2nd_molar7{
+	content: url('../../images/legends/gc/adult right/gc upper second molar.png');
+	top: 52%; left:79%; max-width: 11%; position: absolute;}
+
+.radult_upper_2nd_molar8{
+	content: url('../../images/legends/jc/adult right/jc upper second molar.png');
+	top: 52%; left:79%; max-width: 11%; position: absolute;}
+
+.radult_upper_2nd_molar9{
+	content: url('../../images/legends/lc/adult right/lc upper second molar.png');
+	top: 52%; left:79%; max-width: 11%; position: absolute;}
+
+
+/***** LOWER SECOND MOLAR ******/
+
+/* *** LEFT *** */
+
+.ladult_lower_2nd_molar0{
+	content: url('../../images/AdultTeeth/Left/Left Lower Second Molar.png');
+	max-width: 13%; top:21%; left: 7.5%; position: absolute; z-index: 1;}
+
+.ladult_lower_2nd_molar1{
+	content: url('../../images/legends/dc/adult left/dc lower second molar.png');
+	max-width: 13%; top:21%; left: 7.5%; position: absolute; z-index: 1;}
+
+.ladult_lower_2nd_molar2{
+	content: url('../../images/legends/ife/adult left/ife lower second molar.png');
+	max-width: 13%; top:21%; left: 7.5%; position: absolute; z-index: 1;}
+
+.ladult_lower_2nd_molar3{
+	content: url('../../images/legends/rrf/adult left/rrf lower second molar.png');
+	max-width: 13%; top:21%; left: 7.5%; position: absolute; z-index: 1;}
+
+.ladult_lower_2nd_molar4{
+	content: url('../../images/legends/mt/adult left/mt lower second molar.png');
+	max-width: 13%; top:21%; left: 7.5%; position: absolute; z-index: 1;}
+
+.ladult_lower_2nd_molar5{
+	content: url('../../images/legends/af/adult left/af lower second molar.png');
+	max-width: 13%; top:21%; left: 7.5%; position: absolute; z-index: 1;}
+
+.ladult_lower_2nd_molar6{
+	content: url('../../images/legends/ut/adult left/ut lower second molar.png');
+	max-width: 13%; top:21%; left: 7.5%; position: absolute; z-index: 1;}
+
+.ladult_lower_2nd_molar7{
+	content: url('../../images/legends/gc/adult left/gc lower second molar.png');
+	max-width: 13%; top:21%; left: 7.5%; position: absolute; z-index: 1;}
+
+.ladult_lower_2nd_molar8{
+	content: url('../../images/legends/jc/adult left/jc lower second molar.png');
+	max-width: 13%; top:21%; left: 7.5%; position: absolute; z-index: 1;}
+
+.ladult_lower_2nd_molar9{
+	content: url('../../images/legends/lc/adult left/lc lower second molar.png');
+	max-width: 13%; top:21%; left: 7.5%; position: absolute; z-index: 1;}
+
+
+/* *** RIGHT *** */
+
+.radult_lower_2nd_molar0{
+	content: url('../../images/AdultTeeth/Right/Right Lower Second Molar.png');
+	max-width: 13%; top: 18.5%; left: 79%; position: absolute; z-index: 1;}
+
+.radult_lower_2nd_molar1{
+	content: url('../../images/legends/dc/adult right/dc lower second molar.png');
+	max-width: 13%; top: 18.5%; left: 79%; position: absolute; z-index: 1;}
+
+.radult_lower_2nd_molar2{
+	content: url('../../images/legends/ife/adult right/ife lower second molar.png');
+	max-width: 13%; top: 18.5%; left: 79%; position: absolute; z-index: 1;}
+
+.radult_lower_2nd_molar3{
+	content: url('../../images/legends/rrf/adult right/rrf lower second molar.png');
+	max-width: 13%; top: 18.5%; left: 79%; position: absolute; z-index: 1;}
+
+.radult_lower_2nd_molar4{
+	content: url('../../images/legends/mt/adult right/mt lower second molar.png');
+	max-width: 13%; top: 18.5%; left: 79%; position: absolute; z-index: 1;}
+
+.radult_lower_2nd_molar5{
+	content: url('../../images/legends/af/adult right/af lower second molar.png');
+	max-width: 13%; top: 18.5%; left: 79%; position: absolute; z-index: 1;}
+
+.radult_lower_2nd_molar6{
+	content: url('../../images/legends/ut/adult right/ut lower second molar.png');
+	max-width: 13%; top: 18.5%; left: 79%; position: absolute; z-index: 1;}
+
+.radult_lower_2nd_molar7{
+	content: url('../../images/legends/gc/adult right/gc lower second molar.png');
+	max-width: 13%; top: 18.5%; left: 79%; position: absolute; z-index: 1;}
+
+.radult_lower_2nd_molar8{
+	content: url('../../images/legends/jc/adult right/jc lower second molar.png');
+	max-width: 13%; top: 18.5%; left: 79%; position: absolute; z-index: 1;}
+
+.radult_lower_2nd_molar9{
+	content: url('../../images/legends/lc/adult right/lc lower second molar.png');
+	max-width: 13%; top: 18.5%; left: 79%; position: absolute; z-index: 1;}
+
+/***** UPPER THIRD MOLAR ******/
+
+/* *** LEFT *** */
+
+.ladult_upper_3rd_molar0{
+	content: url('../../images/AdultTeeth/Left/Left Upper Third Molar.png');
+	top:65%; left: 8%; max-width: 12%; position: absolute;}
+
+.ladult_upper_3rd_molar1{
+	content: url('../../images/legends/dc/adult left/dc upper third molar.png');
+	top:65%; left: 8%; max-width: 12%; position: absolute;}
+
+.ladult_upper_3rd_molar2{
+	content: url('../../images/legends/ife/adult left/ife upper third molar.png');
+	top:65%; left: 8%; max-width: 12%; position: absolute;}
+
+.ladult_upper_3rd_molar3{
+	content: url('../../images/legends/rrf/adult left/rrf upper third molar.png');
+	top:65%; left: 8%; max-width: 12%; position: absolute;}
+
+.ladult_upper_3rd_molar4{
+	content: url('../../images/legends/mt/adult left/mt upper third molar.png');
+	top:65%; left: 8%; max-width: 12%; position: absolute;}
+
+.ladult_upper_3rd_molar5{
+	content: url('../../images/legends/af/adult left/af upper third molar.png');
+	top:65%; left: 8%; max-width: 12%; position: absolute;}
+
+.ladult_upper_3rd_molar6{
+	content: url('../../images/legends/ut/adult left/ut upper third molar.png');
+	top:65%; left: 8%; max-width: 12%; position: absolute;}
+
+.ladult_upper_3rd_molar7{
+	content: url('../../images/legends/gc/adult left/gc upper third molar.png');
+	top:65%; left: 8%; max-width: 12%; position: absolute;}
+
+.ladult_upper_3rd_molar8{
+	content: url('../../images/legends/jc/adult left/jc upper third molar.png');
+	top:65%; left: 8%; max-width: 12%; position: absolute;}
+
+.ladult_upper_3rd_molar9{
+	content: url('../../images/legends/lc/adult left/lc upper third molar.png');
+	top:65%; left: 8%; max-width: 12%; position: absolute;}
+
+	/* *** RIGHT *** */
+
+.radult_upper_3rd_molar0{
+	content: url('../../images/AdultTeeth/Right/Right Upper Third Molar.png');
+	top:65%; left: 80%; max-width: 12%; position: absolute;}
+
+.radult_upper_3rd_molar1{
+	content: url('../../images/legends/dc/adult right/dc upper third molar.png');
+	top:65%; left: 80%; max-width: 12%; position: absolute;}
+
+.radult_upper_3rd_molar2{
+	content: url('../../images/legends/ife/adult right/ife upper third molar.png');
+	top:65%; left: 80%; max-width: 12%; position: absolute;}
+
+.radult_upper_3rd_molar3{
+	content: url('../../images/legends/rrf/adult right/rrf upper third molar.png');
+	top:65%; left: 80%; max-width: 12%; position: absolute;}
+
+.radult_upper_3rd_molar4{
+	content: url('../../images/legends/mt/adult right/mt upper third molar.png');
+	top:65%; left: 80%; max-width: 12%; position: absolute;}
+
+.radult_upper_3rd_molar5{
+	content: url('../../images/legends/af/adult right/af upper third molar.png');
+	top:65%; left: 80%; max-width: 12%; position: absolute;}
+
+.radult_upper_3rd_molar6{
+	content: url('../../images/legends/ut/adult right/ut upper third molar.png');
+	top:65%; left: 80%; max-width: 12%; position: absolute;}
+
+.radult_upper_3rd_molar7{
+	content: url('../../images/legends/gc/adult right/gc upper third molar.png');
+	top:65%; left: 80%; max-width: 12%; position: absolute;}
+
+.radult_upper_3rd_molar8{
+	content: url('../../images/legends/jc/adult right/jc upper third molar.png');
+	top:65%; left: 80%; max-width: 12%; position: absolute;}
+
+.radult_upper_3rd_molar9{
+	content: url('../../images/legends/lc/adult right/lc upper third molar.png');
+	top:65%; left: 80%; max-width: 12%; position: absolute;}
+
+/***** LOWER THIRD MOLAR ******/
+
+/* *** LEFT *** */
+
+.ladult_lower_3rd_molar0{
+	content: url('../../images/AdultTeeth/Left/Left Lower Third Molar.png');
+	max-width: 13.5%; top:4%; left: 4%; position: absolute;}
+
+.ladult_lower_3rd_molar1{
+	content: url('../../images/legends/dc/adult left/dc lower third molar.png');
+	max-width: 13.5%; top:4%; left: 4%; position: absolute;}
+
+.ladult_lower_3rd_molar2{
+	content: url('../../images/legends/ife/adult left/ife lower third molar.png');
+	max-width: 13.5%; top:4%; left: 4%; position: absolute;}
+
+.ladult_lower_3rd_molar3{
+	content: url('../../images/legends/rrf/adult left/rrf lower third molar.png');
+	max-width: 13.5%; top:4%; left: 4%; position: absolute;}
+
+.ladult_lower_3rd_molar4{
+	content: url('../../images/legends/mt/adult left/mt lower third molar.png');
+	max-width: 13.5%; top:4%; left: 4%; position: absolute;}
+
+.ladult_lower_3rd_molar5{
+	content: url('../../images/legends/af/adult left/af lower third molar.png');
+	max-width: 13.5%; top:4%; left: 4%; position: absolute;}
+
+.ladult_lower_3rd_molar6{
+	content: url('../../images/legends/ut/adult left/ut lower third molar.png');
+	max-width: 13.5%; top:4%; left: 4%; position: absolute;}
+
+.ladult_lower_3rd_molar7{
+	content: url('../../images/legends/gc/adult left/gc lower third molar.png');
+	max-width: 13.5%; top:4%; left: 4%; position: absolute;}
+
+.ladult_lower_3rd_molar8{
+	content: url('../../images/legends/jc/adult left/jc lower third molar.png');
+	max-width: 13.5%; top:4%; left: 4%; position: absolute;}
+
+.ladult_lower_3rd_molar9{
+	content: url('../../images/legends/lc/adult left/lc lower third molar.png');
+	max-width: 13.5%; top:4%; left: 4%; position: absolute;}
+
+/* *** RIGHT *** */
+
+.radult_lower_3rd_molar0{
+	content: url('../../images/AdultTeeth/Right/Right Lower Third Molar.png');
+	max-width: 13.5%; top:2%; left: 82%; position: absolute;}
+
+.radult_lower_3rd_molar1{
+	content: url('../../images/legends/dc/adult right/dc lower third molar.png');
+	max-width: 13.5%; top:2%; left: 82%; position: absolute;}
+
+.radult_lower_3rd_molar2{
+	content: url('../../images/legends/ife/adult right/ife lower third molar.png');
+	max-width: 13.5%; top:2%; left: 82%; position: absolute;}
+
+.radult_lower_3rd_molar3{
+	content: url('../../images/legends/rrf/adult right/rrf lower third molar.png');
+	max-width: 13.5%; top:2%; left: 82%; position: absolute;}
+
+.radult_lower_3rd_molar4{
+	content: url('../../images/legends/mt/adult right/mt lower third molar.png');
+	max-width: 13.5%; top:2%; left: 82%; position: absolute;}
+
+.radult_lower_3rd_molar5{
+	content: url('../../images/legends/af/adult right/af lower third molar.png');
+	max-width: 13.5%; top:2%; left: 82%; position: absolute;}
+
+.radult_lower_3rd_molar6{
+	content: url('../../images/legends/ut/adult right/ut lower third molar.png');
+	max-width: 13.5%; top:2%; left: 82%; position: absolute;}
+
+.radult_lower_3rd_molar7{
+	content: url('../../images/legends/gc/adult right/gc lower third molar.png');
+	max-width: 13.5%; top:2%; left: 82%; position: absolute;}
+
+.radult_lower_3rd_molar8{
+	content: url('../../images/legends/jc/adult right/jc lower third molar.png');
+	max-width: 13.5%; top:2%; left: 82%; position: absolute;}
+
+.radult_lower_3rd_molar9{
+	content: url('../../images/legends/lc/adult right/lc lower third molar.png');
+	max-width: 13.5%; top:2%; left: 82%; position: absolute;}
+
+}
+
+
+/*** White Teeth HOVER ***/ 
+
+/* Upper Teeth */
+
+/* ***LEFT *** */
+
+.ladult_upper_central_incisor0:hover{
+	content: url('../../images/AdultTeeth/Left/Left Upper Central Incisor Red.png');
+	z-index:1;}
+
+.ladult_upper_lateral_incisor0:hover{
+	content: url('../../images/AdultTeeth/Left/Left Upper Lateral Incisor Red.png');
+	z-index:1;}
+
+.ladult_upper_cuspid0:hover{
+	content: url('../../images/AdultTeeth/Left/Left Upper Cuspid Red.png');
+	z-index:1;}
+
+.ladult_upper_1st_bicuspid0:hover{
+	content: url('../../images/AdultTeeth/Left/Left Upper First Bicuspid Red.png');
+	z-index:1;}
+
+.ladult_upper_2nd_bicuspid0:hover{
+	content: url('../../images/AdultTeeth/Left/Left Upper Second Bicuspid Red.png');
+	z-index:1;}
+
+.ladult_upper_1st_molar0:hover{
+	content: url('../../images/AdultTeeth/Left/Left Upper First Molar Red.png');
+	z-index:1;}
+
+.ladult_upper_2nd_molar0:hover{
+	content: url('../../images/AdultTeeth/Left/Left Upper Second Molar Red.png');
+	z-index:1;}
+
+.ladult_upper_3rd_molar0:hover{
+	content: url('../../images/AdultTeeth/Left/Left Upper Third Molar Red.png');
+	z-index:1;}
+
+/* ***RIGHT *** */
+
+.radult_upper_central_incisor0:hover{
+	content: url('../../images/AdultTeeth/Right/Right Upper Central Incisor Red.png');
+	z-index:1;}
+
+.radult_upper_lateral_incisor0:hover{
+	content: url('../../images/AdultTeeth/Right/Right Upper Lateral Incisor Red.png');
+	z-index:1;}
+.radult_upper_cuspid0:hover{
+	content: url('../../images/AdultTeeth/Right/Right Upper Cuspid Red.png');
+	z-index:1;}
+
+.radult_upper_1st_bicuspid0:hover{
+	content: url('../../images/AdultTeeth/Right/Right Upper First Bicuspid Red.png');
+	z-index:1;}
+
+.radult_upper_2nd_bicuspid0:hover{
+	content: url('../../images/AdultTeeth/Right/Right Upper Second Bicuspid Red.png');
+	z-index:1;}
+
+.radult_upper_1st_molar0:hover{
+	content: url('../../images/AdultTeeth/Right/Right Upper First Molar Red.png');
+	z-index:1;}
+
+.radult_upper_2nd_molar0:hover{
+	content: url('../../images/AdultTeeth/Right/Right Upper Second Molar Red.png');
+	z-index:1;}
+
+.radult_upper_3rd_molar0:hover{
+	content: url('../../images/AdultTeeth/Right/Right Upper Third Molar Red.png');
+	z-index:1;}
+
+/* Lower Teeth */
+
+/* ***LEFT *** */
+
+.ladult_lower_central_incisor0:hover{
+	content: url('../../images/AdultTeeth/Left/Left Lower Central Incisor Red.png');
+	z-index: 8;}
+
+.ladult_lower_lateral_incisor0:hover{
+	content: url('../../images/AdultTeeth/Left/Left Lower Lateral Incisor Red.png');
+	z-index: 7;}
+
+.ladult_lower_cuspid0:hover{
+	content: url('../../images/AdultTeeth/Left/Left Lower Cuspid Red.png');
+	z-index: 6;}
+
+.ladult_lower_1st_bicuspid0:hover{
+	content: url('../../images/AdultTeeth/Left/Left Lower First Bicuspid Red.png');
+	z-index: 5;}
+
+.ladult_lower_2nd_bicuspid0:hover{
+	content: url('../../images/AdultTeeth/Left/Left Lower Second Bicuspid Red.png');
+	z-index: 4;}
+
+.ladult_lower_1st_molar0:hover{
+	content: url('../../images/AdultTeeth/Left/Left Lower First Molar Red.png');
+	z-index: 3;}
+
+.ladult_lower_2nd_molar0:hover{
+	content: url('../../images/AdultTeeth/Left/Left Lower Second Molar Red.png');
+	z-index: 2;}
+
+.ladult_lower_3rd_molar0:hover{
+	content: url('../../images/AdultTeeth/Left/Left Lower Third Molar Red.png');
+	z-index: 1;}
+
+/* ***RIGHT *** */
+
+.radult_lower_central_incisor0:hover{
+	content: url('../../images/AdultTeeth/Right/Right Lower Central Incisor Red.png');
+	z-index: 8;}
+
+.radult_lower_lateral_incisor0:hover{
+	content: url('../../images/AdultTeeth/Right/Right Lower Lateral Incisor Red.png');
+	z-index: 7;}
+
+.radult_lower_cuspid0:hover{
+	content: url('../../images/AdultTeeth/Right/Right Lower Cuspid Red.png');
+	z-index: 6;}
+
+.radult_lower_1st_bicuspid0:hover{
+	content: url('../../images/AdultTeeth/Right/Right Lower First Bicuspid Red.png');
+	z-index: 5;}
+
+.radult_lower_2nd_bicuspid0:hover{
+	content: url('../../images/AdultTeeth/Right/Right Lower Second Bicuspid Red.png');
+	z-index: 4;}
+
+.radult_lower_1st_molar0:hover{
+	content: url('../../images/AdultTeeth/Right/Right Lower First Molar Red.png');
+	z-index: 3;}
+
+.radult_lower_2nd_molar0:hover{
+	content: url('../../images/AdultTeeth/Right/Right Lower Second Molar Red.png');
+	z-index: 2;}
+
+.radult_lower_3rd_molar0:hover{
+	content: url('../../images/AdultTeeth/Right/Right Lower Third Molar Red.png');
+	z-index: 1;}
+
+
+/** DENTAL CARRIES HOVER**/
+
+/* Upper Teeth */
+
+/* ***LEFT *** */
+
+.ladult_upper_central_incisor1:hover{
+	content: url('../../images/legends/dc/adult left/dc upper central incisor Red.png');
+	z-index:1;}
+
+.ladult_upper_lateral_incisor1:hover{
+	content: url('../../images/legends/dc/adult left/dc upper lateral incisor Red.png');
+	z-index:1;}
+
+.ladult_upper_cuspid1:hover{
+	content: url('../../images/legends/dc/adult left/dc upper cuspid Red.png');
+	z-index:1;}
+
+.ladult_upper_1st_bicuspid1:hover{
+	content: url('../../images/legends/dc/adult left/dc upper 1st bicuspid Red.png');
+	z-index:1;}
+
+.ladult_upper_2nd_bicuspid1:hover{
+	content: url('../../images/legends/dc/adult left/dc upper 2nd bicuspid Red.png');
+	z-index:1;}
+
+.ladult_upper_1st_molar1:hover{
+	content: url('../../images/legends/dc/adult left/dc upper 1st molar Red.png');
+	z-index:1;}
+
+.ladult_upper_2nd_molar1:hover{
+	content: url('../../images/legends/dc/adult left/dc upper 2nd molar Red.png');
+	z-index:1;}
+
+.ladult_upper_3rd_molar1:hover{
+	content: url('../../images/legends/dc/adult left/dc upper 3rd molar Red.png');
+	z-index:1;}
+
+/* ***RIGHT *** */
+
+.radult_upper_central_incisor1:hover{
+	content: url('../../images/legends/dc/adult right/dc upper central incisor Red.png');
+	z-index:1;}
+
+.radult_upper_lateral_incisor1:hover{
+	content: url('../../images/legends/dc/adult right/dc upper lateral incisor Red.png');
+	z-index:1;}
+.radult_upper_cuspid1:hover{
+	content: url('../../images/legends/dc/adult right/dc upper cuspid Red.png');
+	z-index:1;}
+
+.radult_upper_1st_bicuspid1:hover{
+	content: url('../../images/legends/dc/adult right/dc upper 1st bicuspid Red.png');
+	z-index:1;}
+
+.radult_upper_2nd_bicuspid1:hover{
+	content: url('../../images/legends/dc/adult right/dc upper 2nd bicuspid Red.png');
+	z-index:1;}
+
+.radult_upper_1st_molar1:hover{
+	content: url('../../images/legends/dc/adult right/dc upper 1st molar Red.png');
+	z-index:1;}
+
+.radult_upper_2nd_molar1:hover{
+	content: url('../../images/legends/dc/adult right/dc upper 2nd molar Red.png');
+	z-index:1;}
+
+.radult_upper_3rd_molar1:hover{
+	content: url('../../images/legends/dc/adult right/dc upper 3rd molar Red.png');
+	z-index:1;}
+
+/* Lower Teeth */
+
+/* ***LEFT *** */
+
+.ladult_lower_central_incisor1:hover{
+	content: url('../../images/legends/dc/adult left/dc lower central incisor Red.png');
+	z-index: 8;}
+
+.ladult_lower_lateral_incisor1:hover{
+	content: url('../../images/legends/dc/adult left/dc lower lateral incisor Red.png');
+	z-index: 7;}
+
+.ladult_lower_cuspid1:hover{
+	content: url('../../images/legends/dc/adult left/dc lower cuspid Red.png');
+	z-index: 6;}
+
+.ladult_lower_1st_bicuspid1:hover{
+	content: url('../../images/legends/dc/adult left/dc lower 1st bicuspid Red.png');
+	z-index: 5;}
+
+.ladult_lower_2nd_bicuspid1:hover{
+	content: url('../../images/legends/dc/adult left/dc lower 2nd bicuspid Red.png');
+	z-index: 4;}
+
+.ladult_lower_1st_molar1:hover{
+	content: url('../../images/legends/dc/adult left/dc lower 1st molar Red.png');
+	z-index: 3;}
+
+.ladult_lower_2nd_molar1:hover{
+	content: url('../../images/legends/dc/adult left/dc lower 2nd molar Red.png');
+	z-index: 2;}
+
+.ladult_lower_3rd_molar1:hover{
+	content: url('../../images/legends/dc/adult left/dc lower 3rd molar Red.png');
+	z-index: 1;}
+
+/* ***RIGHT *** */
+
+.radult_lower_central_incisor1:hover{
+	content: url('../../images/legends/dc/adult right/dc lower central incisor Red.png');
+	z-index: 8;}
+
+.radult_lower_lateral_incisor1:hover{
+	content: url('../../images/legends/dc/adult right/dc lower lateral incisor Red.png');
+	z-index: 7;}
+
+.radult_lower_cuspid1:hover{
+	content: url('../../images/legends/dc/adult right/dc lower cuspid Red.png');
+	z-index: 6;}
+
+.radult_lower_1st_bicuspid1:hover{
+	content: url('../../images/legends/dc/adult right/dc lower 1st bicuspid Red.png');
+	z-index: 5;}
+
+.radult_lower_2nd_bicuspid1:hover{
+	content: url('../../images/legends/dc/adult right/dc lower 2nd bicuspid Red.png');
+	z-index: 4;}
+
+.radult_lower_1st_molar1:hover{
+	content: url('../../images/legends/dc/adult right/dc lower 1st molar Red.png');
+	z-index: 3;}
+
+.radult_lower_2nd_molar1:hover{
+	content: url('../../images/legends/dc/adult right/dc lower 2nd molar Red.png');
+	z-index: 2;}
+
+.radult_lower_3rd_molar1:hover{
+	content: url('../../images/legends/dc/adult right/dc lower 3rd molar Red.png');
+	z-index: 1;}
+
+
+
+
+
+/** DC HOVER**/
+
+/* Upper Teeth */
+
+/* ***LEFT *** */
+
+.ladult_upper_central_incisor1:hover{
+	content: url('../../images/legends/dc/adult left/dc upper central incisor Red.png');
+	z-index:1;}
+
+.ladult_upper_lateral_incisor1:hover{
+	content: url('../../images/legends/dc/adult left/dc upper lateral incisor Red.png');
+	z-index:1;}
+
+.ladult_upper_cuspid1:hover{
+	content: url('../../images/legends/dc/adult left/dc upper cuspid Red.png');
+	z-index:1;}
+
+.ladult_upper_1st_bicuspid1:hover{
+	content: url('../../images/legends/dc/adult left/dc upper 1st bicuspid Red.png');
+	z-index:1;}
+
+.ladult_upper_2nd_bicuspid1:hover{
+	content: url('../../images/legends/dc/adult left/dc upper 2nd bicuspid Red.png');
+	z-index:1;}
+
+.ladult_upper_1st_molar1:hover{
+	content: url('../../images/legends/dc/adult left/dc upper 1st molar Red.png');
+	z-index:1;}
+
+.ladult_upper_2nd_molar1:hover{
+	content: url('../../images/legends/dc/adult left/dc upper 2nd molar Red.png');
+	z-index:1;}
+
+.ladult_upper_3rd_molar1:hover{
+	content: url('../../images/legends/dc/adult left/dc upper 3rd molar Red.png');
+	z-index:1;}
+
+/* ***RIGHT *** */
+
+.radult_upper_central_incisor1:hover{
+	content: url('../../images/legends/dc/adult right/dc upper central incisor Red.png');
+	z-index:1;}
+
+.radult_upper_lateral_incisor1:hover{
+	content: url('../../images/legends/dc/adult right/dc upper lateral incisor Red.png');
+	z-index:1;}
+.radult_upper_cuspid1:hover{
+	content: url('../../images/legends/dc/adult right/dc upper cuspid Red.png');
+	z-index:1;}
+
+.radult_upper_1st_bicuspid1:hover{
+	content: url('../../images/legends/dc/adult right/dc upper 1st bicuspid Red.png');
+	z-index:1;}
+
+.radult_upper_2nd_bicuspid1:hover{
+	content: url('../../images/legends/dc/adult right/dc upper 2nd bicuspid Red.png');
+	z-index:1;}
+
+.radult_upper_1st_molar1:hover{
+	content: url('../../images/legends/dc/adult right/dc upper 1st molar Red.png');
+	z-index:1;}
+
+.radult_upper_2nd_molar1:hover{
+	content: url('../../images/legends/dc/adult right/dc upper 2nd molar Red.png');
+	z-index:1;}
+
+.radult_upper_3rd_molar1:hover{
+	content: url('../../images/legends/dc/adult right/dc upper 3rd molar Red.png');
+	z-index:1;}
+
+/* Lower Teeth */
+
+/* ***LEFT *** */
+
+.ladult_lower_central_incisor1:hover{
+	content: url('../../images/legends/dc/adult left/dc lower central incisor Red.png');
+	z-index: 8;}
+
+.ladult_lower_lateral_incisor1:hover{
+	content: url('../../images/legends/dc/adult left/dc lower lateral incisor Red.png');
+	z-index: 7;}
+
+.ladult_lower_cuspid1:hover{
+	content: url('../../images/legends/dc/adult left/dc lower cuspid Red.png');
+	z-index: 6;}
+
+.ladult_lower_1st_bicuspid1:hover{
+	content: url('../../images/legends/dc/adult left/dc lower 1st bicuspid Red.png');
+	z-index: 5;}
+
+.ladult_lower_2nd_bicuspid1:hover{
+	content: url('../../images/legends/dc/adult left/dc lower 2nd bicuspid Red.png');
+	z-index: 4;}
+
+.ladult_lower_1st_molar1:hover{
+	content: url('../../images/legends/dc/adult left/dc lower 1st molar Red.png');
+	z-index: 3;}
+
+.ladult_lower_2nd_molar1:hover{
+	content: url('../../images/legends/dc/adult left/dc lower 2nd molar Red.png');
+	z-index: 2;}
+
+.ladult_lower_3rd_molar1:hover{
+	content: url('../../images/legends/dc/adult left/dc lower 3rd molar Red.png');
+	z-index: 1;}
+
+/* ***RIGHT *** */
+
+.radult_lower_central_incisor1:hover{
+	content: url('../../images/legends/dc/adult right/dc lower central incisor Red.png');
+	z-index: 8;}
+
+.radult_lower_lateral_incisor1:hover{
+	content: url('../../images/legends/dc/adult right/dc lower lateral incisor Red.png');
+	z-index: 7;}
+
+.radult_lower_cuspid1:hover{
+	content: url('../../images/legends/dc/adult right/dc lower cuspid Red.png');
+	z-index: 6;}
+
+.radult_lower_1st_bicuspid1:hover{
+	content: url('../../images/legends/dc/adult right/dc lower 1st bicuspid Red.png');
+	z-index: 5;}
+
+.radult_lower_2nd_bicuspid1:hover{
+	content: url('../../images/legends/dc/adult right/dc lower 2nd bicuspid Red.png');
+	z-index: 4;}
+
+.radult_lower_1st_molar1:hover{
+	content: url('../../images/legends/dc/adult right/dc lower 1st molar Red.png');
+	z-index: 3;}
+
+.radult_lower_2nd_molar1:hover{
+	content: url('../../images/legends/dc/adult right/dc lower 2nd molar Red.png');
+	z-index: 2;}
+
+.radult_lower_3rd_molar1:hover{
+	content: url('../../images/legends/dc/adult right/dc lower 3rd molar Red.png');
+	z-index: 1;}
+
+
+
+
+/** IFE HOVER**/
+
+/* Upper Teeth */
+
+/* ***LEFT *** */
+
+.ladult_upper_central_incisor2:hover{
+	content: url('../../images/legends/ife/adult left/ife upper central incisor Red.png');
+	z-index:1;}
+
+.ladult_upper_lateral_incisor2:hover{
+	content: url('../../images/legends/ife/adult left/ife upper lateral incisor Red.png');
+	z-index:1;}
+
+.ladult_upper_cuspid2:hover{
+	content: url('../../images/legends/ife/adult left/ife upper cuspid Red.png');
+	z-index:1;}
+
+.ladult_upper_1st_bicuspid2:hover{
+	content: url('../../images/legends/ife/adult left/ife upper 1st bicuspid Red.png');
+	z-index:1;}
+
+.ladult_upper_2nd_bicuspid2:hover{
+	content: url('../../images/legends/ife/adult left/ife upper 2nd bicuspid Red.png');
+	z-index:1;}
+
+.ladult_upper_1st_molar2:hover{
+	content: url('../../images/legends/ife/adult left/ife upper 1st molar Red.png');
+	z-index:1;}
+
+.ladult_upper_2nd_molar2:hover{
+	content: url('../../images/legends/ife/adult left/ife upper 2nd molar Red.png');
+	z-index:1;}
+
+.ladult_upper_3rd_molar2:hover{
+	content: url('../../images/legends/ife/adult left/ife upper 3rd molar Red.png');
+	z-index:1;}
+
+/* ***RIGHT *** */
+
+.radult_upper_central_incisor2:hover{
+	content: url('../../images/legends/ife/adult right/ife upper central incisor Red.png');
+	z-index:1;}
+
+.radult_upper_lateral_incisor2:hover{
+	content: url('../../images/legends/ife/adult right/ife upper lateral incisor Red.png');
+	z-index:1;}
+.radult_upper_cuspid2:hover{
+	content: url('../../images/legends/ife/adult right/ife upper cuspid Red.png');
+	z-index:1;}
+
+.radult_upper_1st_bicuspid2:hover{
+	content: url('../../images/legends/ife/adult right/ife upper 1st bicuspid Red.png');
+	z-index:1;}
+
+.radult_upper_2nd_bicuspid2:hover{
+	content: url('../../images/legends/ife/adult right/ife upper 2nd bicuspid Red.png');
+	z-index:1;}
+
+.radult_upper_1st_molar2:hover{
+	content: url('../../images/legends/ife/adult right/ife upper 1st molar Red.png');
+	z-index:1;}
+
+.radult_upper_2nd_molar2:hover{
+	content: url('../../images/legends/ife/adult right/ife upper 2nd molar Red.png');
+	z-index:1;}
+
+.radult_upper_3rd_molar2:hover{
+	content: url('../../images/legends/ife/adult right/ife upper 3rd molar Red.png');
+	z-index:1;}
+
+/* Lower Teeth */
+
+/* ***LEFT *** */
+
+.ladult_lower_central_incisor2:hover{
+	content: url('../../images/legends/ife/adult left/ife lower central incisor Red.png');
+	z-index: 8;}
+
+.ladult_lower_lateral_incisor2:hover{
+	content: url('../../images/legends/ife/adult left/ife lower lateral incisor Red.png');
+	z-index: 7;}
+
+.ladult_lower_cuspid2:hover{
+	content: url('../../images/legends/ife/adult left/ife lower cuspid Red.png');
+	z-index: 6;}
+
+.ladult_lower_1st_bicuspid2:hover{
+	content: url('../../images/legends/ife/adult left/ife lower 1st bicuspid Red.png');
+	z-index: 5;}
+
+.ladult_lower_2nd_bicuspid2:hover{
+	content: url('../../images/legends/ife/adult left/ife lower 2nd bicuspid Red.png');
+	z-index: 4;}
+
+.ladult_lower_1st_molar2:hover{
+	content: url('../../images/legends/ife/adult left/ife lower 1st molar Red.png');
+	z-index: 3;}
+
+.ladult_lower_2nd_molar2:hover{
+	content: url('../../images/legends/ife/adult left/ife lower 2nd molar Red.png');
+	z-index: 2;}
+
+.ladult_lower_3rd_molar2:hover{
+	content: url('../../images/legends/ife/adult left/ife lower 3rd molar Red.png');
+	z-index: 1;}
+
+/* ***RIGHT *** */
+
+.radult_lower_central_incisor2:hover{
+	content: url('../../images/legends/ife/adult right/ife lower central incisor Red.png');
+	z-index: 8;}
+
+.radult_lower_lateral_incisor2:hover{
+	content: url('../../images/legends/ife/adult right/ife lower lateral incisor Red.png');
+	z-index: 7;}
+
+.radult_lower_cuspid2:hover{
+	content: url('../../images/legends/ife/adult right/ife lower cuspid Red.png');
+	z-index: 6;}
+
+.radult_lower_1st_bicuspid2:hover{
+	content: url('../../images/legends/ife/adult right/ife lower 1st bicuspid Red.png');
+	z-index: 5;}
+
+.radult_lower_2nd_bicuspid2:hover{
+	content: url('../../images/legends/ife/adult right/ife lower 2nd bicuspid Red.png');
+	z-index: 4;}
+
+.radult_lower_1st_molar2:hover{
+	content: url('../../images/legends/ife/adult right/ife lower 1st molar Red.png');
+	z-index: 3;}
+
+.radult_lower_2nd_molar2:hover{
+	content: url('../../images/legends/ife/adult right/ife lower 2nd molar Red.png');
+	z-index: 2;}
+
+.radult_lower_3rd_molar2:hover{
+	content: url('../../images/legends/ife/adult right/ife lower 3rd molar Red.png');
+	z-index: 1;}
+
+
+/** RRF HOVER**/
+
+/* Upper Teeth */
+
+/* ***LEFT *** */
+
+.ladult_upper_central_incisor3:hover{
+	content: url('../../images/legends/rrf/adult left/rrf upper central incisor Red.png');
+	z-index:1;}
+
+.ladult_upper_lateral_incisor3:hover{
+	content: url('../../images/legends/rrf/adult left/rrf upper lateral incisor Red.png');
+	z-index:1;}
+
+.ladult_upper_cuspid3:hover{
+	content: url('../../images/legends/rrf/adult left/rrf upper cuspid Red.png');
+	z-index:1;}
+
+.ladult_upper_1st_bicuspid3:hover{
+	content: url('../../images/legends/rrf/adult left/rrf upper 1st bicuspid Red.png');
+	z-index:1;}
+
+.ladult_upper_2nd_bicuspid3:hover{
+	content: url('../../images/legends/rrf/adult left/rrf upper 2nd bicuspid Red.png');
+	z-index:1;}
+
+.ladult_upper_1st_molar3:hover{
+	content: url('../../images/legends/rrf/adult left/rrf upper 1st molar Red.png');
+	z-index:1;}
+
+.ladult_upper_2nd_molar3:hover{
+	content: url('../../images/legends/rrf/adult left/rrf upper 2nd molar Red.png');
+	z-index:1;}
+
+.ladult_upper_3rd_molar3:hover{
+	content: url('../../images/legends/rrf/adult left/rrf upper 3rd molar Red.png');
+	z-index:1;}
+
+/* ***RIGHT *** */
+
+.radult_upper_central_incisor3:hover{
+	content: url('../../images/legends/rrf/adult right/rrf upper central incisor Red.png');
+	z-index:1;}
+
+.radult_upper_lateral_incisor3:hover{
+	content: url('../../images/legends/rrf/adult right/rrf upper lateral incisor Red.png');
+	z-index:1;}
+.radult_upper_cuspid3:hover{
+	content: url('../../images/legends/rrf/adult right/rrf upper cuspid Red.png');
+	z-index:1;}
+
+.radult_upper_1st_bicuspid3:hover{
+	content: url('../../images/legends/rrf/adult right/rrf upper 1st bicuspid Red.png');
+	z-index:1;}
+
+.radult_upper_2nd_bicuspid3:hover{
+	content: url('../../images/legends/rrf/adult right/rrf upper 2nd bicuspid Red.png');
+	z-index:1;}
+
+.radult_upper_1st_molar3:hover{
+	content: url('../../images/legends/rrf/adult right/rrf upper 1st molar Red.png');
+	z-index:1;}
+
+.radult_upper_2nd_molar3:hover{
+	content: url('../../images/legends/rrf/adult right/rrf upper 2nd molar Red.png');
+	z-index:1;}
+
+.radult_upper_3rd_molar3:hover{
+	content: url('../../images/legends/rrf/adult right/rrf upper 3rd molar Red.png');
+	z-index:1;}
+
+/* Lower Teeth */
+
+/* ***LEFT *** */
+
+.ladult_lower_central_incisor3:hover{
+	content: url('../../images/legends/rrf/adult left/rrf lower central incisor Red.png');
+	z-index: 8;}
+
+.ladult_lower_lateral_incisor3:hover{
+	content: url('../../images/legends/rrf/adult left/rrf lower lateral incisor Red.png');
+	z-index: 7;}
+
+.ladult_lower_cuspid3:hover{
+	content: url('../../images/legends/rrf/adult left/rrf lower cuspid Red.png');
+	z-index: 6;}
+
+.ladult_lower_1st_bicuspid3:hover{
+	content: url('../../images/legends/rrf/adult left/rrf lower 1st bicuspid Red.png');
+	z-index: 5;}
+
+.ladult_lower_2nd_bicuspid3:hover{
+	content: url('../../images/legends/rrf/adult left/rrf lower 2nd bicuspid Red.png');
+	z-index: 4;}
+
+.ladult_lower_1st_molar3:hover{
+	content: url('../../images/legends/rrf/adult left/rrf lower 1st molar Red.png');
+	z-index: 3;}
+
+.ladult_lower_2nd_molar3:hover{
+	content: url('../../images/legends/rrf/adult left/rrf lower 2nd molar Red.png');
+	z-index: 2;}
+
+.ladult_lower_3rd_molar3:hover{
+	content: url('../../images/legends/rrf/adult left/rrf lower 3rd molar Red.png');
+	z-index: 1;}
+
+/* ***RIGHT *** */
+
+.radult_lower_central_incisor3:hover{
+	content: url('../../images/legends/rrf/adult right/rrf lower central incisor Red.png');
+	z-index: 8;}
+
+.radult_lower_lateral_incisor3:hover{
+	content: url('../../images/legends/rrf/adult right/rrf lower lateral incisor Red.png');
+	z-index: 7;}
+
+.radult_lower_cuspid3:hover{
+	content: url('../../images/legends/rrf/adult right/rrf lower cuspid Red.png');
+	z-index: 6;}
+
+.radult_lower_1st_bicuspid3:hover{
+	content: url('../../images/legends/rrf/adult right/rrf lower 1st bicuspid Red.png');
+	z-index: 5;}
+
+.radult_lower_2nd_bicuspid3:hover{
+	content: url('../../images/legends/rrf/adult right/rrf lower 2nd bicuspid Red.png');
+	z-index: 4;}
+
+.radult_lower_1st_molar3:hover{
+	content: url('../../images/legends/rrf/adult right/rrf lower 1st molar Red.png');
+	z-index: 3;}
+
+.radult_lower_2nd_molar3:hover{
+	content: url('../../images/legends/rrf/adult right/rrf lower 2nd molar Red.png');
+	z-index: 2;}
+
+.radult_lower_3rd_molar3:hover{
+	content: url('../../images/legends/rrf/adult right/rrf lower 3rd molar Red.png');
+	z-index: ;}
+
+
+/** MT HOVER**/
+
+/* Upper Teeth */
+
+/* ***LEFT *** */
+
+.ladult_upper_central_incisor4:hover{
+	content: url('../../images/legends/mt/adult left/mt upper central incisor Red.png');
+	z-index:1;}
+
+.ladult_upper_lateral_incisor4:hover{
+	content: url('../../images/legends/mt/adult left/mt upper lateral incisor Red.png');
+	z-index:1;}
+
+.ladult_upper_cuspid4:hover{
+	content: url('../../images/legends/mt/adult left/mt upper cuspid Red.png');
+	z-index:1;}
+
+.ladult_upper_1st_bicuspid4:hover{
+	content: url('../../images/legends/mt/adult left/mt upper 1st bicuspid Red.png');
+	z-index:1;}
+
+.ladult_upper_2nd_bicuspid4:hover{
+	content: url('../../images/legends/mt/adult left/mt upper 2nd bicuspid Red.png');
+	z-index:1;}
+
+.ladult_upper_1st_molar4:hover{
+	content: url('../../images/legends/mt/adult left/mt upper 1st molar Red.png');
+	z-index:1;}
+
+.ladult_upper_2nd_molar4:hover{
+	content: url('../../images/legends/mt/adult left/mt upper 2nd molar Red.png');
+	z-index:1;}
+
+.ladult_upper_3rd_molar4:hover{
+	content: url('../../images/legends/mt/adult left/mt upper 3rd molar Red.png');
+	z-index:1;}
+
+
+/* *** RIGHT *** */
+
+.radult_upper_central_incisor4:hover{
+	content: url('../../images/legends/mt/adult right/mt upper central incisor Red.png');
+	z-index:1;}
+
+.radult_upper_lateral_incisor4:hover{
+	content: url('../../images/legends/mt/adult right/mt upper lateral incisor Red.png');
+	z-index:1;}
+
+.radult_upper_cuspid4:hover{
+	content: url('../../images/legends/mt/adult right/mt upper cuspid Red.png');
+	z-index:1;}
+
+.radult_upper_1st_bicuspid4:hover{
+	content: url('../../images/legends/mt/adult right/mt upper 1st bicuspid Red.png');
+	z-index:1;}
+
+.radult_upper_2nd_bicuspid4:hover{
+	content: url('../../images/legends/mt/adult right/mt upper 2nd bicuspid Red.png');
+	z-index:1;}
+
+.radult_upper_1st_molar4:hover{
+	content: url('../../images/legends/mt/adult right/mt upper 1st molar Red.png');
+	z-index:1;}
+
+.radult_upper_2nd_molar4:hover{
+	content: url('../../images/legends/mt/adult right/mt upper 2nd molar Red.png');
+	z-index:1;}
+
+.radult_upper_3rd_molar4:hover{
+	content: url('../../images/legends/mt/adult right/mt upper 3rd molar Red.png');
+	z-index:1;}
+
+
+/* Lower Teeth */
+
+/* ***LEFT *** */
+
+.ladult_lower_central_incisor4:hover{
+	content: url('../../images/legends/mt/adult left/mt lower central incisor Red.png');
+	z-index: 8;}
+
+.ladult_lower_lateral_incisor4:hover{
+	content: url('../../images/legends/mt/adult left/mt lower lateral incisor Red.png');
+	z-index: 7;}
+
+.ladult_lower_cuspid4:hover{
+	content: url('../../images/legends/mt/adult left/mt lower cuspid Red.png');
+	z-index: 6;}
+
+.ladult_lower_1st_bicuspid4:hover{
+	content: url('../../images/legends/mt/adult left/mt lower 1st bicuspid Red.png');
+	z-index: 5;}
+
+.ladult_lower_2nd_bicuspid4:hover{
+	content: url('../../images/legends/mt/adult left/mt lower 2nd bicuspid Red.png');
+	z-index: 4;}
+
+.ladult_lower_1st_molar4:hover{
+	content: url('../../images/legends/mt/adult left/mt lower 1st molar Red.png');
+	z-index: 3;}
+
+.ladult_lower_2nd_molar4:hover{
+	content: url('../../images/legends/mt/adult left/mt lower 2nd molar Red.png');
+	z-index: 2;}
+
+.ladult_lower_3rd_molar4:hover{
+	content: url('../../images/legends/mt/adult left/mt lower 3rd molar Red.png');
+	z-index: 1;}
+
+/* *** RIGHT *** */
+
+
+.radult_lower_central_incisor4:hover{
+	content: url('../../images/legends/mt/adult right/mt lower central incisor Red.png');
+	z-index: 8;}
+
+.radult_lower_lateral_incisor4:hover{
+	content: url('../../images/legends/mt/adult right/mt lower lateral incisor Red.png');
+	z-index: 7;}
+
+.radult_lower_cuspid4:hover{
+	content: url('../../images/legends/mt/adult right/mt lower cuspid Red.png');
+	z-index: 6;}
+
+.radult_lower_1st_bicuspid4:hover{
+	content: url('../../images/legends/mt/adult right/mt lower 1st bicuspid Red.png');
+	z-index: 5;}
+
+.radult_lower_2nd_bicuspid4:hover{
+	content: url('../../images/legends/mt/adult right/mt lower 2nd bicuspid Red.png');
+	z-index: 4;}
+
+.radult_lower_1st_molar4:hover{
+	content: url('../../images/legends/mt/adult right/mt lower 1st molar Red.png');
+	z-index: 3;}
+
+.radult_lower_2nd_molar4:hover{
+	content: url('../../images/legends/mt/adult right/mt lower 2nd molar Red.png');
+	z-index: 2;}
+
+.radult_lower_3rd_molar4:hover{
+	content: url('../../images/legends/mt/adult right/mt lower 3rd molar Red.png');
+	z-index: 1;}
+
+
+
+
+/** AF HOVER**/
+
+/* Upper Teeth */
+
+/* ***LEFT *** */
+
+.ladult_upper_central_incisor5:hover{
+	content: url('../../images/legends/af/adult left/af upper central incisor Red.png');
+	z-index:1;}
+
+.ladult_upper_lateral_incisor5:hover{
+	content: url('../../images/legends/af/adult left/af upper lateral incisor Red.png');
+	z-index:1;}
+
+.ladult_upper_cuspid5:hover{
+	content: url('../../images/legends/af/adult left/af upper cuspid Red.png');
+	z-index:1;}
+
+.ladult_upper_1st_bicuspid5:hover{
+	content: url('../../images/legends/af/adult left/af upper 1st bicuspid Red.png');
+	z-index:1;}
+
+.ladult_upper_2nd_bicuspid5:hover{
+	content: url('../../images/legends/af/adult left/af upper 2nd bicuspid Red.png');
+	z-index:1;}
+
+.ladult_upper_1st_molar5:hover{
+	content: url('../../images/legends/af/adult left/af upper 1st molar Red.png');
+	z-index:1;}
+
+.ladult_upper_2nd_molar5:hover{
+	content: url('../../images/legends/af/adult left/af upper 2nd molar Red.png');
+	z-index:1;}
+
+.ladult_upper_3rd_molar5:hover{
+	content: url('../../images/legends/af/adult left/af upper 3rd molar Red.png');
+	z-index:1;}
+
+/* ***RIGHT *** */
+
+.radult_upper_central_incisor5:hover{
+	content: url('../../images/legends/af/adult right/af upper central incisor Red.png');
+	z-index:1;}
+
+.radult_upper_lateral_incisor5:hover{
+	content: url('../../images/legends/af/adult right/af upper lateral incisor Red.png');
+	z-index:1;}
+.radult_upper_cuspid5:hover{
+	content: url('../../images/legends/af/adult right/af upper cuspid Red.png');
+	z-index:1;}
+
+.radult_upper_1st_bicuspid5:hover{
+	content: url('../../images/legends/af/adult right/af upper 1st bicuspid Red.png');
+	z-index:1;}
+
+.radult_upper_2nd_bicuspid5:hover{
+	content: url('../../images/legends/af/adult right/af upper 2nd bicuspid Red.png');
+	z-index:1;}
+
+.radult_upper_1st_molar5:hover{
+	content: url('../../images/legends/af/adult right/af upper 1st molar Red.png');
+	z-index:1;}
+
+.radult_upper_2nd_molar5:hover{
+	content: url('../../images/legends/af/adult right/af upper 2nd molar Red.png');
+	z-index:1;}
+
+.radult_upper_3rd_molar5:hover{
+	content: url('../../images/legends/af/adult right/af upper 3rd molar Red.png');
+	z-index:1;}
+
+/* Lower Teeth */
+
+/* ***LEFT *** */
+
+.ladult_lower_central_incisor5:hover{
+	content: url('../../images/legends/af/adult left/af lower central incisor Red.png');
+	z-index: 8;}
+
+.ladult_lower_lateral_incisor5:hover{
+	content: url('../../images/legends/af/adult left/af lower lateral incisor Red.png');
+	z-index: 7;}
+
+.ladult_lower_cuspid5:hover{
+	content: url('../../images/legends/af/adult left/af lower cuspid Red.png');
+	z-index: 6;}
+
+.ladult_lower_1st_bicuspid5:hover{
+	content: url('../../images/legends/af/adult left/af lower 1st bicuspid Red.png');
+	z-index: 5;}
+
+.ladult_lower_2nd_bicuspid5:hover{
+	content: url('../../images/legends/af/adult left/af lower 2nd bicuspid Red.png');
+	z-index: 4;}
+
+.ladult_lower_1st_molar5:hover{
+	content: url('../../images/legends/af/adult left/af lower 1st molar Red.png');
+	z-index: 3;}
+
+.ladult_lower_2nd_molar5:hover{
+	content: url('../../images/legends/af/adult left/af lower 2nd molar Red.png');
+	z-index: 2;}
+
+.ladult_lower_3rd_molar5:hover{
+	content: url('../../images/legends/af/adult left/af lower 3rd molar Red.png');
+	z-index: 1;}
+
+/* ***RIGHT *** */
+
+.radult_lower_central_incisor5:hover{
+	content: url('../../images/legends/af/adult right/af lower central incisor Red.png');
+	z-index: 8;}
+
+.radult_lower_lateral_incisor5:hover{
+	content: url('../../images/legends/af/adult right/af lower lateral incisor Red.png');
+	z-index: 7;}
+
+.radult_lower_cuspid5:hover{
+	content: url('../../images/legends/af/adult right/af lower cuspid Red.png');
+	z-index: 6;}
+
+.radult_lower_1st_bicuspid5:hover{
+	content: url('../../images/legends/af/adult right/af lower 1st bicuspid Red.png');
+	z-index: 5;}
+
+.radult_lower_2nd_bicuspid5:hover{
+	content: url('../../images/legends/af/adult right/af lower 2nd bicuspid Red.png');
+	z-index: 4;}
+
+.radult_lower_1st_molar5:hover{
+	content: url('../../images/legends/af/adult right/af lower 1st molar Red.png');
+	z-index: 3;}
+
+.radult_lower_2nd_molar5:hover{
+	content: url('../../images/legends/af/adult right/af lower 2nd molar Red.png');
+	z-index: 2;}
+
+.radult_lower_3rd_molar5:hover{
+	content: url('../../images/legends/af/adult right/af lower 3rd molar Red.png');
+	z-index: 1;}
+
+
+
+/** UT HOVER**/
+
+/* Upper Teeth */
+
+/* ***LEFT *** */
+
+.ladult_upper_central_incisor6:hover{
+	content: url('../../images/legends/ut/adult left/ut upper central incisor Red.png');
+	z-index:1;}
+
+.ladult_upper_lateral_incisor6:hover{
+	content: url('../../images/legends/ut/adult left/ut upper lateral incisor Red.png');
+	z-index:1;}
+
+.ladult_upper_cuspid6:hover{
+	content: url('../../images/legends/ut/adult left/ut upper cuspid Red.png');
+	z-index:1;}
+
+.ladult_upper_1st_bicuspid6:hover{
+	content: url('../../images/legends/ut/adult left/ut upper 1st bicuspid Red.png');
+	z-index:1;}
+
+.ladult_upper_2nd_bicuspid6:hover{
+	content: url('../../images/legends/ut/adult left/ut upper 2nd bicuspid Red.png');
+	z-index:1;}
+
+.ladult_upper_1st_molar6:hover{
+	content: url('../../images/legends/ut/adult left/ut upper 1st molar Red.png');
+	z-index:1;}
+
+.ladult_upper_2nd_molar6:hover{
+	content: url('../../images/legends/ut/adult left/ut upper 2nd molar Red.png');
+	z-index:1;}
+
+.ladult_upper_3rd_molar6:hover{
+	content: url('../../images/legends/ut/adult left/ut upper 3rd molar Red.png');
+	z-index:1;}
+
+
+/* ***RIGHT *** */
+
+.radult_upper_central_incisor6:hover{
+	content: url('../../images/legends/ut/adult right/ut upper central incisor Red.png');
+	z-index:1;}
+
+.radult_upper_lateral_incisor6:hover{
+	content: url('../../images/legends/ut/adult right/ut upper lateral incisor Red.png');
+	z-index:1;}
+.radult_upper_cuspid6:hover{
+	content: url('../../images/legends/ut/adult right/ut upper cuspid Red.png');
+	z-index:1;}
+
+.radult_upper_1st_bicuspid6:hover{
+	content: url('../../images/legends/ut/adult right/ut upper 1st bicuspid Red.png');
+	z-index:1;}
+
+.radult_upper_2nd_bicuspid6:hover{
+	content: url('../../images/legends/ut/adult right/ut upper 2nd bicuspid Red.png');
+	z-index:1;}
+
+.radult_upper_1st_molar6:hover{
+	content: url('../../images/legends/ut/adult right/ut upper 1st molar Red.png');
+	z-index:1;}
+
+.radult_upper_2nd_molar6:hover{
+	content: url('../../images/legends/ut/adult right/ut upper 2nd molar Red.png');
+	z-index:1;}
+
+.radult_upper_3rd_molar6:hover{
+	content: url('../../images/legends/ut/adult right/ut upper 3rd molar Red.png');
+	z-index:1;}
+
+/* Lower Teeth */
+
+/* ***LEFT *** */
+
+.ladult_lower_central_incisor6:hover{
+	content: url('../../images/legends/ut/adult left/ut lower central incisor Red.png');
+	z-index: 8;}
+
+.ladult_lower_lateral_incisor6:hover{
+	content: url('../../images/legends/ut/adult left/ut lower lateral incisor Red.png');
+	z-index: 7;}
+
+.ladult_lower_cuspid6:hover{
+	content: url('../../images/legends/ut/adult left/ut lower cuspid Red.png');
+	z-index: 6;}
+
+.ladult_lower_1st_bicuspid6:hover{
+	content: url('../../images/legends/ut/adult left/ut lower 1st bicuspid Red.png');
+	z-index: 5;}
+
+.ladult_lower_2nd_bicuspid6:hover{
+	content: url('../../images/legends/ut/adult left/ut lower 2nd bicuspid Red.png');
+	z-index: 4;}
+
+.ladult_lower_1st_molar6:hover{
+	content: url('../../images/legends/ut/adult left/ut lower 1st molar Red.png');
+	z-index: 3;}
+
+.ladult_lower_2nd_molar6:hover{
+	content: url('../../images/legends/ut/adult left/ut lower 2nd molar Red.png');
+	z-index: 2;}
+
+.ladult_lower_3rd_molar6:hover{
+	content: url('../../images/legends/ut/adult left/ut lower 3rd molar Red.png');
+	z-index: 1;}
+
+/* ***RIGHT *** */
+
+.radult_lower_central_incisor6:hover{
+	content: url('../../images/legends/ut/adult right/ut lower central incisor Red.png');
+	z-index: 8;}
+
+.radult_lower_lateral_incisor6:hover{
+	content: url('../../images/legends/ut/adult right/ut lower lateral incisor Red.png');
+	z-index: 7;}
+
+.radult_lower_cuspid6:hover{
+	content: url('../../images/legends/ut/adult right/ut lower cuspid Red.png');
+	z-index: 6;}
+
+.radult_lower_1st_bicuspid6:hover{
+	content: url('../../images/legends/ut/adult right/ut lower 1st bicuspid Red.png');
+	z-index: 5;}
+
+.radult_lower_2nd_bicuspid6:hover{
+	content: url('../../images/legends/ut/adult right/ut lower 2nd bicuspid Red.png');
+	z-index: 4;}
+
+.radult_lower_1st_molar6:hover{
+	content: url('../../images/legends/ut/adult right/ut lower 1st molar Red.png');
+	z-index: 3;}
+
+.radult_lower_2nd_molar6:hover{
+	content: url('../../images/legends/ut/adult right/ut lower 2nd molar Red.png');
+	z-index: 2;}
+
+.radult_lower_3rd_molar6:hover{
+	content: url('../../images/legends/ut/adult right/ut lower 3rd molar Red.png');
+	z-index: 1;}
+
+
+/** GC HOVER**/
+
+/* Upper Teeth */
+
+/* ***LEFT *** */
+
+.ladult_upper_central_incisor7:hover{
+	content: url('../../images/legends/gc/adult left/gc upper central incisor Red.png');
+	z-index:1;}
+
+.ladult_upper_lateral_incisor7:hover{
+	content: url('../../images/legends/gc/adult left/gc upper lateral incisor Red.png');
+	z-index:1;}
+
+.ladult_upper_cuspid7:hover{
+	content: url('../../images/legends/gc/adult left/gc upper cuspid Red.png');
+	z-index:1;}
+
+.ladult_upper_1st_bicuspid7:hover{
+	content: url('../../images/legends/gc/adult left/gc upper 1st bicuspid Red.png');
+	z-index:1;}
+
+.ladult_upper_2nd_bicuspid7:hover{
+	content: url('../../images/legends/gc/adult left/gc upper 2nd bicuspid Red.png');
+	z-index:1;}
+
+.ladult_upper_1st_molar7:hover{
+	content: url('../../images/legends/gc/adult left/gc upper 1st molar Red.png');
+	z-index:1;}
+
+.ladult_upper_2nd_molar7:hover{
+	content: url('../../images/legends/gc/adult left/gc upper 2nd molar Red.png');
+	z-index:1;}
+
+.ladult_upper_3rd_molar7:hover{
+	content: url('../../images/legends/gc/adult left/gc upper 3rd molar Red.png');
+	z-index:1;}
+
+/* *** RIGHT *** */
+
+.radult_upper_central_incisor7:hover{
+	content: url('../../images/legends/gc/adult right/gc upper central incisor Red.png');
+	z-index:1;}
+
+.radult_upper_lateral_incisor7:hover{
+	content: url('../../images/legends/gc/adult right/gc upper lateral incisor Red.png');
+	z-index:1;}
+
+.radult_upper_cuspid7:hover{
+	content: url('../../images/legends/gc/adult right/gc upper cuspid Red.png');
+	z-index:1;}
+
+.radult_upper_1st_bicuspid7:hover{
+	content: url('../../images/legends/gc/adult right/gc upper 1st bicuspid Red.png');
+	z-index:1;}
+
+.radult_upper_2nd_bicuspid7:hover{
+	content: url('../../images/legends/gc/adult right/gc upper 2nd bicuspid Red.png');
+	z-index:1;}
+
+.radult_upper_1st_molar7:hover{
+	content: url('../../images/legends/gc/adult right/gc upper 1st molar Red.png');
+	z-index:1;}
+
+.radult_upper_2nd_molar7:hover{
+	content: url('../../images/legends/gc/adult right/gc upper 2nd molar Red.png');
+	z-index:1;}
+
+.radult_upper_3rd_molar7:hover{
+	content: url('../../images/legends/gc/adult right/gc upper 3rd molar Red.png');
+	z-index:1;}
+
+/* Lower Teeth */
+
+/* ***LEFT *** */
+
+.ladult_lower_central_incisor7:hover{
+	content: url('../../images/legends/gc/adult left/gc lower central incisor Red.png');
+	z-index: 8;}
+
+.ladult_lower_lateral_incisor7:hover{
+	content: url('../../images/legends/gc/adult left/gc lower lateral incisor Red.png');
+	z-index: 7;}
+
+.ladult_lower_cuspid7:hover{
+	content: url('../../images/legends/gc/adult left/gc lower cuspid Red.png');
+	z-index: 6;}
+
+.ladult_lower_1st_bicuspid7:hover{
+	content: url('../../images/legends/gc/adult left/gc lower 1st bicuspid Red.png');
+	z-index: 5;}
+
+.ladult_lower_2nd_bicuspid7:hover{
+	content: url('../../images/legends/gc/adult left/gc lower 2nd bicuspid Red.png');
+	z-index: 4;}
+
+.ladult_lower_1st_molar7:hover{
+	content: url('../../images/legends/gc/adult left/gc lower 1st molar Red.png');
+	z-index: 3;}
+
+.ladult_lower_2nd_molar7:hover{
+	content: url('../../images/legends/gc/adult left/gc lower 2nd molar Red.png');
+	z-index: 2;}
+
+.ladult_lower_3rd_molar7:hover{
+	content: url('../../images/legends/gc/adult left/gc lower 3rd molar Red.png');
+	z-index: 1;}
+
+
+/* *** RIGHT *** */
+
+.radult_lower_central_incisor7:hover{
+	content: url('../../images/legends/gc/adult right/gc lower central incisor Red.png');
+	z-index: 8;}
+
+.radult_lower_lateral_incisor7:hover{
+	content: url('../../images/legends/gc/adult right/gc lower lateral incisor Red.png');
+	z-index: 7;}
+
+.radult_lower_cuspid7:hover{
+	content: url('../../images/legends/gc/adult right/gc lower cuspid Red.png');
+	z-index: 6;}
+
+.radult_lower_1st_bicuspid7:hover{
+	content: url('../../images/legends/gc/adult right/gc lower 1st bicuspid Red.png');
+	z-index: 5;}
+
+.radult_lower_2nd_bicuspid7:hover{
+	content: url('../../images/legends/gc/adult right/gc lower 2nd bicuspid Red.png');
+	z-index: 4;}
+
+.radult_lower_1st_molar7:hover{
+	content: url('../../images/legends/gc/adult right/gc lower 1st molar Red.png');
+	z-index: 3;}
+
+.radult_lower_2nd_molar7:hover{
+	content: url('../../images/legends/gc/adult right/gc lower 2nd molar Red.png');
+	z-index: 2;}
+
+.radult_lower_3rd_molar7:hover{
+	content: url('../../images/legends/gc/adult right/gc lower 3rd molar Red.png');
+	z-index: 1;}
+
+/** JC HOVER**/
+
+/* Upper Teeth */
+
+/* ***LEFT *** */
+
+.ladult_upper_central_incisor8:hover{
+	content: url('../../images/legends/jc/adult left/jc upper central incisor Red.png');
+	z-index:1;}
+
+.ladult_upper_lateral_incisor8:hover{
+	content: url('../../images/legends/jc/adult left/jc upper lateral incisor Red.png');
+	z-index:1;}
+
+.ladult_upper_cuspid8:hover{
+	content: url('../../images/legends/jc/adult left/jc upper cuspid Red.png');
+	z-index:1;}
+
+.ladult_upper_1st_bicuspid8:hover{
+	content: url('../../images/legends/jc/adult left/jc upper 1st bicuspid Red.png');
+	z-index:1;}
+
+.ladult_upper_2nd_bicuspid8:hover{
+	content: url('../../images/legends/jc/adult left/jc upper 2nd bicuspid Red.png');
+	z-index:1;}
+
+.ladult_upper_1st_molar8:hover{
+	content: url('../../images/legends/jc/adult left/jc upper 1st molar Red.png');
+	z-index:1;}
+
+.ladult_upper_2nd_molar8:hover{
+	content: url('../../images/legends/jc/adult left/jc upper 2nd molar Red.png');
+	z-index:1;}
+
+.ladult_upper_3rd_molar8:hover{
+	content: url('../../images/legends/jc/adult left/jc upper 3rd molar Red.png');
+	z-index:1;}
+
+/* ***RIGHT *** */
+
+.radult_upper_central_incisor8:hover{
+	content: url('../../images/legends/jc/adult right/jc upper central incisor Red.png');
+	z-index:1;}
+
+.radult_upper_lateral_incisor8:hover{
+	content: url('../../images/legends/jc/adult right/jc upper lateral incisor Red.png');
+	z-index:1;}
+
+.radult_upper_cuspid8:hover{
+	content: url('../../images/legends/jc/adult right/jc upper cuspid Red.png');
+	z-index:1;}
+
+.radult_upper_1st_bicuspid8:hover{
+	content: url('../../images/legends/jc/adult right/jc upper 1st bicuspid Red.png');
+	z-index:1;}
+
+.radult_upper_2nd_bicuspid8:hover{
+	content: url('../../images/legends/jc/adult right/jc upper 2nd bicuspid Red.png');
+	z-index:1;}
+
+.radult_upper_1st_molar8:hover{
+	content: url('../../images/legends/jc/adult right/jc upper 1st molar Red.png');
+	z-index:1;}
+
+.radult_upper_2nd_molar8:hover{
+	content: url('../../images/legends/jc/adult right/jc upper 2nd molar Red.png');
+	z-index:1;}
+
+.radult_upper_3rd_molar8:hover{
+	content: url('../../images/legends/jc/adult right/jc upper 3rd molar Red.png');
+	z-index:1;}
+
+/* Lower Teeth */
+
+/* ***LEFT *** */
+
+.ladult_lower_central_incisor8:hover{
+	content: url('../../images/legends/jc/adult left/jc lower central incisor Red.png');
+	z-index: 8;}
+
+.ladult_lower_lateral_incisor8:hover{
+	content: url('../../images/legends/jc/adult left/jc lower lateral incisor Red.png');
+	z-index: 7;}
+
+.ladult_lower_cuspid8:hover{
+	content: url('../../images/legends/jc/adult left/jc lower cuspid Red.png');
+	z-index: 6;}
+
+.ladult_lower_1st_bicuspid8:hover{
+	content: url('../../images/legends/jc/adult left/jc lower 1st bicuspid Red.png');
+	z-index: 5;}
+
+.ladult_lower_2nd_bicuspid8:hover{
+	content: url('../../images/legends/jc/adult left/jc lower 2nd bicuspid Red.png');
+	z-index: 4;}
+
+.ladult_lower_1st_molar8:hover{
+	content: url('../../images/legends/jc/adult left/jc lower 1st molar Red.png');
+	z-index: 3;}
+
+.ladult_lower_2nd_molar8:hover{
+	content: url('../../images/legends/jc/adult left/jc lower 2nd molar Red.png');
+	z-index: 2;}
+
+.ladult_lower_3rd_molar8:hover{
+	content: url('../../images/legends/jc/adult left/jc lower 3rd molar Red.png');
+	z-index: 1;}
+
+/* ***RIGHT *** */
+
+.radult_lower_central_incisor8:hover{
+	content: url('../../images/legends/jc/adult right/jc lower central incisor Red.png');
+	z-index: 8;}
+
+.radult_lower_lateral_incisor8:hover{
+	content: url('../../images/legends/jc/adult right/jc lower lateral incisor Red.png');
+	z-index: 7;}
+
+.radult_lower_cuspid8:hover{
+	content: url('../../images/legends/jc/adult right/jc lower cuspid Red.png');
+	z-index: 6;}
+
+.radult_lower_1st_bicuspid8:hover{
+	content: url('../../images/legends/jc/adult right/jc lower 1st bicuspid Red.png');
+	z-index: 5;}
+
+.radult_lower_2nd_bicuspid8:hover{
+	content: url('../../images/legends/jc/adult right/jc lower 2nd bicuspid Red.png');
+	z-index: 4;}
+
+.radult_lower_1st_molar8:hover{
+	content: url('../../images/legends/jc/adult right/jc lower 1st molar Red.png');
+	z-index: 3;}
+
+.radult_lower_2nd_molar8:hover{
+	content: url('../../images/legends/jc/adult right/jc lower 2nd molar Red.png');
+	z-index: 2;}
+
+.radult_lower_3rd_molar8:hover{
+	content: url('../../images/legends/jc/adult right/jc lower 3rd molar Red.png');
+	z-index: 1;}
+
+/** LC HOVER**/
+
+/* Upper Teeth */
+
+/* ***LEFT *** */
+
+.ladult_upper_central_incisor9:hover{
+	content: url('../../images/legends/lc/adult left/lc upper central incisor Red.png');
+	z-index:1;}
+
+.ladult_upper_lateral_incisor9:hover{
+	content: url('../../images/legends/lc/adult left/lc upper lateral incisor Red.png');
+	z-index:1;}
+
+.ladult_upper_cuspid9:hover{
+	content: url('../../images/legends/lc/adult left/lc upper cuspid Red.png');
+	z-index:1;}
+
+.ladult_upper_1st_bicuspid9:hover{
+	content: url('../../images/legends/lc/adult left/lc upper 1st bicuspid Red.png');
+	z-index:1;}
+
+.ladult_upper_2nd_bicuspid9:hover{
+	content: url('../../images/legends/lc/adult left/lc upper 2nd bicuspid Red.png');
+	z-index:1;}
+
+.ladult_upper_1st_molar9:hover{
+	content: url('../../images/legends/lc/adult left/lc upper 1st molar Red.png');
+	z-index:1;}
+
+.ladult_upper_2nd_molar9:hover{
+	content: url('../../images/legends/lc/adult left/lc upper 2nd molar Red.png');
+	z-index:1;}
+
+.ladult_upper_3rd_molar9:hover{
+	content: url('../../images/legends/lc/adult left/lc upper 3rd molar Red.png');
+	z-index:1;}
+
+/* ***RIGHT *** */
+
+.radult_upper_central_incisor9:hover{
+	content: url('../../images/legends/lc/adult right/lc upper central incisor Red.png');
+	z-index:1;}
+
+.radult_upper_lateral_incisor9:hover{
+	content: url('../../images/legends/lc/adult right/lc upper lateral incisor Red.png');
+	z-index:1;}
+
+.radult_upper_cuspid9:hover{
+	content: url('../../images/legends/lc/adult right/lc upper cuspid Red.png');
+	z-index:1;}
+
+.radult_upper_1st_bicuspid9:hover{
+	content: url('../../images/legends/lc/adult right/lc upper 1st bicuspid Red.png');
+	z-index:1;}
+
+.radult_upper_2nd_bicuspid9:hover{
+	content: url('../../images/legends/lc/adult right/lc upper 2nd bicuspid Red.png');
+	z-index:1;}
+
+.radult_upper_1st_molar9:hover{
+	content: url('../../images/legends/lc/adult right/lc upper 1st molar Red.png');
+	z-index:1;}
+
+.radult_upper_2nd_molar9:hover{
+	content: url('../../images/legends/lc/adult right/lc upper 2nd molar Red.png');
+	z-index:1;}
+
+.radult_upper_3rd_molar9:hover{
+	content: url('../../images/legends/lc/adult right/lc upper 3rd molar Red.png');
+	z-index:1;}
+
+/* Lower Teeth */
+
+/* ***LEFT *** */
+
+.ladult_lower_central_incisor9:hover{
+	content: url('../../images/legends/lc/adult left/lc lower central incisor Red.png');
+	z-index: 8;}
+
+.ladult_lower_lateral_incisor9:hover{
+	content: url('../../images/legends/lc/adult left/lc lower lateral incisor Red.png');
+	z-index: 7;}
+
+.ladult_lower_cuspid9:hover{
+	content: url('../../images/legends/lc/adult left/lc lower cuspid Red.png');
+	z-index: 6;}
+
+.ladult_lower_1st_bicuspid9:hover{
+	content: url('../../images/legends/lc/adult left/lc lower 1st bicuspid Red.png');
+	z-index: 5;}
+
+.ladult_lower_2nd_bicuspid9:hover{
+	content: url('../../images/legends/lc/adult left/lc lower 2nd bicuspid Red.png');
+	z-index: 4;}
+
+.ladult_lower_1st_molar9:hover{
+	content: url('../../images/legends/lc/adult left/lc lower 1st molar Red.png');
+	z-index: 3;}
+
+.ladult_lower_2nd_molar9:hover{
+	content: url('../../images/legends/lc/adult left/lc lower 2nd molar Red.png');
+	z-index: 2;}
+
+.ladult_lower_3rd_molar9:hover{
+	content: url('../../images/legends/lc/adult left/lc lower 3rd molar Red.png');
+	z-index: 1;}
+
+/* ***RIGHT *** */
+
+.radult_lower_central_incisor9:hover{
+	content: url('../../images/legends/lc/adult right/lc lower central incisor Red.png');
+	z-index: 8;}
+
+.radult_lower_lateral_incisor9:hover{
+	content: url('../../images/legends/lc/adult right/lc lower lateral incisor Red.png');
+	z-index: 7;}
+
+.radult_lower_cuspid89:hover{
+	content: url('../../images/legends/lc/adult right/lc lower cuspid Red.png');
+	z-index: 6;}
+
+.radult_lower_1st_bicuspid9:hover{
+	content: url('../../images/legends/lc/adult right/lc lower 1st bicuspid Red.png');
+	z-index: 5;}
+
+.radult_lower_2nd_bicuspid9:hover{
+	content: url('../../images/legends/lc/adult right/lc lower 2nd bicuspid Red.png');
+	z-index: 4;}
+
+.radult_lower_1st_molar9:hover{
+	content: url('../../images/legends/lc/adult right/lc lower 1st molar Red.png');
+	z-index: 3;}
+
+.radult_lower_2nd_molar9:hover{
+	content: url('../../images/legends/lc/adult right/lc lower 2nd molar Red.png');
+	z-index: 2;}
+
+.radult_lower_3rd_molar9:hover{
+	content: url('../../images/legends/lc/adult right/lc lower 3rd molar Red.png');
+	z-index: 1;}
+
+}
+
+
