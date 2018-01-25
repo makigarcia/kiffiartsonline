@@ -3,7 +3,7 @@
 
   $link = mysql_connect('localhost', 'root', '');
   if (!$link) { die('Could not connect: ' . mysql_error()); }
-  if (!mysql_select_db('myrnas')) {  die('Could not select database: ' . mysql_error()); }
+  if (!mysql_select_db('kiffiarts')) {  die('Could not select database: ' . mysql_error()); }
 
   session_start();
 

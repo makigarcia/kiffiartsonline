@@ -123,7 +123,7 @@ session_start();
 
    <!-- SAMPLE DIT  
     $link = mysql_connect('localhost', 'root', '');
-    mysql_select_db("myrnas", $link);
+    mysql_select_db("kiffiarts", $link);
 
     $query="SELECT * FROM customized_cake";
     $myData = @mysql_query($query, $link);
@@ -257,13 +257,14 @@ session_start();
             </div>
             <div class="container">
                 <div class="row">
-                <h2><span style="color: red">Few Reminders</span></h2> <hr> </hr>
+                <h2><span style="color: red">REMINDERS</span></h2> <hr> </hr>
                     <div class="col-lg-12"> <!-- <h3> --> 
                         <div class="modal-body">                
-                            <p> <h4> <i class="fa fa-circle"></i> Orders must be placed <b> at least 2 weeks before </b> the desired date for delivery/pick-up. </p>                            
+                            <span style="text-align: left"><h4><p> <i class="fa fa-circle"></i> Orders must be placed <b> at least 2 weeks before </b> the desired date for delivery/pick-up. </p>                            
                             <i class="fa fa-circle"></i> Changes in orders can be made <b> only when the status is pending</b>.
                             <p></p>
-                             <p> <i class="fa fa-circle"></i> Only bulk orders are eligible for delivery.</p></h4>
+                             <p> <i class="fa fa-circle"></i> Only bulk orders are eligible for delivery.</p>
+                             <p><i class="fa fa-circle"></i> No online payment.</p></h4></span>
                             <div class="button-form"> <a href="customization/index.php" class="btn btn-primary btn-large btn-block" type="submit"> Start Designing</a> </div> 
                         </div>
                     </div>
@@ -340,7 +341,7 @@ session_start();
 <!-- Start of LiveChat (www.livechatinc.com) code -->
 <script type="text/javascript">
 window.__lc = window.__lc || {};
-window.__lc.license = 9327300;
+window.__lc.license = 9447515;
 (function() {
   var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
   lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';

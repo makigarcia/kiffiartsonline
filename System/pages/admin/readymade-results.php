@@ -6,7 +6,7 @@
       die('Could not connect: ' . mysql_error());
   }
       //name of the database
-  if (!mysql_select_db('myrnas')) {
+  if (!mysql_select_db('kiffiarts')) {
       die('Could not select database: ' . mysql_error());
   }
 ?>
@@ -168,8 +168,8 @@
                      </span>
                      </a>
                      <ul class="treeview-menu">
-                        <li><a href="cake-catalog.php"><i class="fa fa-circle-o"></i> Add Cake Catalog</a></li>
-                        <li><a href="edit-cakecatalog.php"><i class="fa fa-circle-o"></i> Edit Cake Catalog</a></li>
+                        <li><a href="readymade-designs.php"><i class="fa fa-circle-o"></i> Add Cake Catalog</a></li>
+                        <li><a href="edit-readymade.php"><i class="fa fa-circle-o"></i> Edit Cake Catalog</a></li>
                      </ul>
                   </li>
                </ul>
@@ -193,7 +193,7 @@
 
 
     $dbc = @mysql_connect('localhost' , 'root', '');
-    @mysql_select_db('myrnas', $dbc);
+    @mysql_select_db('kiffiarts', $dbc);
 
     $query = "INSERT INTO cakecatalog VALUES(NULL,'$design_code','$ctlg_shape','$ctlg_size','$ctlg_flavor','$ctlg_frostcolor','$ctlg_frosttype','$ctlg_acces','$ctlg_price')";
 
@@ -230,7 +230,7 @@
                                           <div class="panel-heading">
                                              <h2 class="panel-title"><strong>ADD CAKE CATALOG</strong></h2>
                                           </div>
-                                          <form action="cake-catalog-results.php" method="POST">
+                                          <form action="readymade-results.php" method="POST">
                                           <div class="panel-body">
                                              <div class="form-group">
                                                 <label class="col-md-3 col-xs-12 control-label">Design Code</label>

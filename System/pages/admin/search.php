@@ -1,7 +1,7 @@
 <?php
 
 
-$mysqli = new MySQLi('localhost','root','','myrnas');
+$mysqli = new MySQLi('localhost','root','','kiffiarts');
 /* Connect to database and set charset to UTF-8 */
 if($mysqli->connect_error) {
   echo 'Database connection failed...' . 'Error: ' . $mysqli->connect_errno . ' ' . $mysqli->connect_error;

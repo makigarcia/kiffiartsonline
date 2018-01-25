@@ -56,7 +56,7 @@ disablebackbutton(); </script>
            <section class="nav-responsive">
             <div class="navbar-header">
               <!-- Logo Starts -->
-              <a class="navbar-brand" href="#home"> <img src="images/logoboth.jpg" alt="Smiley face" style="width: 90%"></a> <!-- #Logo Ends -->
+              <a class="navbar-brand" href="#home"> <img src="images/logoboth.jpg" alt="Smiley face" style="width: 75%"></a> <!-- #Logo Ends -->
 
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -75,8 +75,10 @@ disablebackbutton(); </script>
                  <li> <a class="page-scroll active" href="#home">Home</a></li>
                  <li> <a class="page-scroll" href="#menu">About Us</a></li>
                  <li> <a class="page-scroll" href="#foods">Ready-Made Designs</a></li>
-                 <li> <a class="page-scroll" href="#placelast">Location</a></li> </ul>
+                 <li> <a class="page-scroll" href="#placelast">Location</a></li>
+                 <li> <a href="../kiffiarts/System/login.php">Admin Login</a></li> </ul>
             </div>
+
             <!-- #Nav Ends -->
             </section>
           </div>
@@ -261,7 +263,7 @@ disablebackbutton(); </script>
                             <h2 class="text-center  wowload fadeInUp">LOG IN</h2>
                               <p> </p> <hr> 
                               
-                                <form action="myrnas_login.php" method="POST">
+                                <form action="kiffiarts_login.php" method="POST">
                                 <div class="col-sm-6 col-sm-offset-3 col-xs-12">  
                                 <label>Username</label> <input type="text" name="cust_uname" required data-validation-required-message="Please enter your name." placeholder="Username">
         
@@ -304,7 +306,7 @@ disablebackbutton(); </script>
                         <div class="container contactform center">
                           <h2 class="text-center  wowload fadeInUp">REGISTRATION</h2>
                           <hr> </hr>
-                            <form action="myrnas_registrationresults.php" method="POST">
+                            <form action="kiffiarts_registrationresults.php" method="POST">
 
                               <div class="col-sm-6 col-xs-12">  
                                 <div class="row control-group">
@@ -378,7 +380,7 @@ disablebackbutton(); </script>
 
                               <h3>Please Log-in or Register to start designing.</h3>
                               
-                                <!-- <form action="myrnas_login.php" method="POST">
+                                <!-- <form action="kiffiarts_login.php" method="POST">
                                 <div class="col-sm-6 col-sm-offset-3 col-xs-12">  
                                 <label>Username</label> <input type="text" name="cust_uname" required data-validation-required-message="Please enter your name." placeholder="Username">
         
@@ -452,7 +454,7 @@ $(document).ready(function(){
 <script type="text/javascript">
   //   function submit_order($form) {
   //   $.ajax({
-  //     url   : "myrnas_registrationresults.php", 
+  //     url   : "kiffiarts_registrationresults.php", 
   //     type  : "POST",
   //     cache : false,
   //     data  : $form.serialize(),

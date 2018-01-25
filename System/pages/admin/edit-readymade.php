@@ -183,8 +183,8 @@
                      </span>
                      </a>
                      <ul class="treeview-menu">
-                        <li><a href="cake-catalog.php"><i class="fa fa-circle-o"></i> Add Ready-Made Design</a></li>
-                        <li class="active"><a href="edit-cakecatalog.php"><i class="fa fa-circle-o"></i> Edit Ready-Made Design</a></li>
+                        <li><a href="readymade-designs.php"><i class="fa fa-circle-o"></i> Add Ready-Made Design</a></li>
+                        <li class="active"><a href="edit-readymade.php"><i class="fa fa-circle-o"></i> Edit Ready-Made Design</a></li>
                      </ul>
                   </li>
                      <li class="treeview">
@@ -335,7 +335,7 @@
                                        }
                                        ?>
                                     <?php echo '<td>';?>
-                                    <form method=POST id="form4_<?php echo $c;?>" action="edit-cakecatalog.php">
+                                    <form method=POST id="form4_<?php echo $c;?>" action="edit-readymade.php">
                                        <?php echo '<input type="hidden" name="catalog_ID" value="' .$catalog_ID. '" >';?>
                                        <a href="#" class="btndashboard edittreat" 
                                           data-dcode="<?php echo $DC; ?>" 

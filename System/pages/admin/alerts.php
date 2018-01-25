@@ -172,8 +172,8 @@
                      </span>
                      </a>
                      <ul class="treeview-menu">
-                        <li><a href="cake-catalog.php"><i class="fa fa-circle-o"></i> Add Cake Catalog</a></li>
-                        <li><a href="edit-cakecatalog.php"><i class="fa fa-circle-o"></i> Edit Cake Catalog</a></li>
+                        <li><a href="readymade-designs.php"><i class="fa fa-circle-o"></i> Add Cake Catalog</a></li>
+                        <li><a href="edit-readymade.php"><i class="fa fa-circle-o"></i> Edit Cake Catalog</a></li>
                      </ul>
                   </li>
                    <li class="treeview">

@@ -1,6 +1,6 @@
 <?php
     $link = mysql_connect('localhost', 'root', '');
-    mysql_select_db("myrnas", $link);
+    mysql_select_db("kiffiarts", $link);
 
     $query="SELECT * FROM pricelist";
     $myData = @mysql_query($query, $link);

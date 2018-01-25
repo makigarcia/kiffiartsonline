@@ -22,7 +22,7 @@
     
     else{
     $dbc = @mysql_connect('localhost' , 'root', '');
-    @mysql_select_db('myrnas', $dbc);
+    @mysql_select_db('kiffiarts', $dbc);
 
     session_start();
 

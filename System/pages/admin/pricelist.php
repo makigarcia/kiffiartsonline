@@ -182,8 +182,8 @@
                      </span>
                      </a>
                      <ul class="treeview-menu">
-                        <li><a href="cake-catalog.php"><i class="fa fa-circle-o"></i> Add Ready-Made Design</a></li>
-                        <li><a href="edit-cakecatalog.php"><i class="fa fa-circle-o"></i> Edit Ready-Made Design</a></li>
+                        <li><a href="readymade-designs.php"><i class="fa fa-circle-o"></i> Add Ready-Made Design</a></li>
+                        <li><a href="edit-readymade.php"><i class="fa fa-circle-o"></i> Edit Ready-Made Design</a></li>
                      </ul>
                   </li>
                      <li class="treeview">
@@ -235,12 +235,12 @@
             </div>
 
             <center><div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="occasion_price.php">
+                <a class="thumbnail" href="shirt_price.php">
                     <img class="img-responsive" src="uploads/shirtprice.jpg" alt="">
                 </a>
             </div></center>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="flavor_price.php">
+                <a class="thumbnail" href="printtype_price.php">
                     <img class="img-responsive" src="uploads/typeofprintprice.jpg" alt="">
                 </a>
             </div>

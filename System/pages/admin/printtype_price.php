@@ -42,7 +42,7 @@
       <![endif]-->
    </head>
    <!--=========================  PHP CODE =========================-->
-   <?php
+  <?php
       include('../../server_one.php');
                 session_start();   
                 $usern=$_SESSION['usern'];
@@ -146,7 +146,7 @@
                      </a>
                   </li>
                   <!--Account Information menu-->
-                  <li class="treeview">
+                  <li class="active treeview">
                      <a href="#">
                      <i class="fa fa-edit"></i> <span>Manage Orders</span>
                      <span class="pull-right-container">
@@ -154,9 +154,9 @@
                      </span>
                      </a>
                      <ul class="treeview-menu">
-                        <li><a href="forms/general.html"><i class="fa fa-circle-o"></i> Approve Orders</a></li>
-                        <li><a href="forms/advanced.html"><i class="fa fa-circle-o"></i> Pending Orders</a></li>
-                        <li><a href="forms/editors.html"><i class="fa fa-circle-o"></i> Deliver Orders</a></li>
+                        <li class="active"><a href="pending-orders.php"><i class="fa fa-circle-o"></i> Pending Orders</a></li>
+                        <li ><a href="deliver-orders.php"><i class="fa fa-circle-o"></i> Confirmed Orders</a></li>
+                        <li ><a href="approved-orders.php"><i class="fa fa-circle-o"></i> Approved Orders</a></li>
                      </ul>
                   </li>
                   <li class=" treeview">
@@ -166,15 +166,15 @@
                   </li>
                   <li class="treeview">
                      <a href="billing.php">
-                     <i class="fa fa-usd"></i><span>Billing and Delivery</span>
+                      <i class="fa  fa-shopping-cart"></i><span>Delivered/Picked-up Orders</span>
                      </a>  
                   </li>
-                  <li class="active treeview">
+                  <li class="treeview">
                      <a href="pricelist.php">
                      <i class="fa fa-user-md"></i><span>Price List</span>
                      </a>  
                   </li>
-                  <li class="  treeview">
+                  <li class=" treeview">
                      <a href="#">
                      <i class="fa fa-edit"></i> <span>Manage Ready-Made Designs</span>
                      <span class="pull-right-container">
@@ -182,13 +182,27 @@
                      </span>
                      </a>
                      <ul class="treeview-menu">
-                        <li><a href="cake-catalog.php"><i class="fa fa-circle-o"></i> Add Ready-Made Design</a></li>
-                        <li><a href="edit-cakecatalog.php"><i class="fa fa-circle-o"></i> Edit Ready-Made Design</a></li>
+                        <li><a href="readymade-designs.php"><i class="fa fa-circle-o"></i> Add Ready-Made Design</a></li>
+                        <li><a href="forms/advanced.html"><i class="fa fa-circle-o"></i> Edit Ready-Made Design</a></li>
                      </ul>
                   </li>
+                     <li class="treeview">
+                  <a href="#">
+                  <i class="fa fa-edit"></i> <span>Report List</span>
+                  <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                  </span>
+                  </a>
+                  <ul class=" active treeview-menu">
+                     <li ><a href="daily_report.php"><i class="fa fa-circle-o"></i> Daily Succesful Report</a></li>
+                     <li ><a href="daily_report1.php"><i class="fa fa-circle-o"></i> Daily Unsuccesful Report</a></li>
+                     <li><a href="monthly_report.php"><i class="fa fa-circle-o"></i> Monthly Succesful Report</a></li>
+                     <li><a href="monthly_report1.php"><i class="fa fa-circle-o"></i> Monthly Unsuccesful Report</a></li>
+                  </ul>
+               </li>
                   <li class="treeview">
-                     <a href="report_list.php">
-                     <i class="fa fa-file-text-o"></i><span>Report</span>
+                     <a href="system_log.php">
+                     <i class="fa  fa-cog"></i><span>System log</span>
                      </a>  
                   </li>
                </ul>
@@ -201,7 +215,9 @@
             <section class="content-header">
                <h1>
                </h1>
-              
+               <ol class="breadcrumb">
+                  
+               </ol>
                <br>
             </section>
             <!-- Main content -->
@@ -214,20 +230,18 @@
                               <h3>Update Price List</h3>
                               <p>Edit details.</p>
                            </div>
-
                            <div class="form-top-right">
                               <i class="fa fa-laptop "></i>
-
                            </div>
                         </div>
-                                                         <a href="pricelist.php"  class="btndashboard" style="background: #227da0;">back</a>
+                        <a href="pricelist.php"  class="btndashboard" style="background: #227da0;">back</a>
                         <div class="col-lg-12" style="margin-top: 10px;">
                            <div class="box border" style="border-top: 3px solid #a54c18;">
-                              <div class="box-header"><b>Type of Shirts</b></div>
+                              <div class="box-header"><b>Types of Printing</b></div>
                               <div class="box-body table-responsive no-padding">
                                  <table class="table table-hover">
-                                       <th> </center></th>
-                                    <th><h3>Shirt Type</h3></th>
+                                     <th> </center></th>
+                                    <th><h3>Print Type</h3></th>
                                     <th> <h3>Price</center></h3></th>
                                     <th></th>
                               
@@ -235,8 +249,6 @@
                                     <th></th>
                                     <?php echo '<th>';?>
                                     <?php echo '</th>';?>
-
-
                                     </tr>
                                     <?php
                                        $bi = mysql_query("SELECT Count(`price_ID`) FROM `pricelist`");
@@ -252,85 +264,138 @@
                                        
                                        for($c=0;  $c<$b1;$c++){
                                          $price_ID=$storeArray2[$c][0]['price_ID'];
-                                         $WP=$storeArray2[$c][0]['wedding_price'];
-                                         $BP = $storeArray2[$c][0]['birthday_price'];
-                                         $DP = $storeArray2[$c][0]['dedi_price'];
-                                         $OP = $storeArray2[$c][0]['occ_price'];
-                                         $CDP = $storeArray2[$c][0]['circle_default_price'];
-                                         $CSP = $storeArray2[$c][0]['circle_small1_price'];
-                                       
-                                       
-                                            echo '<center><tr>';
-                                            echo '<td class="hidden">'.$storeArray2[$c][0]['price_ID'].'</td>';
-                                            echo '<td></td>';
-                                                echo '<td><h4>Election Shirt</h4></td>';
+                                         $A=$storeArray2[$c][0]['flavor_vanilla_price'];
+                                         $B = $storeArray2[$c][0]['flavor_ube_price'];
+                                         $C = $storeArray2[$c][0]['flavor_rvelvet_price'];
+                                         $D = $storeArray2[$c][0]['flavor_coffee_price'];
+                                         $E = $storeArray2[$c][0]['flavor_bberry_price'];
+                                         $F = $storeArray2[$c][0]['flavor_strawberry_price'];
 
-                                            echo '<td><h3>'.$storeArray2[$c][0]['wedding_price'].'</h3></td>'; ?>
+                                       
+                                       
+                                       ?>
+
+                                    <?php
+                                
+                                       
+                                        echo '<center><tr>';
+                                        echo '<td class="hidden">'.$storeArray2[$c][0]['price_ID'].'</td>';
+                                        echo '<td></td>';
+                                        echo '<td><h4>Textile Paint</h4></td>';
+                                        echo '<td><h3>'.$storeArray2[$c][0]['frost_fondant_price'].'</h3></td>'; ?>
                                    
                                     <?php
-                                       echo '<td></td>';
-                                       echo '</tr></center>';                      
+                                
                                        
-                                       
-                                       
+                                        echo '<center><tr>';
+                                        echo '<td class="hidden">'.$storeArray2[$c][0]['price_ID'].'</td>';
+                                        echo '<td></td>';
+                                        echo '<td><h4>Ordinary Rubber Vinyl</h4></td>';
+                                        echo '<td><h3>'.$storeArray2[$c][0]['flavor_vanilla_price'].'</h3></td>'; ?>
+                      
+                                    <?php
+
+                                    echo '<td></td>';
+                                       echo '</tr></center>';  
+
                                         echo '<tr>';
                                         echo '<td class="hidden">'.$storeArray2[$c][0]['price_ID'].'</td>';
-                                         echo '<td></td>';
-                                        echo '<td><h4>Cotton Shirt</h4></td>';
-                                        echo '<td><h3>'.$storeArray2[$c][0]['birthday_price'].'</h3></td>'; ?>
-                                  <?php echo '<td>';?>
+                                        echo '<td></td>';
+                                        echo '<td><h4>Reflectorized</h4></td>';
+                                        echo '<td><h3>'.$storeArray2[$c][0]['flavor_ube_price'].'</h3></td>'; ?>
+                                    <?php echo '<td>';?>
+
+                                   
                                     <?php
+
+
+                                    echo '<td></td>';
+                                       echo '</tr>';                         
+
+
+                                        echo '<tr>';
+                                        echo '<td class="hidden">'.$storeArray2[$c][0]['price_ID'].'</td>';
+                                        echo '<td></td>';
+                                        echo '<td> <h4>Glow-in-the-Dark</h4></td>';
+                                        echo '<td> <h3>'.$storeArray2[$c][0]['flavor_rvelvet_price'].' <h3></td>'; ?>
+                                    <?php echo '<td>';?>
+
+                                     <?php
                                        echo '<td></td>';
                                        echo '</tr>';                         
 
 
                                         echo '<tr>';
                                         echo '<td class="hidden">'.$storeArray2[$c][0]['price_ID'].'</td>';
-                                         echo '<td></td>';
-                                        echo '<td> <h4>Own (Election Shirt)</h4></td>';
-                                        echo '<td> <h3>'.$storeArray2[$c][0]['dedi_price'].'</h3></td>'; ?>
+                                        echo '<td></td>';
+                                        echo '<td> <h4>Gamuza</h4></td>';
+                                        echo '<td> <h3>'.$storeArray2[$c][0]['flavor_coffee_price'].' <h3></td>'; ?>
                                     <?php echo '<td>';?>
-                                   
+
+
+
                                     <?php
-                                       echo '<td></td>';
-                                       echo '</tr>';                  
+
+                                     echo '<td></td>';
+                                       echo '</tr>';                         
 
 
                                         echo '<tr>';
-                                        echo '<td class="hidden">'.$storeArray2[$c][0]['occ_price'].'</td>';
-                                         echo '<td></td>';
-                                        echo '<td><h4>Own (Cotton Shirt)</h4></td>';
-                                        echo '<td><h3>'.$storeArray2[$c][0]['occ_price'].'</h3></td>'; ?>
-                                    
+                                        echo '<td class="hidden">'.$storeArray2[$c][0]['price_ID'].'</td>';
+                                        echo '<td></td>';
+                                        echo '<td> <h4>Sublimation</h4></td>';
+                                        echo '<td> <h3>'.$storeArray2[$c][0]['flavor_bberry_price'].' <h3></td>'; ?>
+                                    <?php echo '<td>';?>
+
+
+                                    <?php
+
+                                     echo '<td></td>';
+                                       echo '</tr>';                         
+
+
+                                        echo '<tr>';
+                                        echo '<td class="hidden">'.$storeArray2[$c][0]['price_ID'].'</td>';
+                                        echo '<td></td>';
+                                        echo '<td> <h4>Transfer Paper</h4></td>';
+                                        echo '<td> <h3>'.$storeArray2[$c][0]['flavor_strawberry_price'].' <h3></td>'; ?>
+                                    <?php echo '<td>';?>
+                                      
+
+                                   
 
 
 
                                     <?php
                                        echo '<td></td>';
-                                       echo '</tr>';
-                                       echo '<tr>';
-                                        echo '<td class="hidden">'.$storeArray2[$c][0]['occ_price'].'</td>';        
+                                       echo '</tr>';        
+                                        echo '<td>';?>
+                                  <center> <form method=POST id="form4_<?php echo $c;?>" action="secretary-prescription.php">
+                                       <?php echo '<input type="hidden" name="price_ID" value="' .$price_ID. '" >';?>
+                                       <a href="#" 
+                                       data-one="<?php echo $A; ?>" 
+                                          data-two="<?php echo $B; ?>"
+                                          data-three="<?php echo $C; ?>" 
 
-                                        echo '<td>';
-                                        ?>
-                                        
-                                   <a href="pricelist.php"  ></a>
-
+                                          data-four="<?php echo $D; ?>" 
+                                          data-code="<?php echo $price_ID; ?>"
+                                           data-toggle="modal" data-target=".edit-treat"> </a></td>
+                                    </form></center>
                                     <?php echo '</td>';?>     
  <?php echo '<td>';?>
-                                    <td>
-
-                                   <form method=POST id="form4_<?php echo $c;?>" action="secretary-prescription.php">
+                                     <td> <form method=POST id="form4_<?php echo $c;?>" action="secretary-prescription.php">
                                        <?php echo '<input type="hidden" name="price_ID" value="' .$price_ID. '" >';?>
                                        <a href="#" class="btndashboard edittreat" 
-                                       data-one="<?php echo $WP; ?>" 
-                                          data-two="<?php echo $BP; ?>"
-                                          data-three="<?php echo $DP; ?>" 
+                                       data-one="<?php echo $A; ?>" 
+                                          data-two="<?php echo $B; ?>"
+                                          data-three="<?php echo $C; ?>" 
 
-                                          data-four="<?php echo $OP; ?>" 
+                                          data-four="<?php echo $D; ?>" 
+                                          data-five="<?php echo $E; ?>" 
+                                          data-six="<?php echo $F; ?>" 
                                           data-code="<?php echo $price_ID; ?>"
                                           style="background: #F39C12;" data-toggle="modal" data-target=".edit-treat"> Edit</a>
-                                    </form></td>
+                                   </form></td>
                                     <?php echo '</td>';?>
                                     <?php
                                        echo '<td></td>';
@@ -348,7 +413,6 @@
                         </div>
                         
                                  </table>
-
                               </div>
                            </div>
                   </div>
@@ -369,7 +433,7 @@
       <div class="modal-content">
       <div class="modal-header">
       <button type="button" class="close" data-dismiss="modal">&times;</button>
-      <h4 class="modal-title" style="text-align:center;">Edit Price List</h4>
+      <h4 class="modal-title" style="text-align:center;">Edit Flavor Price List</h4>
       </div>
       <div class="modal-body">
       <!-- content goes here -->
@@ -377,34 +441,43 @@
       <form method="post" action="results.php" id="form4_<?php echo $c;?>">
       <label class="sr-only" for="form-code">price ID</label>
       <input type="hidden" name="form-code" placeholder="Treatment Code" class="form-code1 form-control" id="form-code">
-      </dive>
       <div class="form-group">
-      Election Shirt Price:
+      Vanilla Flavor:
       <label class="sr-only" for="form-one">Wedding Price</label>
-      <h5><input type="text" name="form-one" placeholder="price" class="form-one1 form-control" id="form-one"></h5>
+      <input type="text" name="form-one" placeholder="price" class="form-one1 form-control" id="form-one">
       </div>        
        <div class="form-group">
-      Cotton Shirt Price:
+       Ube Flavor:
       <label class="sr-only" for="form-two">Wedding Price</label>
       <input type="text" name="form-two" placeholder="price" class="form-two1 form-control" id="form-two">
       </div>                     
        <div class="form-group">
-      Own (Election Shirt) Price:
+       Red Velvet Flavor:
       <label class="sr-only" for="form-three">Wedding Price</label>
       <input type="text" name="form-three" placeholder="price" class="form-three1 form-control" id="form-three">
       </div>         
        <div class="form-group">
-      Own (Cotton Shirt) Price:
+       Coffee Flavor
       <label class="sr-only" for="form-four">Wedding Price</label>
       <input type="text" name="form-four" placeholder="price" class="form-four1 form-control" id="form-four">
+      </div>     
+          <div class="form-group">
+       Blueberry Flavor:
+      <label class="sr-only" for="form-five">Wedding Price</label>
+      <input type="text" name="form-five" placeholder="price" class="form-five1 form-control" id="form-five">
+      </div>  
+
+      <div class="form-group">
+       Strawberry Flavor:
+      <label class="sr-only" for="form-six">Wedding Price</label>
+      <input type="text" name="form-six" placeholder="price" class="form-six1 form-control" id="form-six">
       </div>        
-      <?php echo'<input type="hidden" name="url" value="23" >'; ?>
+      <?php echo'<input type="hidden" name="url" value="26" >'; ?>
       <?php echo'<input type="hidden" name="usern" value="' .$usern. '" >'; ?>
       </div></h3>
       <div class="modal-footer">
-      <center>
       <button type="button" class="btndashboard" data-dismiss="modal">Back</button>            
-     <a href="#" type="submit"  onclick="confirm_pres2(<?php echo $c;?>)" class="btndashboard">Submit</a></center>
+      <button type="submit"  onclick="confirm_pres2(<?php echo $c;?>)" class="btndashboard">Submit</button>
       </form>
       </div>
       </div>
@@ -453,8 +526,7 @@
              }
          }
          
-         
-         function confirm_pres2(mine) {
+        function confirm_pres2(mine) {
          var answer = confirm("Are you sure you want to edit the price? ")
 
              if (answer)
@@ -492,8 +564,8 @@
                  var two = $(this).data('two');
                  var three = $(this).data('three');
                  var four = $(this).data('four');
-                 var color = $(this).data('color');
-                  var frost = $(this).data('frost');
+                 var five = $(this).data('five');
+                  var six = $(this).data('six');
                  var ac = $(this).data('ac');
                  var ct = $(this).data('ct');
                  var price = $(this).data('price');
@@ -503,8 +575,8 @@
                  $(".form-two1").val(two);
                  $(".form-three1").val(three);
                  $(".form-four1").val(four);
-                  $(".form-color1").val(color);
-                 $(".form-frost1").val(frost);
+                  $(".form-five1").val(five);
+                 $(".form-six1").val(six);
                  $(".form-ac1").val(ac);
                  $(".form-ct1").val(ct);
                  $(".form-price1").val(price);

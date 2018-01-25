@@ -489,7 +489,7 @@ $cake_ID = $_POST['cake_ID'];
 	session_start();
 	$_SESSION['usern']=$usern;
 	$_SESSION['alert']=1;
-	$_SESSION['goto']="cake-catalog.php";
+	$_SESSION['goto']="readymade-designs.php";
 	$_SESSION['text']="Adding New Service Successful";
 
 
@@ -622,7 +622,7 @@ $date=date('Y-m-d');
 
 	$_SESSION['usern']=$usern;
 	$_SESSION['alert']=1;
-	$_SESSION['goto']="edit-cakecatalog.php";
+	$_SESSION['goto']="edit-readymade.php";
 	$_SESSION['text']="Marking Service as Unavailable is Successful";
 
 
@@ -646,7 +646,7 @@ $date=date('Y-m-d');
 
 	$_SESSION['usern']=$usern;
 	$_SESSION['alert']=1;
-	$_SESSION['goto']="edit-cakecatalog.php";
+	$_SESSION['goto']="edit-readymade.php";
 	$_SESSION['text']="Marking Service as Available is Successful";
 
 
@@ -763,7 +763,7 @@ if($check==1){
 
 	$_SESSION['usern']=$usern;
 	$_SESSION['alert']=1;
-	$_SESSION['goto']="edit-cakecatalog.php";
+	$_SESSION['goto']="edit-readymade.php";
 	$_SESSION['text']="Service Details Update Done";
 	Header("Location:alerts.php");
 
@@ -779,7 +779,7 @@ if($check==1){
 
 	$_SESSION['usern']=$usern;
 	$_SESSION['alert']=1;
-	$_SESSION['goto']="edit-cakecatalog.php";
+	$_SESSION['goto']="edit-readymade.php";
 	$_SESSION['text']="Updating Of Cake Catalog Done";
 
 

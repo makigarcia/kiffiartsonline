@@ -382,8 +382,8 @@
                      </span>
                      </a>
                      <ul class="treeview-menu">
-                        <li><a href="cake-catalog.php"><i class="fa fa-circle-o"></i> Add Ready-Made Design</a></li>
-                        <li><a href="edit-cakecatalog.php"><i class="fa fa-circle-o"></i> Edit Ready-Made Design</a></li>
+                        <li><a href="readymade-designs.php"><i class="fa fa-circle-o"></i> Add Ready-Made Design</a></li>
+                        <li><a href="edit-readymade.php"><i class="fa fa-circle-o"></i> Edit Ready-Made Design</a></li>
                      </ul>
                   </li>
                      <li class="treeview">
@@ -420,7 +420,7 @@
                         <div class="inner">
                            <?php
                               $link = mysql_connect("localhost", "root", "");
-                              mysql_select_db("myrnas", $link);
+                              mysql_select_db("kiffiarts", $link);
                               
                               $result = mysql_query("SELECT * FROM customized_cake WHERE order_pending='pending'", $link);
                               $num_rows = mysql_num_rows($result);
@@ -724,7 +724,7 @@ echo "Deliver/Pickup for " . date("F j, Y") . "<br>";
                        echo '          <td>'.$service = $reserves[$c][0]['payment_status'].'</td>';  
                        echo '          <td>'.$diagnosis = $reserves[$c][0]['payment_amount'].'</td>';    
                        echo '          <td>'.$diagnosis = $reserves[$c][0]['catalog_price'].'</td>';    ?>
-             <td><a href="catalog_search.php?order_catalog=<?php echo $order_catalog;?>"  class="btndashboard" style="background: #227da0;">view</a></td>
+             <td><a href="readymade_search.php?order_catalog=<?php echo $order_catalog;?>"  class="btndashboard" style="background: #227da0;">view</a></td>
      
             <?php echo '<td>';?>
             <form method=POST id="form6_<?php echo $c;?>" action="results.php">

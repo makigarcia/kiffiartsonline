@@ -79,7 +79,7 @@
               <div class="caption-info">              
               <i class="fa fa-birthday-cake fa-5x animated bounceInDown"></i>
 <?php
-include('myrnas_server.php');
+include('kiffiarts_server.php');
 
 $Regusername = $_POST['cust_uname'];
 $Regpassword = $_POST['cust_pword'];
@@ -135,7 +135,7 @@ else
                         <div class="container contactform center">
                             <h2 class="text-center  wowload fadeInUp">LOG IN</h2>
                               <p> </p> <hr> 
-                              <form action="myrnas_login.php" method="POST">
+                              <form action="kiffiarts_login.php" method="POST">
 
                                 <div class="col-sm-6 col-sm-offset-3 col-xs-12">  
                                 <label>Username</label> <input type="text" name="cust_uname" required data-validation-required-message="Please enter your username." placeholder="Username">
@@ -173,7 +173,7 @@ else
 
                         <div class="container contactform center">
                           <h2 class="text-center  wowload fadeInUp">REGISTRATION</h2>
-                            <form action="myrnas_registrationresults.php" method="POST">
+                            <form action="kiffiarts_registrationresults.php" method="POST">
                               <div class="col-sm-6 col-xs-12">  
                                 <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">

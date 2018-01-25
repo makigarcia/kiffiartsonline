@@ -175,7 +175,7 @@
                      </span>
                      </a>
                      <ul class="treeview-menu">
-                        <li><a href="cake-catalog.php"><i class="fa fa-circle-o"></i> Add Cake Catalog</a></li>
+                        <li><a href="readymade-designs.php"><i class="fa fa-circle-o"></i> Add Cake Catalog</a></li>
                         <li><a href="forms/advanced.html"><i class="fa fa-circle-o"></i> Edit Cake Catalog</a></li>
                      </ul>
                   </li>
@@ -188,7 +188,7 @@
                   </a>
                   <ul class=" active treeview-menu">
                      <li ><a href="daily_report.php"><i class="fa fa-circle-o"></i> Daily Report</a></li>
-                     <li class="active"><a href="edit-cakecatalog.php"><i class="fa fa-circle-o"></i> Monthly Report</a></li>
+                     <li class="active"><a href="edit-readymade.php"><i class="fa fa-circle-o"></i> Monthly Report</a></li>
                   </ul>
                </li>
                   <li class="treeview">
@@ -396,7 +396,7 @@ echo $datetime->format('F');
                        echo '          <td>'.$diagnosis = $reserves[$c][0]['catalog_code'].'</td>';   
          
                        echo '          <td>'.$diagnosis = $reserves[$c][0]['catalog_price'].'</td>';    ?>
-             <td><a href="catalog_search.php?order_catalog=<?php echo $order_catalog;?>"  class="btndashboard" style="background: #227da0;">view</a></td>
+             <td><a href="readymade_search.php?order_catalog=<?php echo $order_catalog;?>"  class="btndashboard" style="background: #227da0;">view</a></td>
      
             
             <?php              

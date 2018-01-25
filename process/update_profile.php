@@ -1,6 +1,6 @@
 <?php
 
-include('../myrnas_server.php');
+include('../kiffiarts_server.php');
 
 
 

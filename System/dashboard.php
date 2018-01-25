@@ -233,7 +233,7 @@
 
 
             <li class="treeview">
-              <a href="manage-cake.php">
+              <a href="manage.php">
                 <i class="fa fa-plus"></i> <span>Manage Orders</span>
               </a>
             </li>       

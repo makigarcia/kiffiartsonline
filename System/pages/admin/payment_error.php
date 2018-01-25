@@ -176,7 +176,7 @@
                      </span>
                      </a>
                      <ul class="treeview-menu">
-                        <li><a href="cake-catalog.php"><i class="fa fa-circle-o"></i> Add Cake Catalog</a></li>
+                        <li><a href="readymade-designs.php"><i class="fa fa-circle-o"></i> Add Cake Catalog</a></li>
                         <li><a href="forms/advanced.html"><i class="fa fa-circle-o"></i> Edit Cake Catalog</a></li>
                      </ul>
                   </li>
@@ -406,7 +406,7 @@
                                                         echo '          <td>'.$diagnosis = $reserves[$c][0]['catalog_code'].'</td>';   
                                                         echo '          <td>'.$service = $reserves[$c][0]['catalog_price'].'</td>';  
                                                         echo '          <td>'.$name = $num.'</td>';    ?>
-                                  <td><a href="catalog_search.php?order=<?php echo $order1;?>"  class="btndashboard" style="background: #227da0;">view</a></td>
+                                  <td><a href="readymade_search.php?order=<?php echo $order1;?>"  class="btndashboard" style="background: #227da0;">view</a></td>
                                     <?php
                                        if($reserves[$c][0]['catalog_status']=="confirmed"){
                                        ?>

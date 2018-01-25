@@ -168,7 +168,7 @@ echo "" . date("F j,Y") . "<br>";
                      <ul class="treeview-menu">
                         <li><a href="pending-orders.php"><i class="fa fa-circle-o"></i> Pending Orders</a></li>
                         <li ><a href="deliver-orders.php"><i class="fa fa-circle-o"></i> Confirmed Orders</a></li>
-                        <li ><a href="approved-orders.php"><i class="fa fa-circle-o"></i> Confirmed Orders</a></li>
+                        <li ><a href="approved-orders.php"><i class="fa fa-circle-o"></i> Approved Orders</a></li>
                      </ul>
                   </li>
                   <li class=" treeview">
@@ -176,12 +176,12 @@ echo "" . date("F j,Y") . "<br>";
                      <i class="fa fa-files-o"></i><span>Customer Files</span>
                      </a>
                   </li>
-                  <li class="  treeview">
+                  <li class="treeview">
                      <a href="billing.php">
-                     <i class="fa  fa-shopping-cart"></i><span>Delivered/Picked-up Orders</span>
+                      <i class="fa  fa-shopping-cart"></i><span>Delivered/Picked-up Orders</span>
                      </a>  
                   </li>
-                  <li class=" treeview">
+                  <li class="treeview">
                      <a href="pricelist.php">
                      <i class="fa fa-user-md"></i><span>Price List</span>
                      </a>  
@@ -194,29 +194,24 @@ echo "" . date("F j,Y") . "<br>";
                      </span>
                      </a>
                      <ul class="treeview-menu">
-                        <li><a href="cake-catalog.php"><i class="fa fa-circle-o"></i> Add Ready-Made Design</a></li>
+                        <li><a href="readymade-designs.php"><i class="fa fa-circle-o"></i> Add Ready-Made Design</a></li>
                         <li><a href="forms/advanced.html"><i class="fa fa-circle-o"></i> Edit Ready-Made Design</a></li>
                      </ul>
                   </li>
-                   <li class=" active treeview">
+                     <li class="treeview">
                   <a href="#">
                   <i class="fa fa-edit"></i> <span>Report List</span>
                   <span class="pull-right-container">
                   <i class="fa fa-angle-left pull-right"></i>
                   </span>
                   </a>
-                  <ul class=" treeview-menu">
-                     <li class="active" ><a href="daily_report.php"><i class="fa fa-circle-o"></i> Daily Succesful Report</a></li>
+                  <ul class=" active treeview">
+                     <li class="active"><a href="daily_report.php"><i class="fa fa-circle-o"></i> Daily Succesful Report</a></li>
                      <li ><a href="daily_report1.php"><i class="fa fa-circle-o"></i> Daily Unsuccesful Report</a></li>
                      <li><a href="monthly_report.php"><i class="fa fa-circle-o"></i> Monthly Succesful Report</a></li>
                      <li><a href="monthly_report1.php"><i class="fa fa-circle-o"></i> Monthly Unsuccesful Report</a></li>
                   </ul>
                </li>
-                  <li class="treeview">
-                     <a href="report_list.php">
-                     <i class="fa fa-file-text-o"></i><span>Report</span>
-                     </a>  
-                  </li>
                   <li class="treeview">
                      <a href="system_log.php">
                      <i class="fa  fa-cog"></i><span>System log</span>
@@ -414,7 +409,7 @@ echo "" . date("F j,Y") . "<br>";
                        // echo '          <td>'.$diagnosis = $reserves[$c][0]['catalog_code'].'</td>';   
          
                        echo '          <td>'.$diagnosis = $reserves[$c][0]['catalog_price'].'</td>';    ?>
-             <td><a href="catalog_search.php?order_catalog=<?php echo $order_catalog;?>"  class="btndashboard" style="background: #227da0;">view</a></td>
+             <td><a href="readymade_search.php?order_catalog=<?php echo $order_catalog;?>"  class="btndashboard" style="background: #227da0;">view</a></td>
      
             
             <?php              

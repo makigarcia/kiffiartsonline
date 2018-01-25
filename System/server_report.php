@@ -2,8 +2,8 @@
 $host 		= "localhost"; // Hostname
 $username	= "root"; // Host username
 $password	= ""; // Host password
-$db			= "myrnas"; //Database name
+$db			= "kiffiarts"; //Database name
 $dbc = @mysql_connect('localhost','root','');
-@mysql_select_db('myrnas', $dbc);
+@mysql_select_db('kiffiarts', $dbc);
 $conn = new mysqli("$host", "$username", "", "$db");
 ?>

@@ -110,7 +110,7 @@ date_default_timezone_set('Etc/UTC');
     
     else{
     $dbc = @mysql_connect('localhost' , 'root', '');
-    @mysql_select_db('myrnas', $dbc);
+    @mysql_select_db('kiffiarts', $dbc);
 
     session_start();
 
@@ -144,11 +144,11 @@ date_default_timezone_set('Etc/UTC');
         print '<p> Oooppps, please register again!. '.mysql_error().'</p>';
         }*/
 
-include "PHPMailer/PHPMailerAutoload.php";
+//include "PHPMailer/PHPMailerAutoload.php";
 
       
 
-      $mail = new PHPMailer();
+     /* $mail = new PHPMailer();
       $mail->IsSMTP(); // set mailer to use SMTP
       $mail->Host = "mail.authsmtp.com"; // specify SMTP server
       $mail->SMTPAuth = true; // turn on SMTP authentication
@@ -171,7 +171,7 @@ include "PHPMailer/PHPMailerAutoload.php";
         echo "Mailer Error: " . $mail->ErrorInfo;
         exit;
       }
-      echo "Message has been sent";
+      echo "Message has been sent";*/
 
 
 
@@ -209,7 +209,7 @@ include "PHPMailer/PHPMailerAutoload.php";
                         <div class="container contactform center">
                             <h2 class="text-center  wowload fadeInUp">LOG IN</h2>
                               <p> </p> <hr> 
-                              <form action="myrnas_login.php" method="POST">
+                              <form action="kiffiarts_login.php" method="POST">
 
                                 <div class="col-sm-6 col-sm-offset-3 col-xs-12">  
                                 <label>Username</label> <input type="text" name="cust_uname" required data-validation-required-message="Please enter your username." placeholder="Username">
@@ -248,7 +248,7 @@ include "PHPMailer/PHPMailerAutoload.php";
 
                         <div class="container contactform center">
                           <h2 class="text-center  wowload fadeInUp">REGISTRATION</h2> <hr> </hr>
-                            <form action="myrnas_registrationresults.php" method="POST">
+                            <form action="kiffiarts_registrationresults.php" method="POST">
 
                               <div class="col-sm-6 col-xs-12">  
 

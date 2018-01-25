@@ -152,7 +152,7 @@
 
 
             <li class="active treeview">
-              <a href="manage-cake.php">
+              <a href="manage.php">
                 <i class="fa fa-plus"></i> <span>Manage Cake Orders</span>
               </a>
             </li>       
@@ -173,7 +173,7 @@
               <a href="pricelist.php">
                 <i class="fa fa-user-md"></i><span>Price List</span>
               </a>  
-            </li>          s
+            </li>          
 
     
           </ul>
