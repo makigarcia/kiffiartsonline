@@ -425,7 +425,7 @@
                               $result = mysql_query("SELECT * FROM customized_cake WHERE order_pending='pending'", $link);
                               $num_rows = mysql_num_rows($result);
 
-                              $resultadd = mysql_query("SELECT * FROM catalog_orderlist WHERE catalog_status='pending'", $link);
+                              $resultadd = mysql_query("SELECT * FROM rmd_orderlist WHERE rmd_status='pending'", $link);
                               $num_rowsadd = mysql_num_rows($resultadd);
                               
                               ?>                   
@@ -449,7 +449,7 @@
                               $result = mysql_query("SELECT * FROM customized_cake WHERE order_pending='confirmed'", $link);
                               $num_rows = mysql_num_rows($result);
 
-                              $resultadd = mysql_query("SELECT * FROM catalog_orderlist WHERE catalog_status='confirmed'", $link);
+                              $resultadd = mysql_query("SELECT * FROM rmd_orderlist WHERE rmd_status='confirmed'", $link);
                               $num_rowsadd = mysql_num_rows($resultadd);
                               
                               
@@ -475,7 +475,7 @@
                               $result = mysql_query("SELECT * FROM customized_cake WHERE order_pending='approved'", $link);
                               $num_rows = mysql_num_rows($result);
 
-                              $resultadd = mysql_query("SELECT * FROM catalog_orderlist WHERE catalog_status='approved'", $link);
+                              $resultadd = mysql_query("SELECT * FROM rmd_orderlist WHERE rmd_status='approved'", $link);
                               $num_rowsadd = mysql_num_rows($resultadd);
                               
                               
@@ -677,24 +677,24 @@ echo "Deliver/Pickup for " . date("F j, Y") . "<br>";
             </tr>
             </thead>
 
-            <?php      $bi = mysql_query("SELECT Count(`order_catalog`) FROM `catalog_orderlist` WHERE `duedate_catalog`=CURDATE()");
+            <?php      $bi = mysql_query("SELECT Count(`orderrmd_id`) FROM `rmd_orderlist` WHERE `d_date`=CURDATE()");
                $b1 = mysql_fetch_array($bi);
                $cnt1=$b1[0];
                
                if($cnt1!=0){
                
-                     $query2 = "SELECT * FROM catalog_orderlist";
+                     $query2 = "SELECT * FROM rmd_orderlist";
                      $r4 = @mysql_query($query2, $dbc); 
                      while ($row3 = mysql_fetch_array($r4, MYSQL_ASSOC)) {
                           $reserves[][] =  $row3;
                      }
                
                      for($c=0;$c<$cnt1; $c++){
-                       $order_catalog=$reserves[$c][0]['order_catalog'];
+                       $orderrmd_id=$reserves[$c][0]['orderrmd_id'];
                        $id1=$reserves[$c][0]['customer_ID'];
 
 
-                           $qtl1 = mysql_query("SELECT order_catalog FROM  catalog_orderlist WHERE order_catalog='$order_catalog' ");
+                           $qtl1 = mysql_query("SELECT orderrmd_id FROM  rmd_orderlist WHERE orderrmd_id='$orderrmd_id' ");
                        $t2 = mysql_fetch_array($qtl1);
                        $orderID=$t2[0];
                
@@ -711,8 +711,8 @@ echo "Deliver/Pickup for " . date("F j, Y") . "<br>";
                        $row5['lname'] = ucwords($row5['lname']);
                        $usrcompletename4 = $row4['fname']." ".$row5['lname'];
                        
-                       if($reserves[$c][0]['catalog_status']=="approved"){
-                       $ddate1=strtotime($reserves[$c][0]['duedate_catalog']);
+                       if($reserves[$c][0]['status']=="approved"){
+                       $ddate1=strtotime($reserves[$c][0]['d_date']);
                        $ddate=date("F j, Y",$ddate1 );
                
                        echo '          <tr>';
@@ -720,15 +720,15 @@ echo "Deliver/Pickup for " . date("F j, Y") . "<br>";
 
                        echo '          <td>'.$name1 = $usrcompletename4.'</td>';         
                        echo '          <td class="hidden">'.$tname = $orderID.'  cake</td>';
-                       echo '          <td>'.$diagnosis = $reserves[$c][0]['catalog_code'].'</td>';   
+                       echo '          <td>'.$diagnosis = $reserves[$c][0]['design_code'].'</td>';   
                        echo '          <td>'.$service = $reserves[$c][0]['payment_status'].'</td>';  
                        echo '          <td>'.$diagnosis = $reserves[$c][0]['payment_amount'].'</td>';    
-                       echo '          <td>'.$diagnosis = $reserves[$c][0]['catalog_price'].'</td>';    ?>
-             <td><a href="readymade_search.php?order_catalog=<?php echo $order_catalog;?>"  class="btndashboard" style="background: #227da0;">view</a></td>
+                       echo '          <td>'.$diagnosis = $reserves[$c][0]['shirt_price'].'</td>';    ?>
+             <td><a href="readymade_search.php?orderrmd_id=<?php echo $orderrmd_id;?>"  class="btndashboard" style="background: #227da0;">view</a></td>
      
             <?php echo '<td>';?>
             <form method=POST id="form6_<?php echo $c;?>" action="results.php">
-            <?php echo '<input type="hidden" name="order_catalog" value="' .$order_catalog. '" >';?>
+            <?php echo '<input type="hidden" name="orderrmd_id" value="' .$orderrmd_id. '" >';?>
             <?php echo'<input type="hidden" name="usern" value="' .$usern. '" >'; ?>
             <?php echo'<input type="hidden" name="url" value="6" >'; ?>
             <a href="#" onclick="confirm_pres4(<?php echo $c;?>)" class="btndashboard" style="background: #DD4B39;"> pick-up</a></td>

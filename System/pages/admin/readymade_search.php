@@ -38,11 +38,11 @@
    <?php
       include('../../server_one.php');
                 session_start();   
-                       if(!empty($_POST['order_catalog'])){
+                       if(!empty($_POST['orderrmd_id'])){
 
-              $id = $_POST['order_catalog'];
-          } else if (!empty($_SESSION['order_catalog'])){
-            $id = $_SESSION['order_catalog'];
+              $id = $_POST['orderrmd_id'];
+          } else if (!empty($_SESSION['orderrmd_id'])){
+            $id = $_SESSION['orderrmd_id'];
           }else{
             $id=0;
           }
@@ -219,14 +219,14 @@
                            <?php
                               include('configuration.php');
                               
-                              $sql = "SELECT  * FROM order_catalog ORDER BY catalog_orderlist ASC";
+                              $sql = "SELECT  * FROM orderrmd_id ORDER BY rmd_orderlist ASC";
                               $result = $conn->query($sql);
                               ?>
                            <?php
-                              if(!empty($_GET['order_catalog'])){ //search information for temporary / confirmed reviewee
-                                 $value = ($_GET['order_catalog']);
+                              if(!empty($_GET['orderrmd_id'])){ //search information for temporary / confirmed reviewee
+                                 $value = ($_GET['orderrmd_id']);
                                  //echo 'id is ---> ' . $value;
-                                 $search_reviewee = mysql_query("SELECT * FROM catalog_orderlist where order_catalog = '$value'");
+                                 $search_reviewee = mysql_query("SELECT * FROM rmd_orderlist where orderrmd_id = '$value'");
                                  $rowa = mysql_fetch_array($search_reviewee); 
                               
                                  // $picture = $rowa['picture'];
@@ -257,27 +257,27 @@
                            <?php
                               include('configuration.php');
                               
-                              $sql = "SELECT  * FROM catalog_orderlist ORDER BY order_catalog ASC";
+                              $sql = "SELECT  * FROM rmd_orderlist ORDER BY orderrmd_id ASC";
                               $result = $conn->query($sql);
                               ?>
                            <?php
-                              if(!empty($_GET['order_catalog'])){ //search information for temporary / confirmed reviewee
-                                 $value = ($_GET['order_catalog']);
+                              if(!empty($_GET['orderrmd_id'])){ //search information for temporary / confirmed reviewee
+                                 $value = ($_GET['orderrmd_id']);
                                  //echo 'id is ---> ' . $value;
                               
                                             //echo 'id is ---> ' . $value;
-                                            $search_reviewee = mysql_query("SELECT * FROM catalog_orderlist where order_catalog = '$value'");
+                                            $search_reviewee = mysql_query("SELECT * FROM rmd_orderlist where orderrmd_id = '$value'");
                                             $rowa = mysql_fetch_array($search_reviewee); 
-                                            $order_catalog= $rowa['order_catalog'];
-                                             $CP= $rowa['catalog_price'];
+                                            $orderrmd_id= $rowa['orderrmd_id'];
+                                             $CP= $rowa['shirt_price'];
                               
 
                               
                                             // $picture = $rowa['picture'];
-                                            $catalog_ID = $rowa['catalog_ID'];
+                                            $design_id = $rowa['design_id'];
                               
                                          
-                                             $query3 = "SELECT picture FROM cakecatalog WHERE catalog_ID='$catalog_ID'";
+                                             $query3 = "SELECT picture FROM readymadedesigns WHERE design_id='$design_id'";
                                              $r3 = @mysql_query($query3, $dbc); 
                                              $row3 = mysql_fetch_array($r3); 
                                          
@@ -293,19 +293,19 @@
                               <div class="sectionprof">
                                  <div class="col-sm-10">
                                     <h4><i class="fa fa-shopping-cart"></i> Shirt Details </h4>
-                                    <p> <label>Order ID</label> : <?php echo $rowa['order_catalog'];?> </p>
-                                    <p> <label>Service Date</label> : <?php echo $rowa['duedate_catalog'];?> </p>
-                                    <p> <label>Ready-Made Design Code</label> : <?php echo $rowa['catalog_code'];?> </p>
+                                    <p> <label>Order ID</label> : <?php echo $rowa['orderrmd_id'];?> </p>
+                                    <p> <label>Service Date</label> : <?php echo $rowa['d_date'];?> </p>
+                                    <p> <label>Ready-Made Design Code</label> : <?php echo $rowa['design_code'];?> </p>
                                     <p> <label>Quantity</label> : <?php echo $rowa['dedi_catalog'];?> </p>
                                     <p> <label>Shirt Color</label> : <?php echo $rowa['shirtcolor'];?> </p>
                                     <p> <label>Shirt Size</label> : <?php echo $rowa['shirtsize'];?> </p>
                      
-                                     <p> <label>Shirt Amount</label> : <?php echo $rowa['catalog_price'] * $rowa['dedi_catalog'] . '.00' ;?>  
+                                     <p> <label>Shirt Amount</label> : <?php echo $rowa['shirt_price'] * $rowa['dedi_catalog'] . '.00' ;?>  
                                        <!--form method=POST id="form4_<?php echo $i;?>" action="secretary-prescription.php">
-                                          <?php echo '<input type="hidden" name="order_catalog" value="' .$value. '" >';?>
+                                          <?php echo '<input type="hidden" name="orderrmd_id" value="' .$value. '" >';?>
                                           <a href="#" class="btndashboard edittreat" 
                                              data-am="<?php echo $CP; ?>" 
-                                             data-code="<?php echo $order_catalog; ?>"
+                                             data-code="<?php echo $orderrmd_id; ?>"
                                              style="background: #d67c20;" data-toggle="modal" data-target=".edit-treat"> update amount</a></td>
                                        </form-->
                                        </p>

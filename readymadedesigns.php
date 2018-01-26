@@ -1,18 +1,18 @@
 <?php
     require 'database.php';
-    $catalog_ID = null;
-    if ( !empty($_GET['catalog_ID'])) {
-        $catalog_ID = $_REQUEST['catalog_ID'];
+    $design_id = null;
+    if ( !empty($_GET['design_id'])) {
+        $design_id = $_REQUEST['design_id'];
     }
      
-    if ( null==$catalog_ID ) {
+    if ( null==$design_id ) {
         header("Location: index.php");
     } else {
         $pdo = Database::connect();
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $sql = "SELECT * FROM cakecatalog where catalog_ID = ?";
+        $sql = "SELECT * FROM readymadedesigns where design_id = ?";
         $q = $pdo->prepare($sql);
-        $q->execute(array($catalog_ID));
+        $q->execute(array($design_id));
         $data = $q->fetch(PDO::FETCH_ASSOC);
         Database::disconnect();
     }
@@ -114,7 +114,7 @@ session_start();
                <col width="100" style="background-color: #F0F0F0;"> <col width="200">
              <tbody> 
 
-             <tr> <td> Design ID </td> <td> <span id="catalog_ID"> <?php echo $data['catalog_ID']; ?> </span> </td> </tr>
+             <tr> <td> Design ID </td> <td> <span id="design_id"> <?php echo $data['design_id']; ?> </span> </td> </tr>
 
              <tr> <td> Design Code </td> <td> <span id="design_code"> <?php echo $data['design_code']; ?> </span> </td> </tr>
 
@@ -124,13 +124,13 @@ session_start();
 
              <!-- <tr> <td> Flavor </td> <td> <?php echo $data['ctlg_flavor'];?></td> </tr> -->
 
-             <tr> <td> Shirt Color </td> <td> <?php echo $data['ctlg_frostcolor'];?> </td> </tr>
+             <tr> <td> Shirt Color </td> <td> <?php echo $data['shirt_color'];?> </td> </tr>
 
-             <tr> <td> Shirt Type </td> <td> <?php echo $data['ctlg_frosttype'];?> </td> </tr>
+             <tr> <td> Shirt Type </td> <td> <?php echo $data['shirt_type'];?> </td> </tr>
 
              <!-- <tr> <td> Accessories</td> <td> <?php echo $data['ctlg_acces'];?>  </td> </tr> -->
 
-             <tr> <td> Price </td> <td> <span id="ctlg_price"> <?php echo $data['ctlg_price'];?> </span> </td> </tr>
+             <tr> <td> Price </td> <td> <span id="shirt_price"> <?php echo $data['shirt_price'];?> </span> </td> </tr>
 
              </tbody>
             </table>
@@ -165,7 +165,7 @@ session_start();
                     <option value='XX Large'>XXL</option>
                   </select> </td>
 
-                <?php if($data['ctlg_frostcolor']=='Any')
+                <?php if($data['shirt_color']=='Any')
                   echo "<td> <label for='shirtcolor'> Shirt Color:
                   <select id='shirtcolor' name='shirtcolor'>
                     <option value='White'>White</option>
@@ -248,12 +248,12 @@ session_start();
 
 
 <script type="text/javascript">
-    function submit_order(catalog_ID, design_code, ctlg_price, $form) {
+    function submit_order(design_id, design_code, shirt_price, $form) {
     $.ajax({
       url   : "process/catalog_ordersent.php", 
       type  : "POST",
       cache : false,
-      data  : $form.serialize() + '&catalog_ID=' + catalog_ID + '&design_code=' + design_code + '&ctlg_price=' + ctlg_price,
+      data  : $form.serialize() + '&design_id=' + design_id + '&design_code=' + design_code + '&shirt_price=' + shirt_price,
       success: function(response) {
 
         swal(response);
@@ -277,8 +277,8 @@ session_start();
         
         function(isConfirm){
           if (isConfirm) {
-            // console.log($('#ctlg_price').html());
-            submit_order($('#catalog_ID').html(), $('#design_code').html(), $('#ctlg_price').html(), $('#catalog_order'));
+            // console.log($('#shirt_price').html());
+            submit_order($('#design_id').html(), $('#design_code').html(), $('#shirt_price').html(), $('#catalog_order'));
             //swal("Deleted!", "Your imaginary file has been deleted.", "success");
           } 
         });

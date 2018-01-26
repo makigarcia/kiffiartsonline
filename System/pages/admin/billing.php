@@ -340,23 +340,23 @@
             </tr>
             </thead>
 
-            <?php      $bi = mysql_query("SELECT Count(`order_catalog`) FROM `catalog_orderlist`");
+            <?php      $bi = mysql_query("SELECT Count(`orderrmd_id`) FROM `rmd_orderlist`");
                $b1 = mysql_fetch_array($bi);
                $cnt1=$b1[0];
                
                if($cnt1!=0){
                
-                     $query2 = "SELECT * FROM catalog_orderlist";
+                     $query2 = "SELECT * FROM rmd_orderlist";
                      $r4 = @mysql_query($query2, $dbc); 
                      while ($row3 = mysql_fetch_array($r4, MYSQL_ASSOC)) {
                           $reserves[][] =  $row3;
                      }
                
                      for($c=0;$c<$cnt1; $c++){
-                       $order_catalog=$reserves[$c][0]['order_catalog'];
+                       $orderrmd_id=$reserves[$c][0]['orderrmd_id'];
                        $id1=$reserves[$c][0]['customer_ID'];
                         
-                           $qtl1 = mysql_query("SELECT order_catalog FROM  catalog_orderlist WHERE order_catalog='$order_catalog'");
+                           $qtl1 = mysql_query("SELECT orderrmd_id FROM  rmd_orderlist WHERE orderrmd_id='$orderrmd_id'");
                        $t2 = mysql_fetch_array($qtl1);
                        $orderID=$t2[0];
                
@@ -374,7 +374,7 @@
                        $usrcompletename4 = $row4['fname']." ".$row5['lname'];
                        
                        if($reserves[$c][0]['catalog_status']=="pick-uped"){
-                       $ddate1=strtotime($reserves[$c][0]['duedate_catalog']);
+                       $ddate1=strtotime($reserves[$c][0]['d_date']);
                        $ddate=date("F j, Y",$ddate1 );
                
                        echo '          <tr>';
@@ -382,10 +382,10 @@
 
                        echo '          <td>'.$name1 = $usrcompletename4.'</td>';         
                        echo '          <td class="hidden">'.$tname = $orderID.'  cake</td>';
-                       // echo '          <td>'.$diagnosis = $reserves[$c][0]['catalog_code'].'</td>';   
+                       // echo '          <td>'.$diagnosis = $reserves[$c][0]['design_code'].'</td>';   
          
-                       echo '          <td>'.$diagnosis = $reserves[$c][0]['catalog_price'].'</td>';    ?>
-             <td><a href="readymade_search.php?order_catalog=<?php echo $order_catalog;?>"  class="btndashboard" style="background: #227da0;">view</a></td>
+                       echo '          <td>'.$diagnosis = $reserves[$c][0]['shirt_price'].'</td>';    ?>
+             <td><a href="readymade_search.php?orderrmd_id=<?php echo $orderrmd_id;?>"  class="btndashboard" style="background: #227da0;">view</a></td>
      
             
             <?php              

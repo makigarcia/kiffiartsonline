@@ -155,6 +155,8 @@
                                             <th> <center>Order Status </center></th>
                                             <th> <center>Price</center></th>
                                             <th> <center>Payment Status</center></th>
+                                            <th> <center>Payment Amount</center></th>
+                                            <th> <center>Payment Date</center></th>
                                             
                                            <!--  <th> <center>Details </center></th>  -->
                                         </tr>
@@ -175,19 +177,21 @@
                                         echo '<td>'. $record['cake_duedate'] . '</td>';
                                         echo '<td>'. $record['order_pending'] . '</td>';
                                         echo '<td>'. $record['cake_price'] . '</td>';
-                                        echo '<td>'. $record['payment_status'] . '</td> </tr> ';
+                                        echo '<td>'. $record['payment_status'] . '</td>';
+                                        echo '<td>'. $record['payment_amount'] . '</td>';
+                                        echo '<td>'. $record['payment_date'] . '</td> </tr> ';
 
                                        }
 
-                                       /*$query2="SELECT * FROM catalog_orderlist WHERE customer_ID='$read_cust' ORDER BY ordercat_created DESC" ;
+                                       /*$query2="SELECT * FROM rmd_orderlist WHERE customer_ID='$read_cust' ORDER BY o_date DESC" ;
                                        $dats = @mysql_query($query2, $link);
                                        while($data=mysql_fetch_array($dats)){
 
                                         if($record['order_pending']!="delete" ){
-                                        echo '<tr> <td>'. $data['duedate_catalog'] . '</td>';
-                                        // echo '<td>'. $data['ordercat_created'] . '</td>';
-                                        echo '<td>'. $data['catalog_status'] . '</td>';
-                                        echo '<td>'. $data['catalog_price'] . '</td>';
+                                        echo '<tr> <td>'. $data['d_date'] . '</td>';
+                                        // echo '<td>'. $data['o_date'] . '</td>';
+                                        echo '<td>'. $data['status'] . '</td>';
+                                        echo '<td>'. $data['shirt_price'] . '</td>';
                                         echo '<td>'. $data['payment_status'] . '</td> </tr>';
 
                                        }
@@ -217,6 +221,8 @@
                                             <th> <center>Order Status </center></th>
                                             <th> <center>Price</center></th>
                                             <th> <center>Payment Status</center></th>
+                                            <th> <center>Payment Amount</center></th>
+                                            <th> <center>Payment Date</center></th>
                                             
                                            <!--  <th> <center>Details </center></th>  -->
                                         </tr>
@@ -241,16 +247,18 @@
 
                                        }*/
 
-                                       $query2="SELECT * FROM catalog_orderlist WHERE customer_ID='$read_cust' ORDER BY ordercat_created DESC" ;
+                                       $query2="SELECT * FROM rmd_orderlist WHERE customer_ID='$read_cust' ORDER BY o_date DESC" ;
                                        $dats = @mysql_query($query2, $link);
                                        while($data=mysql_fetch_array($dats)){
 
                                         if($record['order_pending']!="delete" ){
-                                        echo '<tr> <td>'. $data['ordercat_created'] . '</td>';
-                                        echo '<td>'. $data['duedate_catalog'] . '</td>';
-                                        echo '<td>'. $data['catalog_status'] . '</td>';
-                                        echo '<td>'. $data['catalog_price'] . '</td>';
-                                        echo '<td>'. $data['payment_status'] . '</td> </tr>';
+                                        echo '<tr> <td>'. $data['o_date'] . '</td>';
+                                        echo '<td>'. $data['d_date'] . '</td>';
+                                        echo '<td>'. $data['status'] . '</td>';
+                                        echo '<td>'. $data['shirt_price'] . '</td>';
+                                        echo '<td>'. $data['payment_status'] . '</td>';
+                                        echo '<td>'. $data['payment_amount'] . '</td>';
+                                        echo '<td>'. $data['payment_date'] . '</td> </tr>';
 
                                        }
 

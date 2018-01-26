@@ -186,16 +186,16 @@
     $ctlg_shape = $_POST['ctlg_shape'];
     $ctlg_size = $_POST['ctlg_size'];
     $ctlg_flavor = $_POST['ctlg_flavor'];
-    $ctlg_frostcolor = $_POST['ctlg_frostcolor'];
-    $ctlg_frosttype = $_POST['ctlg_frosttype'];
+    $shirt_color = $_POST['shirt_color'];
+    $shirt_type = $_POST['shirt_type'];
     $ctlg_acces = $_POST['ctlg_acces'];
-    $ctlg_price = $_POST['ctlg_price'];
+    $shirt_price = $_POST['shirt_price'];
 
 
     $dbc = @mysql_connect('localhost' , 'root', '');
     @mysql_select_db('kiffiarts', $dbc);
 
-    $query = "INSERT INTO cakecatalog VALUES(NULL,'$design_code','$ctlg_shape','$ctlg_size','$ctlg_flavor','$ctlg_frostcolor','$ctlg_frosttype','$ctlg_acces','$ctlg_price')";
+    $query = "INSERT INTO readymadedesigns VALUES(NULL,'$design_code','$ctlg_shape','$ctlg_size','$ctlg_flavor','$shirt_color','$shirt_type','$ctlg_acces','$shirt_price')";
 
     if(@mysql_query($query,$dbc)){
         print '<h2> <p>  You are now Registered! </p>
@@ -284,7 +284,7 @@
                                                 <div class="col-md-6 col-xs-12">
                                                    <div class="input-group">
                                                       <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
-                                                      <input type="text" class="form-control" id="ctlg_frostcolor" name="ctlg_frostcolor" required data-validation-required-message="Please enter the design code.">
+                                                      <input type="text" class="form-control" id="shirt_color" name="shirt_color" required data-validation-required-message="Please enter the design code.">
                                                    </div>
                                                 </div>
                                              </div>
@@ -294,7 +294,7 @@
                                                 <div class="col-md-6 col-xs-12">
                                                    <div class="input-group">
                                                       <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
-                                                      <input type="text" class="form-control"  id="ctlg_frosttype" name="ctlg_frosttype" required data-validation-required-message="Please enter the design code.">
+                                                      <input type="text" class="form-control"  id="shirt_type" name="shirt_type" required data-validation-required-message="Please enter the design code.">
                                                    </div>
                                                 </div>
                                              </div>
@@ -315,7 +315,7 @@
                                                 <div class="col-md-6 col-xs-12">
                                                    <div class="input-group">
                                                       <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
-                                                      <input type="text" class="form-control" id="ctlg_price" name="ctlg_price" required data-validation-required-message="Please enter the design code.">
+                                                      <input type="text" class="form-control" id="shirt_price" name="shirt_price" required data-validation-required-message="Please enter the design code.">
                                                    </div>
                                                 </div>
                                              </div>

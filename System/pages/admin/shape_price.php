@@ -415,7 +415,7 @@
 
 
                                         echo '<tr>';
-                                        echo '<td class="hidden">'.$storeArray2[$c][0]['occ_price'].'</td>';
+                                        echo '<td class="hidden">'.$storeArray2[$c][0]['owncot_price'].'</td>';
                                         echo '<td>Circle semi o</td>';
                                         echo '<td>'.$storeArray2[$c][0]['circle_semi2_price'].'</td>'; ?>
                                     

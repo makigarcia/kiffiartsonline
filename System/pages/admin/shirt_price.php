@@ -266,10 +266,10 @@
                                        
                                        for($c=0;  $c<$b1;$c++){
                                          $price_ID=$storeArray2[$c][0]['price_ID'];
-                                         $WP=$storeArray2[$c][0]['wedding_price'];
-                                         $BP = $storeArray2[$c][0]['birthday_price'];
-                                         $DP = $storeArray2[$c][0]['dedi_price'];
-                                         $OP = $storeArray2[$c][0]['occ_price'];
+                                         $WP=$storeArray2[$c][0]['election_price'];
+                                         $BP = $storeArray2[$c][0]['cotton_price'];
+                                         $DP = $storeArray2[$c][0]['ownelec_price'];
+                                         $OP = $storeArray2[$c][0]['owncot_price'];
                                          $CDP = $storeArray2[$c][0]['circle_default_price'];
                                          $CSP = $storeArray2[$c][0]['circle_small1_price'];
                                        
@@ -279,7 +279,7 @@
                                             echo '<td></td>';
                                                 echo '<td><h4>Election Shirt</h4></td>';
 
-                                            echo '<td><h3>'.$storeArray2[$c][0]['wedding_price'].'</h3></td>'; ?>
+                                            echo '<td><h3>'.$storeArray2[$c][0]['election_price'].'</h3></td>'; ?>
                                    
                                     <?php
                                        echo '<td></td>';
@@ -291,7 +291,7 @@
                                         echo '<td class="hidden">'.$storeArray2[$c][0]['price_ID'].'</td>';
                                          echo '<td></td>';
                                         echo '<td><h4>Cotton Shirt</h4></td>';
-                                        echo '<td><h3>'.$storeArray2[$c][0]['birthday_price'].'</h3></td>'; ?>
+                                        echo '<td><h3>'.$storeArray2[$c][0]['cotton_price'].'</h3></td>'; ?>
                                   <?php echo '<td>';?>
                                     <?php
                                        echo '<td></td>';
@@ -302,7 +302,7 @@
                                         echo '<td class="hidden">'.$storeArray2[$c][0]['price_ID'].'</td>';
                                          echo '<td></td>';
                                         echo '<td> <h4>Own (Election Shirt)</h4></td>';
-                                        echo '<td> <h3>'.$storeArray2[$c][0]['dedi_price'].'</h3></td>'; ?>
+                                        echo '<td> <h3>'.$storeArray2[$c][0]['ownelec_price'].'</h3></td>'; ?>
                                     <?php echo '<td>';?>
                                    
                                     <?php
@@ -311,10 +311,10 @@
 
 
                                         echo '<tr>';
-                                        echo '<td class="hidden">'.$storeArray2[$c][0]['occ_price'].'</td>';
+                                        echo '<td class="hidden">'.$storeArray2[$c][0]['owncot_price'].'</td>';
                                          echo '<td></td>';
                                         echo '<td><h4>Own (Cotton Shirt)</h4></td>';
-                                        echo '<td><h3>'.$storeArray2[$c][0]['occ_price'].'</h3></td>'; ?>
+                                        echo '<td><h3>'.$storeArray2[$c][0]['owncot_price'].'</h3></td>'; ?>
                                     
 
 
@@ -323,7 +323,7 @@
                                        echo '<td></td>';
                                        echo '</tr>';
                                        echo '<tr>';
-                                        echo '<td class="hidden">'.$storeArray2[$c][0]['occ_price'].'</td>';        
+                                        echo '<td class="hidden">'.$storeArray2[$c][0]['owncot_price'].'</td>';        
 
                                         echo '<td>';
                                         ?>

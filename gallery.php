@@ -1,7 +1,7 @@
 <?php
 
   $connect = mysql_connect("localhost", "root", "", "kiffiarts");
-  $query = "SELECT * FROM cakecatalog";
+  $query = "SELECT * FROM readymadedesigns";
   $result = mysql_query($connect, $query);
 
   session_start();
@@ -65,20 +65,20 @@
     <?php
                       include 'database.php';
                       $pdo = Database::connect();
-                      $sql = "SELECT * FROM cakecatalog ORDER BY catalog_ID ASC";
+                      $sql = "SELECT * FROM readymadedesigns ORDER BY design_id ASC";
                       foreach ($pdo->query($sql) as $row) {
                         // echo ' <tr> <td>'. $row['design_code'] . '</td>';
                         // echo ' <td> </td>';
                         // echo '<td>'. $row['ctlg_flavor'] . '</td>';
-                        // echo '<td>'. $row['ctlg_price'] . '</td>';                            
-                        // echo '<td><center><a class="btn btn-medium btn-orange" id="button" href="readymadedesigns.php?catalog_ID='.$row['catalog_ID'].'">View More</a> </center></td> </tr>'; 
+                        // echo '<td>'. $row['shirt_price'] . '</td>';                            
+                        // echo '<td><center><a class="btn btn-medium btn-orange" id="button" href="readymadedesigns.php?design_id='.$row['design_id'].'">View More</a> </center></td> </tr>'; 
                       
                           if ($row ['status']=="Available"){
     echo ' <figure class="effect-oscar  wowload fadeInUp">';
     echo ' <img src="System/pages/admin/uploads/'.$row['picture'].'"> ';
         echo  '<figcaption>';
             echo '<p>Ready-made shirt designs by kiffi arts print shop<br>';
-            echo '<a href="readymadedesigns.php?catalog_ID='.$row['catalog_ID'].'">VIEW DETAILS</a></p>';           
+            echo '<a href="readymadedesigns.php?design_id='.$row['design_id'].'">VIEW DETAILS</a></p>';           
         echo '</figcaption>';
     echo '</figure>'; 
       }
@@ -124,13 +124,13 @@
                    <!?php
                       include 'database.php';
                       $pdo = Database::connect();
-                      $sql = "SELECT * FROM cakecatalog ORDER BY catalog_ID ASC";
+                      $sql = "SELECT * FROM readymadedesigns ORDER BY design_id ASC";
                       foreach ($pdo->query($sql) as $row) {
                         echo ' <tr> <td>'. $row['design_code'] . '</td>';
                         echo ' <td> </td>';
                         echo '<td>'. $row['ctlg_flavor'] . '</td>';
-                        echo '<td>'. $row['ctlg_price'] . '</td>';                            
-                        echo '<td><center><a class="btn btn-medium btn-orange" id="button" href="readymadedesigns.php?catalog_ID='.$row['catalog_ID'].'">View More</a> </center></td> </tr>'; }
+                        echo '<td>'. $row['shirt_price'] . '</td>';                            
+                        echo '<td><center><a class="btn btn-medium btn-orange" id="button" href="readymadedesigns.php?design_id='.$row['design_id'].'">View More</a> </center></td> </tr>'; }
                         Database::disconnect();
                     ?>
                        </tbody>
@@ -156,11 +156,11 @@
          <tr>
            ?php include 'database.php';
                  $pdo = Database::connect();
-                 $sql = 'SELECT * FROM cakecatalog ORDER BY catalog_ID ASC';
+                 $sql = 'SELECT * FROM readymadedesigns ORDER BY design_id ASC';
                  foreach ($pdo->query($sql) as $row) { 
                   echo '<tr>' ;
                   echo '<td> <center> '
-                  echo '<td> <center> <a class="btn btn-orange" href="readymadedesigns.php?catalog_ID='.$row['catalog_ID'].'">VIEW</a> </td>'; 
+                  echo '<td> <center> <a class="btn btn-orange" href="readymadedesigns.php?design_id='.$row['design_id'].'">VIEW</a> </td>'; 
                   echo '<tr>' ;
 
                   }  ?>
@@ -172,7 +172,7 @@
                   </tr>
 
 
-                  ?php foreach ($pdo->query($sql) as $row) { echo '<td> <center> <a class="btn btn-orange" href="readymadedesigns.php?catalog_ID='.$row['catalog_ID'].'"> VIEW </a> </td>'; } Database::disconnect(); ?> 
+                  ?php foreach ($pdo->query($sql) as $row) { echo '<td> <center> <a class="btn btn-orange" href="readymadedesigns.php?design_id='.$row['design_id'].'"> VIEW </a> </td>'; } Database::disconnect(); ?> 
 
                   </tbody>
           </table> -->

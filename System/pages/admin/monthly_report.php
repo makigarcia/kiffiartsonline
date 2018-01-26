@@ -365,23 +365,23 @@
                                       
                                        </tr>
                                     </thead>
-                                    <?php      $bi = mysql_query("SELECT Count(`order_catalog`) FROM `catalog_orderlist` ");
+                                    <?php      $bi = mysql_query("SELECT Count(`orderrmd_id`) FROM `rmd_orderlist` ");
                                        $b1 = mysql_fetch_array($bi);
                                        $cnt1=$b1[0];
                                        
                                        if($cnt1!=0){
                                        
-                                             $query2 = "SELECT * FROM catalog_orderlist";
+                                             $query2 = "SELECT * FROM rmd_orderlist";
                                              $r4 = @mysql_query($query2, $dbc); 
                                              while ($row3 = mysql_fetch_array($r4, MYSQL_ASSOC)) {
                                                   $reserves[][] =  $row3;
                                              }
                                        
                                              for($c=0;$c<$cnt1; $c++){
-                                               $order_catalog=$reserves[$c][0]['order_catalog'];
+                                               $orderrmd_id=$reserves[$c][0]['orderrmd_id'];
                                                $id1=$reserves[$c][0]['customer_ID'];
                                                 
-                                                   $qtl1 = mysql_query("SELECT order_catalog FROM  catalog_orderlist WHERE order_catalog='$order_catalog'");
+                                                   $qtl1 = mysql_query("SELECT orderrmd_id FROM  rmd_orderlist WHERE orderrmd_id='$orderrmd_id'");
                                                $t2 = mysql_fetch_array($qtl1);
                                                $orderID=$t2[0];
                                        
@@ -398,8 +398,8 @@
                                                $row5['lname'] = ucwords($row5['lname']);
                                                $usrcompletename4 = $row4['fname']." ".$row5['lname'];
                                                
-                                               if($reserves[$c][0]['catalog_status']=="picked-up"){
-                                               $ddate1=strtotime($reserves[$c][0]['duedate_catalog']);
+                                               if($reserves[$c][0]['status']=="picked-up"){
+                                               $ddate1=strtotime($reserves[$c][0]['d_date']);
                                                $ddate=date("F j, Y",$ddate1 );
                                        
                                                echo '          <tr>';
@@ -407,9 +407,9 @@
                                        
                                                echo '          <td>'.$name1 = $usrcompletename4.'</td>';         
                                     
-                                               // echo '          <td>'.$diagnosis = $reserves[$c][0]['catalog_code'].'</td>';   
+                                               // echo '          <td>'.$diagnosis = $reserves[$c][0]['design_code'].'</td>';   
                                        
-                                               echo '          <td>'.$diagnosis = $reserves[$c][0]['catalog_price'].'</td>';    ?>
+                                               echo '          <td>'.$diagnosis = $reserves[$c][0]['shirt_price'].'</td>';    ?>
                                   
                                     <?php              
                                        echo '        </tr>';    

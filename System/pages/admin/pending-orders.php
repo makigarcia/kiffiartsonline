@@ -347,25 +347,25 @@
                                                    <th>Action</th>
                                                 </tr>
                                              </thead>
-                                             <?php      $ai = mysql_query("SELECT Count(`order_catalog`) FROM `catalog_orderlist`");
+                                             <?php      $ai = mysql_query("SELECT Count(`orderrmd_id`) FROM `rmd_orderlist`");
                                                 $a1 = mysql_fetch_array($ai);
                                                 $cnt=$a1[0];
                                                 
                                                 if($cnt!=0){
                                                 
-                                                $query1 = "SELECT * FROM catalog_orderlist ORDER BY `ordercat_created` ASC";
+                                                $query1 = "SELECT * FROM rmd_orderlist ORDER BY `rmdo_date` ASC";
                                                    $r1 = @mysql_query($query1, $dbc); 
                                                 while ($row1 = mysql_fetch_array($r1, MYSQL_ASSOC)) {
                                                  $reserves[][] =  $row1;
                                                 }
                                                 
                                                 for($c=0;$c<$cnt; $c++){
-                                                $order_catalog=$reserves[$c][0]['order_catalog'];
+                                                $orderrmd_id=$reserves[$c][0]['orderrmd_id'];
                                                 $id1=$reserves[$c][0]['customer_ID'];
                                                 
-                                                 $qtl = mysql_query("SELECT order_catalog FROM  catalog_orderlist WHERE order_catalog='$order_catalog'");
+                                                 $qtl = mysql_query("SELECT orderrmd_id FROM  rmd_orderlist WHERE orderrmd_id='$orderrmd_id'");
                                                 $t1 = mysql_fetch_array($qtl);
-                                                $order_catalog=$t1[0];
+                                                $orderrmd_id=$t1[0];
                                                 
                                                 
                                                 $query3= "SELECT fname  FROM customer WHERE customer_ID='$id1'";
@@ -387,24 +387,24 @@
                                                 $usrcompletename4 = $row4['fname']." ".$row5['lname'];
                                                 $num = $row7['phone_num'];
                                                 
-                                                if($reserves[$c][0]['catalog_status']=="pending"){
-                                                $ddate1=strtotime($reserves[$c][0]['ordercat_created']);
+                                                if($reserves[$c][0]['rmd_status']=="pending"){
+                                                $ddate1=strtotime($reserves[$c][0]['rmdo_date']);
                                                                     $ddate=date("F j, Y",$ddate1 );
                                                  
                                                       echo '          <tr>';
                                                       echo '          <td>'.$date = $ddate.'</td>';
                                                       echo '          <td>'.$name = $usrcompletename4.'</td>';         
-                                                      echo '          <td class="hidden">'.$tname = $order_catalog.'  cake</td>';
-                                                      // echo '          <td>'.$diagnosis = $reserves[$c][0]['catalog_code'].'</td>';   
-                                                      echo '          <td>'.$service = $reserves[$c][0]['catalog_price'].'</td>';  
+                                                      echo '          <td class="hidden">'.$tname = $orderrmd_id.'  cake</td>';
+                                                      // echo '          <td>'.$diagnosis = $reserves[$c][0]['design_code'].'</td>';   
+                                                      echo '          <td>'.$service = $reserves[$c][0]['rmd_price'].'</td>';  
                                                       echo '          <td>'.$name = $num.'</td>';    ?>
-                                             <td><a href="readymade_search.php?order_catalog=<?php echo $order_catalog;?>"  class="btndashboard" style="background: #227da0;">view</a></td>
+                                             <td><a href="readymade_search.php?orderrmd_id=<?php echo $orderrmd_id;?>"  class="btndashboard" style="background: #227da0;">view</a></td>
                                              <?php
-                                                if($reserves[$c][0]['catalog_status']=="pending"){
+                                                if($reserves[$c][0]['rmd_status']=="pending"){
                                                 ?>
                                              <?php echo '<td>';?>
                                              <form method=POST id="form2_<?php echo $c;?>" action="results.php">
-                                                <?php echo '<input type="hidden" name="order_catalog" value="' .$order_catalog. '" >';?>
+                                                <?php echo '<input type="hidden" name="orderrmd_id" value="' .$orderrmd_id. '" >';?>
                                                 <?php echo'<input type="hidden" name="usern" value="' .$usern. '" >'; ?>
                                                 <?php echo'<input type="hidden" name="url" value="31" >'; ?>
                                                 <a href="#" onclick="confirm_pres1(<?php echo $c;?>)" class="btndashboard" style="background: #e48e35;"> confirm</a>
@@ -415,7 +415,7 @@
                                                 ?>
                                              <?php echo '<td>';?>
                                              <form method=POST id="form5_<?php echo $c;?>" action="results.php">
-                                                <?php echo '<input type="hidden" name="order_catalog" value="' .$order_catalog. '" >';?>
+                                                <?php echo '<input type="hidden" name="orderrmd_id" value="' .$orderrmd_id. '" >';?>
                                                 <?php echo'<input type="hidden" name="usern" value="' .$usern. '" >'; ?>
                                                 <?php echo'<input type="hidden" name="url" value="39" >'; ?>
                                                 <a href="#" onclick="confirm_pres3(<?php echo $c;?>)" class="btndashboard" style="background: #DD4B39;"> delete</a>

@@ -8,27 +8,27 @@
 
 session_start();
 
-            $catalog_ID = $_POST['catalog_ID'];
+            $design_id = $_POST['design_id'];
             $customer_ID = $_SESSION['customer_ID'];
-            $catalog_code = $_POST['design_code'];
+            $design_code = $_POST['design_code'];
             $dedi_catalog = $_POST['dedicatalog'];
-            $catalog_price = $_POST['ctlg_price'];
+            $shirt_price = $_POST['shirt_price'] * $_POST['dedicatalog'];
             // $picture = $_POST['picture'];
             if(isset($_POST['shirtcolor'])){
             $shirtcolor = $_POST['shirtcolor'];
           }
             $shirtsize = $_POST['shirtsize'];
-            $duedate_catalog = $_POST['schedule'];
+            $d_date = $_POST['schedule'];
 
-            $ordercat_created  =date('Y/m/d');
-            $ordercat_created  =strtotime($ordercat_created);
-            $ordercat_created  =date("Ymd", $ordercat_created);
+            $o_date  =date('Y/m/d');
+            $o_date  =strtotime($o_date);
+            $o_date  =date("Ymd", $o_date);
             
             if(isset($shirtcolor)){
-            $query1 = "INSERT INTO catalog_orderlist (catalog_ID, customer_ID, catalog_code, dedi_catalog, catalog_price, shirtcolor, shirtsize, duedate_catalog, ordercat_created) VALUES ( '$catalog_ID', '$customer_ID', '$catalog_code', '$dedi_catalog', '$catalog_price', '$shirtcolor', '$shirtsize', '$duedate_catalog', '$ordercat_created')";
+            $query1 = "INSERT INTO rmd_orderlist (design_id, customer_ID, design_code, dedi_catalog, shirt_price, shirtcolor, shirtsize, d_date, o_date) VALUES ( '$design_id', '$customer_ID', '$design_code', '$dedi_catalog', '$shirt_price', '$shirtcolor', '$shirtsize', '$d_date', '$o_date')";
           }
           else{
-            $query1 = "INSERT INTO catalog_orderlist (catalog_ID, customer_ID, catalog_code, dedi_catalog, catalog_price, shirtsize, duedate_catalog, ordercat_created) VALUES ( '$catalog_ID', '$customer_ID', '$catalog_code', '$dedi_catalog', '$catalog_price', '$shirtsize', '$duedate_catalog', '$ordercat_created')";
+            $query1 = "INSERT INTO rmd_orderlist (design_id, customer_ID, design_code, dedi_catalog, shirt_price, shirtsize, d_date, o_date) VALUES ( '$design_id', '$customer_ID', '$design_code', '$dedi_catalog', '$shirt_price', '$shirtsize', '$d_date', '$o_date')";
           }
 
             if(@mysql_query($query1,$link))

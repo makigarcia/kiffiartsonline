@@ -269,42 +269,42 @@
                                     <?php echo '</th>';?>
                                     </tr>
                                     <?php
-                                       $bi = mysql_query("SELECT Count(`catalog_ID`) FROM `cakecatalog`");
+                                       $bi = mysql_query("SELECT Count(`design_id`) FROM `readymadedesigns`");
                                        $b1 = mysql_fetch_array($bi);
                                        $b1=$b1[0];
                                        
                                        
-                                       $query3 = "SELECT `catalog_ID`,`design_code`, `ctlg_shape`, `ctlg_size`, `ctlg_flavor`, `ctlg_frostcolor`,`ctlg_frosttype`, `ctlg_acces`, `ctlg_time`, `ctlg_price`, `status`, `picture` FROM `cakecatalog`";
+                                       $query3 = "SELECT `design_id`,`design_code`, `ctlg_shape`, `ctlg_size`, `ctlg_flavor`, `shirt_color`,`shirt_type`, `ctlg_acces`, `ctlg_time`, `shirt_price`, `status`, `picture` FROM `readymadedesigns`";
                                        $r3 = @mysql_query($query3, $dbc); 
                                        while ($row3 = mysql_fetch_array($r3, MYSQL_ASSOC)) {
                                            $storeArray2[][] =  $row3;
                                        }
                                        
                                        for($c=0;  $c<$b1;$c++){
-                                         $catalog_ID=$storeArray2[$c][0]['catalog_ID'];
+                                         $design_id=$storeArray2[$c][0]['design_id'];
                                          $DC=$storeArray2[$c][0]['design_code'];
                                          $CS = $storeArray2[$c][0]['ctlg_shape'];
                                          $CSS = $storeArray2[$c][0]['ctlg_size'];
                                          $CF = $storeArray2[$c][0]['ctlg_flavor'];
-                                         $CFC = $storeArray2[$c][0]['ctlg_frostcolor'];
-                                         $FT = $storeArray2[$c][0]['ctlg_frosttype'];
+                                         $CFC = $storeArray2[$c][0]['shirt_color'];
+                                         $FT = $storeArray2[$c][0]['shirt_type'];
                                          $CCA = $storeArray2[$c][0]['ctlg_acces'];
                                          $CT = $storeArray2[$c][0]['ctlg_time'];
-                                         $CP = $storeArray2[$c][0]['ctlg_price'];
+                                         $CP = $storeArray2[$c][0]['shirt_price'];
                                          $S = $storeArray2[$c][0]['status'];
 										 $img = $storeArray2[$c][0]['picture'];
                                        
                                             echo '<tr>';
-                                            echo '<td>'.$storeArray2[$c][0]['catalog_ID'].'</td>';
+                                            echo '<td>'.$storeArray2[$c][0]['design_id'].'</td>';
                                             echo '<td>'.$storeArray2[$c][0]['design_code'].'</td>';
                                             echo '<td class="hidden">'.$storeArray2[$c][0]['ctlg_shape'].'</td>';
                                             echo '<td class="hidden">'.$storeArray2[$c][0]['ctlg_size'].' </td>';
                                             echo '<td class="hidden">'.$storeArray2[$c][0]['ctlg_flavor'].' php </td>';
-                                            echo '<td class="hidden">'.$storeArray2[$c][0]['ctlg_frostcolor'].'</td>';
-                                            echo '<td class="hidden">'.$storeArray2[$c][0]['ctlg_frosttype'].'</td>';
+                                            echo '<td class="hidden">'.$storeArray2[$c][0]['shirt_color'].'</td>';
+                                            echo '<td class="hidden">'.$storeArray2[$c][0]['shirt_type'].'</td>';
                                             echo '<td class="hidden">'.$storeArray2[$c][0]['ctlg_acces'].'</td>';
                                             echo '<td class="hidden">'.$storeArray2[$c][0]['ctlg_time'].' </td>';
-                                            echo '<td>'.$storeArray2[$c][0]['ctlg_price'].' php</td>';
+                                            echo '<td>'.$storeArray2[$c][0]['shirt_price'].' php</td>';
                                             echo '<td class="hidden">'.$storeArray2[$c][0]['status'].'</td>';
                                        
                                            
@@ -314,7 +314,7 @@
                                        ?>
                                     <?php echo '<td>';?>
                                     <form method=POST id="form2_<?php echo $c;?>" action="results.php">
-                                       <?php echo '<input type="hidden" name="catalog_ID" value="' .$catalog_ID. '" >';?>
+                                       <?php echo '<input type="hidden" name="design_id" value="' .$design_id. '" >';?>
                                        <?php echo'<input type="hidden" name="usern" value="' .$usern. '" >'; ?>
                                        <?php echo'<input type="hidden" name="url" value="13" >'; ?>
                                        <a href="#" onclick="confirm_pres1(<?php echo $c;?>)" class="btndashboard" style="background: #DD4B39;"> Mark as Unavailable</a></td>
@@ -325,7 +325,7 @@
                                        ?>
                                     <?php echo '<td>';?>
                                     <form method=POST id="form3_<?php echo $c;?>" action="results.php">
-                                       <?php echo '<input type="hidden" name="catalog_ID" value="' .$catalog_ID. '" >';?>
+                                       <?php echo '<input type="hidden" name="design_id" value="' .$design_id. '" >';?>
                                        <?php echo'<input type="hidden" name="usern" value="' .$usern. '" >'; ?>
                                        <?php echo'<input type="hidden" name="url" value="14" >'; ?>
                                        <a href="#" onclick="confirm_pres2(<?php echo $c;?>)" class="btndashboard" style="background: #00A65A;"> Mark as Available</a></td>
@@ -336,7 +336,7 @@
                                        ?>
                                     <?php echo '<td>';?>
                                     <form method=POST id="form4_<?php echo $c;?>" action="edit-readymade.php">
-                                       <?php echo '<input type="hidden" name="catalog_ID" value="' .$catalog_ID. '" >';?>
+                                       <?php echo '<input type="hidden" name="design_id" value="' .$design_id. '" >';?>
                                        <a href="#" class="btndashboard edittreat" 
                                           data-dcode="<?php echo $DC; ?>" 
                                           data-shape="<?php echo $CS;?>" 
@@ -347,7 +347,7 @@
                                           data-ac="<?php echo $CCA; ?>" 
                                           data-ct="<?php echo $CT;?>" 
                                           data-price="<?php echo $CP; ?>" 
-                                          data-code="<?php echo $catalog_ID; ?>"
+                                          data-code="<?php echo $design_id; ?>"
 										  data-img="<?php echo $img; ?>"
                                           style="background: #F39C12;" data-toggle="modal" data-target=".edit-treat"> Edit</a></td>
                                     </form>

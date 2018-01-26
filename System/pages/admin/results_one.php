@@ -450,13 +450,13 @@ echo $getdate;*/
 	$usern = $_POST['usern'];
 	$st="Available";
 
-       $ai = mysql_query("SELECT max(`catalog_ID`) FROM `cakecatalog`");
+       $ai = mysql_query("SELECT max(`design_id`) FROM `readymadedesigns`");
 
 		      $a1 = mysql_fetch_array($ai);
 		      $a1=$a1[0];
 		      $a1++;
 
-	$query2 = "INSERT INTO `cakecatalog`(`catalog_ID`, `design_code`, `ctlg_shape`) VALUES ('$ai','$design_code','$ctlg_shape')";
+	$query2 = "INSERT INTO `readymadedesigns`(`design_id`, `design_code`, `ctlg_shape`) VALUES ('$ai','$design_code','$ctlg_shape')";
 	$r1 = @mysql_query($query2, $dbc); 
 
 	session_start();

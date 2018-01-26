@@ -297,7 +297,7 @@
 
 
                                         echo '<tr>';
-                                        echo '<td class="hidden">'.$storeArray2[$c][0]['occ_price'].'</td>';
+                                        echo '<td class="hidden">'.$storeArray2[$c][0]['ownelec_price'].'</td>';
                                         echo '<td></td>';
                                         echo '<td><h4>Frost Fondant Price</h4></td>';
                                         echo '<td><h3>'.$storeArray2[$c][0]['frost_fondant_price'].'</h3></td>'; ?>
