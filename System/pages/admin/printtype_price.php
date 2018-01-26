@@ -264,12 +264,12 @@
                                        
                                        for($c=0;  $c<$b1;$c++){
                                          $price_ID=$storeArray2[$c][0]['price_ID'];
-                                         $A=$storeArray2[$c][0]['flavor_vanilla_price'];
-                                         $B = $storeArray2[$c][0]['flavor_ube_price'];
-                                         $C = $storeArray2[$c][0]['flavor_rvelvet_price'];
-                                         $D = $storeArray2[$c][0]['flavor_coffee_price'];
-                                         $E = $storeArray2[$c][0]['flavor_bberry_price'];
-                                         $F = $storeArray2[$c][0]['flavor_strawberry_price'];
+                                         $A=$storeArray2[$c][0]['ordinaryrv'];
+                                         $B = $storeArray2[$c][0]['reflectorized'];
+                                         $C = $storeArray2[$c][0]['glowinthedark'];
+                                         $D = $storeArray2[$c][0]['gamuza'];
+                                         $E = $storeArray2[$c][0]['sublimation'];
+                                         $F = $storeArray2[$c][0]['transferpaper'];
 
                                        
                                        
@@ -282,7 +282,7 @@
                                         echo '<td class="hidden">'.$storeArray2[$c][0]['price_ID'].'</td>';
                                         echo '<td></td>';
                                         echo '<td><h4>Textile Paint</h4></td>';
-                                        echo '<td><h3>'.$storeArray2[$c][0]['frost_fondant_price'].'</h3></td>'; ?>
+                                        echo '<td><h3>'.$storeArray2[$c][0]['textilepaint'].'</h3></td>'; ?>
                                    
                                     <?php
                                 
@@ -291,7 +291,7 @@
                                         echo '<td class="hidden">'.$storeArray2[$c][0]['price_ID'].'</td>';
                                         echo '<td></td>';
                                         echo '<td><h4>Ordinary Rubber Vinyl</h4></td>';
-                                        echo '<td><h3>'.$storeArray2[$c][0]['flavor_vanilla_price'].'</h3></td>'; ?>
+                                        echo '<td><h3>'.$storeArray2[$c][0]['ordinaryrv'].'</h3></td>'; ?>
                       
                                     <?php
 
@@ -302,7 +302,7 @@
                                         echo '<td class="hidden">'.$storeArray2[$c][0]['price_ID'].'</td>';
                                         echo '<td></td>';
                                         echo '<td><h4>Reflectorized</h4></td>';
-                                        echo '<td><h3>'.$storeArray2[$c][0]['flavor_ube_price'].'</h3></td>'; ?>
+                                        echo '<td><h3>'.$storeArray2[$c][0]['reflectorized'].'</h3></td>'; ?>
                                     <?php echo '<td>';?>
 
                                    
@@ -317,7 +317,7 @@
                                         echo '<td class="hidden">'.$storeArray2[$c][0]['price_ID'].'</td>';
                                         echo '<td></td>';
                                         echo '<td> <h4>Glow-in-the-Dark</h4></td>';
-                                        echo '<td> <h3>'.$storeArray2[$c][0]['flavor_rvelvet_price'].' <h3></td>'; ?>
+                                        echo '<td> <h3>'.$storeArray2[$c][0]['glowinthedark'].' <h3></td>'; ?>
                                     <?php echo '<td>';?>
 
                                      <?php
@@ -329,7 +329,7 @@
                                         echo '<td class="hidden">'.$storeArray2[$c][0]['price_ID'].'</td>';
                                         echo '<td></td>';
                                         echo '<td> <h4>Gamuza</h4></td>';
-                                        echo '<td> <h3>'.$storeArray2[$c][0]['flavor_coffee_price'].' <h3></td>'; ?>
+                                        echo '<td> <h3>'.$storeArray2[$c][0]['gamuza'].' <h3></td>'; ?>
                                     <?php echo '<td>';?>
 
 
@@ -344,7 +344,7 @@
                                         echo '<td class="hidden">'.$storeArray2[$c][0]['price_ID'].'</td>';
                                         echo '<td></td>';
                                         echo '<td> <h4>Sublimation</h4></td>';
-                                        echo '<td> <h3>'.$storeArray2[$c][0]['flavor_bberry_price'].' <h3></td>'; ?>
+                                        echo '<td> <h3>'.$storeArray2[$c][0]['sublimation'].' <h3></td>'; ?>
                                     <?php echo '<td>';?>
 
 
@@ -358,7 +358,7 @@
                                         echo '<td class="hidden">'.$storeArray2[$c][0]['price_ID'].'</td>';
                                         echo '<td></td>';
                                         echo '<td> <h4>Transfer Paper</h4></td>';
-                                        echo '<td> <h3>'.$storeArray2[$c][0]['flavor_strawberry_price'].' <h3></td>'; ?>
+                                        echo '<td> <h3>'.$storeArray2[$c][0]['transferpaper'].' <h3></td>'; ?>
                                     <?php echo '<td>';?>
                                       
 

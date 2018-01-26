@@ -650,31 +650,31 @@
                                     
                                     
                                        
-                                         $ai = mysql_query("SELECT Count(`cake_ID`) FROM `customized_cake` WHERE `customer_ID`='$id'");
+                                         $ai = mysql_query("SELECT Count(`o_idnew`) FROM `order_list` WHERE `customer_ID`='$id'");
                                     
                                          $a1 = mysql_fetch_array($ai);
                                          $cnt=$a1[0];
                                          
                                          if($cnt!=0){
                                     
-                                         $query1 = "SELECT * FROM `customized_cake`WHERE `customer_ID`='$id' order by `cake_ID` DESC";
+                                         $query1 = "SELECT * FROM `order_list`WHERE `customer_ID`='$id' order by `o_idnew` DESC";
                                          $r1 = @mysql_query($query1, $dbc); 
                                          while ($row1 = mysql_fetch_array($r1, MYSQL_ASSOC)) {
                                               $reserve[][] =  $row1;
                                          }
                                     
                                          for($i=0;$i<$cnt; $i++){
-                                           $order=$reserve[$i][0]['cake_ID'];
+                                           $order=$reserve[$i][0]['o_idnew'];
                                            $PA=$reserve[$i][0]['payment_amount'];
                                            $PS=$reserve[$i][0]['payment_status'];
                                     
-                                           $ddate1=strtotime($reserve[$i][0]['cake_duedate']);
+                                           $ddate1=strtotime($reserve[$i][0]['d_datenew']);
                                            $ddate=date("F j, Y",$ddate1 );
                                     
                                     echo '        <tr>';
                                     echo '          <td>'.$ddate.'</td>';
-                                     echo '          <td>'.$reserve[$i][0]['cake_theme'].'</td>';  
-                                    echo '          <td>'.$reserve[$i][0]['order_pending'].'</td>';    
+                                     echo '          <td>'.$reserve[$i][0]['shirt_typenew'].'</td>';  
+                                    echo '          <td>'.$reserve[$i][0]['order_statusnew'].'</td>';    
                                       echo '          <td>'.$diagnosis = $reserve[$i][0]['branch_name'].'</td>';   
                                                echo '          <td>'.$service = $reserve[$i][0]['payment_status'].'</td>';  
                                     
@@ -727,30 +727,30 @@
                                     echo '      <tbody>';
                                     
                                     
-                                         $ai = mysql_query("SELECT Count(`cake_ID`) FROM `customized_cake` WHERE `customer_ID`='$id'");
+                                         $ai = mysql_query("SELECT Count(`o_idnew`) FROM `order_list` WHERE `customer_ID`='$id'");
                                     
                                          $a1 = mysql_fetch_array($ai);
                                          $cnt=$a1[0];
                                          
                                          if($cnt!=0){
                                     
-                                         $query1 = "SELECT `cake_ID`, `order_pending`, `cake_duedate`, `branch_name`, `customer_ID` FROM `customized_cake` WHERE `customer_ID`='$id' order by `cake_ID` DESC";
+                                         $query1 = "SELECT `o_idnew`, `order_statusnew`, `d_datenew`, `branch_name`, `customer_ID` FROM `order_list` WHERE `customer_ID`='$id' order by `o_idnew` DESC";
                                          $r1 = @mysql_query($query1, $dbc); 
                                          while ($row1 = mysql_fetch_array($r1, MYSQL_ASSOC)) {
                                               $reserve[][] =  $row1;
                                          }
                                     
                                          for($i=0;$i<$cnt; $i++){
-                                           $cake=$reserve[$i][0]['cake_duedate'];
-                                           $order=$reserve[$i][0]['cake_ID'];
+                                           $cake=$reserve[$i][0]['d_datenew'];
+                                           $order=$reserve[$i][0]['o_idnew'];
                                            $theme=$reserve[$i][0]['customer_ID'];
                                     
                                     
-                                           $qtl = mysql_query("SELECT `cake_theme`, `cake_duedate` FROM  `cakechoices` WHERE `cake_ID`='$cake'");
+                                           $qtl = mysql_query("SELECT `shirt_typenew`, `d_datenew` FROM  `cakechoices` WHERE `o_idnew`='$cake'");
                                            $t1 = mysql_fetch_array($qtl);
                                            $cake_name=$t1[0];
                                     
-                                           $ddate1=strtotime($reserve[$i][0]['cake_duedate']);
+                                           $ddate1=strtotime($reserve[$i][0]['d_datenew']);
                                            $ddate=date("F j, Y",$ddate1 );
                                     
                                     echo '        <tr>';
@@ -765,7 +765,7 @@
                                       echo '<td>';?>
                                                   <form method=POST id="form5_<?php echo $i;?>" action="results.php">
 
-                                                      <?php echo '<input type="hidden" name="cake_ID" value="' .$order. '" >';?>
+                                                      <?php echo '<input type="hidden" name="o_idnew" value="' .$order. '" >';?>
                                                       <?php echo'<input type="hidden" name="usern" value="' .$usern. '" >'; ?>
                                                       <?php echo'<input type="hidden" name="url" value="11" >'; ?>
                                                       <a href="#" onclick="confirm_pres4(<?php echo $i;?>)" class="btndashboard" style="background: #DD4B39;"> delete</a></td>
@@ -780,10 +780,10 @@
 
                                  <?php echo '<td>';?>
                                  <form method=POST id="form6_<?php echo $i;?>" action="results.php">
-                                    <?php echo '<input type="hidden" name="cake_ID" value="' .$cake. '" >';?>
+                                    <?php echo '<input type="hidden" name="o_idnew" value="' .$cake. '" >';?>
                                     <?php echo'<input type="hidden" name="usern" value="' .$usern. '" >'; ?>
                                     <?php echo'<input type="hidden" name="url" value="16" >'; ?>
-                                    <a href="customer-search" class="btndashboard editpres" style="background: #F39C12;"  data-cake="<?php echo $cake_ID; ?>" data-title="<?php echo $PT; ?>" data-desc="<?php echo $PD; ?>" data-toggle="modal" data-target=".edit-pres"> View</a></td>
+                                    <a href="customer-search" class="btndashboard editpres" style="background: #F39C12;"  data-cake="<?php echo $o_idnew; ?>" data-title="<?php echo $PT; ?>" data-desc="<?php echo $PD; ?>" data-toggle="modal" data-target=".edit-pres"> View</a></td>
                                  </form>
                                  <?php echo '</td>';?>
 

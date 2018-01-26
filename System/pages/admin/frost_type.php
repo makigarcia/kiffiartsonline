@@ -253,7 +253,7 @@
                                          $A=$storeArray2[$c][0]['frost_sugar_price'];
                                          $B = $storeArray2[$c][0]['frost_bcream_price'];
                                          $C = $storeArray2[$c][0]['frost_mmallow_price'];
-                                         $D = $storeArray2[$c][0]['frost_fondant_price'];
+                                         $D = $storeArray2[$c][0]['textilepaint'];
                                        
                                        
                                        ?>
@@ -300,7 +300,7 @@
                                         echo '<td class="hidden">'.$storeArray2[$c][0]['ownelec_price'].'</td>';
                                         echo '<td></td>';
                                         echo '<td><h4>Frost Fondant Price</h4></td>';
-                                        echo '<td><h3>'.$storeArray2[$c][0]['frost_fondant_price'].'</h3></td>'; ?>
+                                        echo '<td><h3>'.$storeArray2[$c][0]['textilepaint'].'</h3></td>'; ?>
                                     
 
 

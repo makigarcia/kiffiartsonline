@@ -168,15 +168,15 @@
 
                                        
 
-                                      $query1="SELECT * FROM customized_cake WHERE customer_ID='$read_cust' ORDER BY cake_created DESC";
+                                      $query1="SELECT * FROM order_list WHERE customer_ID='$read_cust' ORDER BY o_datenew DESC";
                                        $dats = @mysql_query($query1, $link);
                                        while($record=mysql_fetch_array($dats))
                                         
                                        {
-                                        echo '<tr> <td>'. $record['cake_created'] . '</td>';
-                                        echo '<td>'. $record['cake_duedate'] . '</td>';
-                                        echo '<td>'. $record['order_pending'] . '</td>';
-                                        echo '<td>'. $record['cake_price'] . '</td>';
+                                        echo '<tr> <td>'. $record['o_datenew'] . '</td>';
+                                        echo '<td>'. $record['d_datenew'] . '</td>';
+                                        echo '<td>'. $record['order_statusnew'] . '</td>';
+                                        echo '<td>'. $record['pricenew'] . '</td>';
                                         echo '<td>'. $record['payment_status'] . '</td>';
                                         echo '<td>'. $record['payment_amount'] . '</td>';
                                         echo '<td>'. $record['payment_date'] . '</td> </tr> ';
@@ -187,7 +187,7 @@
                                        $dats = @mysql_query($query2, $link);
                                        while($data=mysql_fetch_array($dats)){
 
-                                        if($record['order_pending']!="delete" ){
+                                        if($record['order_statusnew']!="delete" ){
                                         echo '<tr> <td>'. $data['d_date'] . '</td>';
                                         // echo '<td>'. $data['o_date'] . '</td>';
                                         echo '<td>'. $data['status'] . '</td>';
@@ -234,15 +234,15 @@
 
                                        
 
-                                      /*$query1="SELECT * FROM customized_cake WHERE customer_ID='$read_cust' ORDER BY cake_created DESC";
+                                      /*$query1="SELECT * FROM order_list WHERE customer_ID='$read_cust' ORDER BY o_datenew DESC";
                                        $dats = @mysql_query($query1, $link);
                                        while($record=mysql_fetch_array($dats))
                                         
                                        {
-                                        echo '<tr> <td>'. $record['cake_created'] . '</td>';
-                                        echo '<td>'. $record['cake_duedate'] . '</td>';
-                                        echo '<td>'. $record['order_pending'] . '</td>';
-                                        echo '<td>'. $record['cake_price'] . '</td>';
+                                        echo '<tr> <td>'. $record['o_datenew'] . '</td>';
+                                        echo '<td>'. $record['d_datenew'] . '</td>';
+                                        echo '<td>'. $record['order_statusnew'] . '</td>';
+                                        echo '<td>'. $record['pricenew'] . '</td>';
                                         echo '<td>'. $record['payment_status'] . '</td> </tr> ';
 
                                        }*/
@@ -251,7 +251,7 @@
                                        $dats = @mysql_query($query2, $link);
                                        while($data=mysql_fetch_array($dats)){
 
-                                        if($record['order_pending']!="delete" ){
+                                        if($record['order_statusnew']!="delete" ){
                                         echo '<tr> <td>'. $data['o_date'] . '</td>';
                                         echo '<td>'. $data['d_date'] . '</td>';
                                         echo '<td>'. $data['status'] . '</td>';

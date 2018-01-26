@@ -234,23 +234,23 @@
                                     </tr>
                                  </thead>
                                  <?php     
-                                    $ai = mysql_query("SELECT Count(`cake_ID`) FROM `customized_cake` WHERE MONTH(cake_duedate)=MONTH(CURDATE())");
+                                    $ai = mysql_query("SELECT Count(`o_idnew`) FROM `order_list` WHERE MONTH(d_datenew)=MONTH(CURDATE())");
                                       $a1 = mysql_fetch_array($ai);
                                       $cnt=$a1[0];
                                       
                                       if($cnt!=0){
                                       
-                                            $query1 = "SELECT * FROM customized_cake ";
+                                            $query1 = "SELECT * FROM order_list ";
                                             $r1 = @mysql_query($query1, $dbc); 
                                             while ($row1 = mysql_fetch_array($r1)) {
                                                  $reserve[][] =  $row1;
                                             }
                                       
                                             for($i=0;$i<$cnt; $i++){
-                                              $order=$reserve[$i][0]['cake_ID'];
+                                              $order=$reserve[$i][0]['o_idnew'];
                                               $id=$reserve[$i][0]['customer_ID'];
                                                
-                                                  $qtl = mysql_query("SELECT cake_ID FROM  customized_cake WHERE cake_ID='$order'");
+                                                  $qtl = mysql_query("SELECT o_idnew FROM  order_list WHERE o_idnew='$order'");
                                               $t1 = mysql_fetch_array($qtl);
                                               $orderID=$t1[0];
                                       
@@ -264,16 +264,16 @@
                                               $row2['lname'] = ucwords($row2['lname']);
                                               $usrcompletename2 = $row2['fname']." ".$row2['lname'];
                                               
-                                              if($reserve[$i][0]['order_pending']=="delivered"){
-                                              $ddate1=strtotime($reserve[$i][0]['cake_duedate']);
+                                              if($reserve[$i][0]['order_statusnew']=="delivered"){
+                                              $ddate1=strtotime($reserve[$i][0]['d_datenew']);
                                               $ddate=date("F j, Y",$ddate1 );
                                       
                                               echo '          <tr>';
                                               echo '          <td>'.$date = $ddate.'</td>';
-                                              echo '          <td>'.$diagnosis = $reserve[$i][0]['cake_time'].'</td>'; 
+                                              echo '          <td>'.$diagnosis = $reserve[$i][0]['d_timenew'].'</td>'; 
                                               echo '          <td>'.$name = $usrcompletename2.'</td>';         
                                               echo '          <td class="hidden">'.$tname = $orderID.'  cake</td>';
-                                              // echo '          <td>'.$diagnosis = $reserve[$i][0]['cake_theme'].'</td>';   
+                                              // echo '          <td>'.$diagnosis = $reserve[$i][0]['shirt_typenew'].'</td>';   
                                               echo '          <td>'.$service = $reserve[$i][0]['payment_status'].'</td>';  
                                               echo '          <td>'.$diagnosis = $reserve[$i][0]['branch_name'].'</td>';    ?>
                                  <td><a href="customer_search.php?order=<?php echo $order;?>"  class="btndashboard" style="background: #227da0;">view</a></td>

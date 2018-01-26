@@ -125,7 +125,7 @@ session_start();
     $link = mysql_connect('localhost', 'root', '');
     mysql_select_db("kiffiarts", $link);
 
-    $query="SELECT * FROM customized_cake";
+    $query="SELECT * FROM order_list";
     $myData = @mysql_query($query, $link);
 
     date_default_timezone_set("Asia/Manila");

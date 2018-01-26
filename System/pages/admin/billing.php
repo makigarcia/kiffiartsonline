@@ -263,23 +263,23 @@
             </thead>
 
             <?php     
-             $ai = mysql_query("SELECT Count(`cake_ID`) FROM `customized_cake`");
+             $ai = mysql_query("SELECT Count(`o_idnew`) FROM `order_list`");
                $a1 = mysql_fetch_array($ai);
                $cnt=$a1[0];
                
                if($cnt!=0){
                
-                     $query1 = "SELECT * FROM customized_cake ";
+                     $query1 = "SELECT * FROM order_list ";
                      $r1 = @mysql_query($query1, $dbc); 
                      while ($row1 = mysql_fetch_array($r1)) {
                           $reserve[][] =  $row1;
                      }
                
                      for($i=0;$i<$cnt; $i++){
-                       $order=$reserve[$i][0]['cake_ID'];
+                       $order=$reserve[$i][0]['o_idnew'];
                        $id=$reserve[$i][0]['customer_ID'];
                         
-                           $qtl = mysql_query("SELECT cake_ID FROM  customized_cake WHERE cake_ID='$order'");
+                           $qtl = mysql_query("SELECT o_idnew FROM  order_list WHERE o_idnew='$order'");
                        $t1 = mysql_fetch_array($qtl);
                        $orderID=$t1[0];
                
@@ -293,16 +293,16 @@
                        $row2['lname'] = ucwords($row2['lname']);
                        $usrcompletename2 = $row2['fname']." ".$row2['lname'];
                        
-                       if($reserve[$i][0]['order_pending']=="delivered"){
-                       $ddate1=strtotime($reserve[$i][0]['cake_duedate']);
+                       if($reserve[$i][0]['order_statusnew']=="delivered"){
+                       $ddate1=strtotime($reserve[$i][0]['d_datenew']);
                        $ddate=date("F j, Y",$ddate1 );
                
                        echo '          <tr>';
                        echo '          <td>'.$date = $ddate.'</td>';
-                       echo '          <td>'.$diagnosis = $reserve[$i][0]['cake_time'].'</td>'; 
+                       echo '          <td>'.$diagnosis = $reserve[$i][0]['d_timenew'].'</td>'; 
                        echo '          <td>'.$name = $usrcompletename2.'</td>';         
                        echo '          <td class="hidden">'.$tname = $orderID.'  cake</td>';
-                       // echo '          <td>'.$diagnosis = $reserve[$i][0]['cake_theme'].'</td>';   
+                       // echo '          <td>'.$diagnosis = $reserve[$i][0]['shirt_typenew'].'</td>';   
                        echo '          <td>'.$service = $reserve[$i][0]['payment_status'].'</td>';  
                        echo '          <td>'.$diagnosis = $reserve[$i][0]['branch_name'].'</td>';    ?>
             <td><a href="customer_search.php?order=<?php echo $order;?>"  class="btndashboard" style="background: #227da0;">view</a></td>
@@ -443,14 +443,14 @@
          <?php
             include('configuration.php');
             
-            $sql = "SELECT  * FROM customized_cake ORDER BY cake_ID ASC";
+            $sql = "SELECT  * FROM order_list ORDER BY o_idnew ASC";
             $result = $conn->query($sql);
             ?>
          <?php
             if(!empty($_GET['order'])){ //search information for temporary / confirmed reviewee
                $value = ($_GET['order']);
                //echo 'id is ---> ' . $value;
-               $search_reviewee = mysql_query("SELECT * from customized_cake where cake_ID = '$value'");
+               $search_reviewee = mysql_query("SELECT * from order_list where o_idnew = '$value'");
                $rowa = mysql_fetch_assoc($search_reviewee); 
                // $picture = $rowa['picture'];
             
@@ -458,7 +458,7 @@
                ?>
          <div class="tab-content">
             <div id="profile" class="tab-pane fade in active">
-               <h3 style="text-align:center;"><?php echo $rowa['cake_theme']; ?>'s Cake Order</h3>
+               <h3 style="text-align:center;"><?php echo $rowa['shirt_typenew']; ?>'s Cake Order</h3>
                <div class="center col-lg-10" style="margin-top:30px;">
                   <div class="one-fourth first">
                      <img src="<?php echo "$picture"; ?>" alt="" class="profile-pic">
@@ -466,21 +466,21 @@
                   <h3 class="profile-username" style="font-size:15px;">Personal Information</h3>
                   <ul class="list-group list-group-unbordered">
                   <li class="list-group-item" style="padding-left:15px; padding-right:15px;">
-                     <b>First Middle Last Name</b> <a class="pull-right"> <?php echo $rowa['cake_theme']  . '  ' .$rowa['lname']; ?></a>
+                     <b>First Middle Last Name</b> <a class="pull-right"> <?php echo $rowa['shirt_typenew']  . '  ' .$rowa['lname']; ?></a>
                   </li>
                   <li class="list-group-item" style="padding-left:15px; padding-right:15px;">
-                     <b>Complete Address</b> <a class="pull-right"><?php echo $rowa['cake_theme']; ?> </a>
+                     <b>Complete Address</b> <a class="pull-right"><?php echo $rowa['shirt_typenew']; ?> </a>
                   <li class="list-group-item" style="padding-left:15px; padding-right:15px;">
-                     <b>Date of Birth</b> <a class="pull-right"> <?php echo $rowa['cake_theme']; ?></a>     
+                     <b>Date of Birth</b> <a class="pull-right"> <?php echo $rowa['shirt_typenew']; ?></a>     
                   </li>
                   <li class="list-group-item" style="padding-left:15px; padding-right:15px;">
-                     <b>Contact Number</b> <a class="pull-right"><?php echo $rowa['cake_theme']; ?></a>
+                     <b>Contact Number</b> <a class="pull-right"><?php echo $rowa['shirt_typenew']; ?></a>
                   </li>
                   <li class="list-group-item" style="padding-left:15px; padding-right:15px;">
-                     <b>Email</b> <a class="pull-right"><?php echo $rowa['cake_theme']; ?> </a>
+                     <b>Email</b> <a class="pull-right"><?php echo $rowa['shirt_typenew']; ?> </a>
                   </li>
                   <li class="list-group-item" style="padding-left:15px; padding-right:15px;">
-                     <b>Username</b> <a class="pull-right"><?php echo $rowa['cake_theme']; ?></a>
+                     <b>Username</b> <a class="pull-right"><?php echo $rowa['shirt_typenew']; ?></a>
                   </li>
                   <div class = 'spacing-40'> </div>
                   <br>
@@ -492,7 +492,7 @@
                      else if(!empty($_GET['r_order'])){ //search information for dropped reviewee
                            $value = ($_GET['r_order']);
                            //echo 'id is ---> ' . $value;
-                           $search_reviewee = mysql_query("SELECT * from customized_cake where cake_ID = '$value'");
+                           $search_reviewee = mysql_query("SELECT * from order_list where o_idnew = '$value'");
                            $rowa = mysql_fetch_assoc($search_reviewee); 
                            $picture = $rowa['picture'];
                      
@@ -503,7 +503,7 @@
                      
                            ?>
                   <div class='spacing-30'></div>
-                  <div class = 'success-title-l'> <?php echo $rowa['cake_theme'] .' ' .$rowa['cake_theme']; ?> 's Information</div>
+                  <div class = 'success-title-l'> <?php echo $rowa['shirt_typenew'] .' ' .$rowa['shirt_typenew']; ?> 's Information</div>
                   <div class = 'spacing-40'> </div>
                   <div class='form-wrapper'>
                      <!-- ***********Personal Information ************ -->
@@ -512,22 +512,22 @@
                      <div class="one-fourth first">
                         <img src="<?php echo "$picture"; ?>" alt="" class="profile-pic">
                      </div>
-                     <div class= 'success-msg colored'><span>Name: </span> <?php echo $rowa['cake_theme']  . '  ' .$rowa['cake_theme']; ?></div>
+                     <div class= 'success-msg colored'><span>Name: </span> <?php echo $rowa['shirt_typenew']  . '  ' .$rowa['shirt_typenew']; ?></div>
                      <div class= 'success-msg'><span>ID Number: </span> <?php echo $selected; ?> </div>
-                     <div class= 'success-msg colored'><span>Birthdate: </span> <?php echo $rowa['cake_theme']; ?> </div>
+                     <div class= 'success-msg colored'><span>Birthdate: </span> <?php echo $rowa['shirt_typenew']; ?> </div>
                      <!-- *************Contact Information*************** -->
                      <div class = 'spacing-30'> </div>
                      <div class='box-title'><span>Contact Information</span></div>
                      <div class = 'spacing-30'> </div>
-                     <div class= 'success-msg colored'><span>Address: </span> <?php echo $rowa['cake_theme']; ?></div>
-                     <div class= 'success-msg'><span>Email: </span> <?php echo $rowa['cake_theme']; ?></div>
-                     <div class= 'success-msg colored'><span>Telephone: </span> <?php echo $rowa['cake_theme']; ?> </div>
+                     <div class= 'success-msg colored'><span>Address: </span> <?php echo $rowa['shirt_typenew']; ?></div>
+                     <div class= 'success-msg'><span>Email: </span> <?php echo $rowa['shirt_typenew']; ?></div>
+                     <div class= 'success-msg colored'><span>Telephone: </span> <?php echo $rowa['shirt_typenew']; ?> </div>
                      <!-- *************** Tertiary School *************** -->
                      <div class = 'spacing-30'> </div>
                      <div class='box-title'><span>Tertiary School Information</span></div>
                      <div class = 'spacing-30'> </div>
-                     <div class= 'success-msg colored'><span>School Graduated: </span> <?php echo $rowa['cake_theme']; ?></div>
-                     <div class= 'success-msg'><span>Year Graduated: </span> <?php echo $rowa['cake_theme']; ?></div>
+                     <div class= 'success-msg colored'><span>School Graduated: </span> <?php echo $rowa['shirt_typenew']; ?></div>
+                     <div class= 'success-msg'><span>Year Graduated: </span> <?php echo $rowa['shirt_typenew']; ?></div>
                      <div class = 'spacing-40'> </div>
                      <div class="customed-form form-wrapper button-container" style="text-align:center">
       <form name="frmUser" action="" method="post">

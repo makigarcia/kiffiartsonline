@@ -83,18 +83,18 @@
                                 <?php  while($record=mysql_fetch_array($myData)){  ?>
                                 <tr><h4> <b>Choose Cake Theme </b> </h4> </tr>
                                 <tr> 
-                                    <td><div class="button"><input type="radio" id="theme1" name="cake_theme" onchange="updateTotal()" value="wedding = <?php echo $record['election_price']; ?>" />  
+                                    <td><div class="button"><input type="radio" id="theme1" name="shirt_typenew" onchange="updateTotal()" value="wedding = <?php echo $record['election_price']; ?>" />  
                                         <label for="theme1"> <img src="images/buttons/wedding.png" alt="wed_icon"/> </label> </div>
                                         <p>Wedding <span id="wedding_id"> <?php  echo "₱".$record['election_price']."";  ?>  </p>
                                     </td>
                                     
-                                    <td><div class="button"><input type="radio" id="theme2" name="cake_theme" onchange="updateTotal()"  value="birthday =<?php echo $record['cotton_price']; ?>" />   <label for="theme2"> <img src="images/buttons/bday.png" alt="wed_icon"/> </label> </div> 
+                                    <td><div class="button"><input type="radio" id="theme2" name="shirt_typenew" onchange="updateTotal()"  value="birthday =<?php echo $record['cotton_price']; ?>" />   <label for="theme2"> <img src="images/buttons/bday.png" alt="wed_icon"/> </label> </div> 
                                       <p> Birthday <span id="birthday_id"> <?php echo "₱".$record['cotton_price'].""; ?> </span></p></td>
                                     
-                                    <td><div class="button"> <input type="radio" id="theme3" name="cake_theme" onchange="updateTotal()" value="dedication =<?php echo $record['ownelec_price']; ?>" />  <label for="theme3"> <img src="images/buttons/dedi.png" alt="wed_icon"/> </label> </div>
+                                    <td><div class="button"> <input type="radio" id="theme3" name="shirt_typenew" onchange="updateTotal()" value="dedication =<?php echo $record['ownelec_price']; ?>" />  <label for="theme3"> <img src="images/buttons/dedi.png" alt="wed_icon"/> </label> </div>
                                       <p> Dedication <span id="dedi_id"> <?php echo "₱".$record['ownelec_price'].""; ?> </span> </p></td>
                                     
-                                    <td><div class="button"> <input type="radio" id="theme4" name="cake_theme" onchange="updateTotal()" value="occassion =<?php echo $record['owncot_price']; ?>" /> <label for="theme4"> <img src="images/buttons/occ.png" alt="wed_icon"/> </label> </div>
+                                    <td><div class="button"> <input type="radio" id="theme4" name="shirt_typenew" onchange="updateTotal()" value="occassion =<?php echo $record['owncot_price']; ?>" /> <label for="theme4"> <img src="images/buttons/occ.png" alt="wed_icon"/> </label> </div>
                                       <p> Occassion <span id="occ_id"> <?php echo "₱".$record['owncot_price'].""; ?> </span></p>  
                                     </td>
                                 </tr>
@@ -264,9 +264,9 @@
                         </td>
                         <td>
                             <div class="form-group">
-                            <div class="flavor_but">  <input type="radio" id="flavor4" name="cake_flavor" onchange="updateTotal()" value="vanilla = <?php echo $record['flavor_vanilla_price']; ?>" />
+                            <div class="flavor_but">  <input type="radio" id="flavor4" name="cake_flavor" onchange="updateTotal()" value="Ordinary Rubber Vinyl = <?php echo $record['ordinaryrv']; ?>" />
                              <label for="flavor4"> <img src="images/flavor/vanilla.png" alt="vanilla_icon"/> </label> </div> 
-                             <p> Vanilla <span id="vanilla_id">  <?php echo "₱".$record['flavor_vanilla_price'].""; ?> </span> </p>
+                             <p> Ordinary Rubber Vinyl <span id="vanilla_id">  <?php echo "₱".$record['ordinaryrv'].""; ?> </span> </p>
                             </div>
                         </td>
 
@@ -285,38 +285,38 @@
                         <tr style="border-color: #fff;"> 
                             <td>
                                 <div class="form-group">
-                                <div class="flavor_but">  <input type="radio" id="flavorblue" name="cake_flavor" onchange="updateTotal()" value="vanilla = <?php echo $record['flavor_blueberry_price']; ?>" />
+                                <div class="flavor_but">  <input type="radio" id="flavorblue" name="cake_flavor" onchange="updateTotal()" value="Sublimation = <?php echo $record['sublimation']; ?>" />
                                  <label for="flavorblue"> <img src="images/flavor/blueberry.png" alt="blue_icon"/> </label> </div> 
-                                 <p> Blueberry <span id="blue_id">  <?php echo "₱".$record['flavor_blueberry_price'].""; ?> </span> </p>
+                                 <p> Sublimation <span id="blue_id">  <?php echo "₱".$record['sublimation'].""; ?> </span> </p>
                                 </div>
                             </td>
 
                             <td>
                                 <div class="form-group">
-                                <div class="flavor_but"> <input type="radio" id="flavor5" name="cake_flavor" onchange="updateTotal()" value="ube =<?php echo $record['flavor_ube_price']; ?>" />
+                                <div class="flavor_but"> <input type="radio" id="flavor5" name="cake_flavor" onchange="updateTotal()" value="Reflectorized =<?php echo $record['reflectorized']; ?>" />
                                     <label for="flavor5"> <img src="images/flavor/ube.png" alt="orange_icon"/> </label> </div> 
-                                    <p> Ube <span id="ube_id"> <?php echo "₱".$record['flavor_ube_price'].""; ?> </span>   </p> 
+                                    <p> Reflectorized <span id="ube_id"> <?php echo "₱".$record['reflectorized'].""; ?> </span>   </p> 
                                </div>
                             </td>
                             <td>
                                 <div class="form-group">
-                                <div class="flavor_but"> <input type="radio" id="flavor6" name="cake_flavor" onchange="updateTotal()" value="strawberry = <?php echo $record['flavor_strawberry_price']; ?>" />
+                                <div class="flavor_but"> <input type="radio" id="flavor6" name="cake_flavor" onchange="updateTotal()" value="Transfer Paper = <?php echo $record['transferpaper']; ?>" />
                                     <label for="flavor6"> <img src="images/flavor/strawberry.png" alt="choco_icon"/> </label> </div> 
-                                    <p> Strawberry <span id="strawberry_id"> <?php echo "₱".$record['flavor_strawberry_price'].""; ?> </span> </p>
+                                    <p> Transfer Paper <span id="strawberry_id"> <?php echo "₱".$record['transferpaper'].""; ?> </span> </p>
                                </div>
                             </td>
                             <td>
                                 <div class="form-group">
-                                <div class="flavor_but"> <input type="radio" id="flavor7" name="cake_flavor" onchange="updateTotal()" value="redvelvet = <?php echo $record['flavor_rvelvet_price']; ?>" />
+                                <div class="flavor_but"> <input type="radio" id="flavor7" name="cake_flavor" onchange="updateTotal()" value="Glow-in-the-Dark = <?php echo $record['glowinthedark']; ?>" />
                                     <label for="flavor7"> <img src="images/flavor/redvelvet.png" alt="caramel_icon"/> </label> </div> 
-                                    <p> Red Velvet <span id="redvelvet_id"> <?php echo "₱".$record['flavor_rvelvet_price'].""; ?> </span> </p>
+                                    <p> Glow-in-the-Dark <span id="redvelvet_id"> <?php echo "₱".$record['glowinthedark'].""; ?> </span> </p>
                                 </div>
                             </td>
                             <td>
                                 <div class="form-group">
-                                <div class="flavor_but"> <input type="radio" id="flavor8" name="cake_flavor" onchange="updateTotal()" value="coffee = <?php echo $record['flavor_coffee_price']; ?> " />
+                                <div class="flavor_but"> <input type="radio" id="flavor8" name="cake_flavor" onchange="updateTotal()" value="Gamuza = <?php echo $record['gamuza']; ?> " />
                                     <label for="flavor8"> <img src="images/flavor/coffee.png" alt="vanilla_icon"/> </label> </div> 
-                                    <p> Coffee <span id="coffee_id"> <?php echo "₱".$record['flavor_coffee_price'].""; ?> </span> </p>
+                                    <p> Gamuza <span id="coffee_id"> <?php echo "₱".$record['gamuza'].""; ?> </span> </p>
                                </div>
                              </td>
                             </tr>
@@ -420,9 +420,9 @@
                         </td>
                         <td>
                             <div class="form-group">
-                                <div class="frost_but"> <input type="radio" id="frosting4" name="cake_frost" onchange="updateTotal()" value="fondant = <?php echo $record['frost_fondant_price']; ?>"/> 
+                                <div class="frost_but"> <input type="radio" id="frosting4" name="cake_frost" onchange="updateTotal()" value="Textile Paint = <?php echo $record['textilepaint']; ?>"/> 
                                     <label for="frosting4">  <img src="images/color/fondant.png" alt="fon_icon"/> </label>
-                                    <p><span id="fondant_id"><?php echo "₱".$record['frost_fondant_price']."";?></span></p></div>
+                                    <p><span id="fondant_id"><?php echo "₱".$record['textilepaint']."";?></span></p></div>
                             </div>
                         </td>
                     </tr>
@@ -443,7 +443,7 @@
 
                     <h4> <b> Cake Quantity </b> </h4>
                     <div class="form-group col-xs-3">
-                        <input type="number" class="form-control input-sm" placeholder="Cake Quantity" min="1" name="cake_quant" id="quantity_cake"/> 
+                        <input type="number" class="form-control input-sm" placeholder="Cake Quantity" min="1" name="shirt_quantitynew" id="quantity_cake"/> 
                     </div>
 
                     <br>
@@ -611,13 +611,13 @@
                     <script type="text/javascript">
                       $('#submitBtn').click(function () 
                         {  /* when the button in the form, display the entered values in the modal */
-                        $('#cake_theme').html($('input[name="cake_theme"]:checked').val()); //theme
+                        $('#shirt_typenew').html($('input[name="shirt_typenew"]:checked').val()); //theme
                         $('#cake_shape').html($('input[name="cake_shape"]:checked').val());
                         $('#cake_size_C').html($('#size_select_C option:selected').text());
                         $('#cake_size_R').html($('#size_select_R option:selected').text());
                         $('#cake_size_heart').html($('#size_heart option:selected').text());
                         $('#cake_layer').html($('#cake_layer').text());
-                        $('#cake_coat_color').html($('input[name="cake_color"]:checked').val());
+                        $('#shirt_colornew').html($('input[name="cake_color"]:checked').val());
                         $('#cake_frost').html($('input[name="cake_frost"]:checked').val());
                         $('#cake_flavor').html($('input[name="cake_flavor"]:checked').val());
                         $('#cake_fig_other').html($('#other_figurine').val());
@@ -660,7 +660,7 @@
                   <col width="250">
                     <tbody>
                     
-                    <tr><td>Cake Theme</td> <td><span id="cake_theme" name="cake_theme"> </span> </td></tr>
+                    <tr><td>Cake Theme</td> <td><span id="shirt_typenew" name="shirt_typenew"> </span> </td></tr>
                     <tr><td> Cake Shape </td> <td> <type id="cake_shape" name="cake_shape"> </type> </td></tr>
 
                     <tr><td> Cake Size </td><td> 
@@ -671,7 +671,7 @@
                     </td></tr>
 
                     <tr> <td> Cake Layer/s </td><td> <type id="cake_layer" name="cake_layer"> </type> </td></tr>
-                    <tr><td> Frosting (Color and Type) </td><td> <type id="cake_coat_color" name="cake_coat_color"> </type> 
+                    <tr><td> Frosting (Color and Type) </td><td> <type id="shirt_colornew" name="shirt_colornew"> </type> 
                     <p> <type id="cake_frost" name="cake_frost"> </type> </p> </td></tr>
                     <tr><td> Cake Flavor </td> <td> <type id="cake_flavor" name="cake_flavor"> </type>   <type id="cake_flavor_other" name="cake_flavor_other"> </type></td></tr> 
                     <tr><td> Candle</td> <td> <type id="cake_candle" name="cake_candle"> </type> </td></tr>

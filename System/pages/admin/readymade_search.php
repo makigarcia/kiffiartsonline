@@ -345,7 +345,7 @@
                   
                         ?>
                <div class='spacing-30'></div>
-               <div class = 'success-title-l'> <?php echo $rowa['cake_theme'] .' ' .$rowa['cake_theme']; ?> 's Information</div>
+               <div class = 'success-title-l'> <?php echo $rowa['shirt_typenew'] .' ' .$rowa['shirt_typenew']; ?> 's Information</div>
                <div class = 'spacing-40'> </div>
                <div class='form-wrapper'>
                   <!-- ***********Personal Information ************ -->
@@ -354,22 +354,22 @@
                   <div class="one-fourth first">
                      <img src="<?php echo "$picture"; ?>" alt="" class="profile-pic">
                   </div>
-                  <div class= 'success-msg colored'><span>Name: </span> <?php echo $rowa['cake_theme']  . '  ' .$rowa['cake_theme']; ?></div>
+                  <div class= 'success-msg colored'><span>Name: </span> <?php echo $rowa['shirt_typenew']  . '  ' .$rowa['shirt_typenew']; ?></div>
                   <div class= 'success-msg'><span>ID Number: </span> <?php echo $selected; ?> </div>
-                  <div class= 'success-msg colored'><span>Birthdate: </span> <?php echo $rowa['cake_theme']; ?> </div>
+                  <div class= 'success-msg colored'><span>Birthdate: </span> <?php echo $rowa['shirt_typenew']; ?> </div>
                   <!-- *************Contact Information*************** -->
                   <div class = 'spacing-30'> </div>
                   <div class='box-title'><span>Contact Information</span></div>
                   <div class = 'spacing-30'> </div>
-                  <div class= 'success-msg colored'><span>Address: </span> <?php echo $rowa['cake_theme']; ?></div>
-                  <div class= 'success-msg'><span>Email: </span> <?php echo $rowa['cake_theme']; ?></div>
-                  <div class= 'success-msg colored'><span>Telephone: </span> <?php echo $rowa['cake_theme']; ?> </div>
+                  <div class= 'success-msg colored'><span>Address: </span> <?php echo $rowa['shirt_typenew']; ?></div>
+                  <div class= 'success-msg'><span>Email: </span> <?php echo $rowa['shirt_typenew']; ?></div>
+                  <div class= 'success-msg colored'><span>Telephone: </span> <?php echo $rowa['shirt_typenew']; ?> </div>
                   <!-- *************** Tertiary School *************** -->
                   <div class = 'spacing-30'> </div>
                   <div class='box-title'><span>Tertiary School Information</span></div>
                   <div class = 'spacing-30'> </div>
-                  <div class= 'success-msg colored'><span>School Graduated: </span> <?php echo $rowa['cake_theme']; ?></div>
-                  <div class= 'success-msg'><span>Year Graduated: </span> <?php echo $rowa['cake_theme']; ?></div>
+                  <div class= 'success-msg colored'><span>School Graduated: </span> <?php echo $rowa['shirt_typenew']; ?></div>
+                  <div class= 'success-msg'><span>Year Graduated: </span> <?php echo $rowa['shirt_typenew']; ?></div>
                   <div class = 'spacing-40'> </div>
                   <div class="customed-form form-wrapper button-container" style="text-align:center">
                      <form name="frmUser" action="" method="post">

@@ -12,26 +12,26 @@
         
             $customer_ID = $_SESSION['customer_ID'];
 
-            $cake_theme = $_POST['cake_theme'];
+            $shirt_typenew = $_POST['shirt_typenew'];
             $cake_shape = $_POST['cake_shape'];
             $cake_size = $_POST['cakesize'];
             $cake_layer = $_POST['cake_layer_num'];
-            $cake_coat_color = $_POST['cake_color']; 
+            $shirt_colornew = $_POST['cake_color']; 
             //$cake_frost = $_POST['cake_frost']; 
             //$cake_flavor = $_POST['cake_flavor'];
             //$figurine_other = $_POST['figurine_other'];
             //$dedicationT = $_POST['dedicationT'];
             $candle_selection = $_POST['candle_selection'];
-            $cake_quant = $_POST['cake_quant'];
+            $shirt_quantitynew = $_POST['shirt_quantitynew'];
             $other_concerns = $_POST['other_concerns'];
-            $cake_price = $_POST['totalPrice_cake'];
+            $pricenew = $_POST['totalPrice_cake'];
 
-            $cake_created = date('Y/m/d');
-            $cake_created = strtotime($cake_created);
-            $cake_created = date("Ymd", $cake_created);
+            $o_datenew = date('Y/m/d');
+            $o_datenew = strtotime($o_datenew);
+            $o_datenew = date("Ymd", $o_datenew);
             
-            $cake_duedate = $_POST['service_date']; // $totalPrice = $_POST['totalPrice'];
-            $cake_time = $_POST['service_time'];
+            $d_datenew = $_POST['service_date']; // $totalPrice = $_POST['totalPrice'];
+            $d_timenew = $_POST['service_time'];
             $del_venue = $_POST['del_venue'];
             $branch_name = $_POST['branch_name'];
             
@@ -41,7 +41,7 @@
             
             //figurine_select, figurine_other,  '$figurine_select', '$figurine_other', 
             //removed customer_ID
-            $query1 = "INSERT INTO  customized_cake (customer_ID, cake_theme, cake_shape, cake_size, cake_layer, cake_coat_color, candle_selection,  cake_quant, other_concerns, cake_price, cake_created, cake_duedate, cake_time, branch_name, del_venue, canvas) VALUES ('$customer_ID', '$cake_theme', '$cake_shape', '$cake_size', '$cake_layer', '$cake_coat_color', '$candle_selection', '$cake_quant', '$other_concerns', '$cake_price', '".$cake_created."', '$cake_duedate', '$cake_time', '$branch_name', '$del_venue','$savecanvas')";
+            $query1 = "INSERT INTO  order_list (customer_ID, shirt_typenew, cake_shape, cake_size, cake_layer, shirt_colornew, candle_selection,  shirt_quantitynew, other_concerns, pricenew, o_datenew, d_datenew, d_timenew, branch_name, del_venue, canvas) VALUES ('$customer_ID', '$shirt_typenew', '$cake_shape', '$cake_size', '$cake_layer', '$shirt_colornew', '$candle_selection', '$shirt_quantitynew', '$other_concerns', '$pricenew', '".$o_datenew."', '$d_datenew', '$d_timenew', '$branch_name', '$del_venue','$savecanvas')";
 
             // echo $cake_size;
 

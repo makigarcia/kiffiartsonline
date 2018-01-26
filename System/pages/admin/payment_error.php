@@ -282,7 +282,7 @@
                                                      $usrcompletename3 = $row2['phone_num'];
                                              
                                                      
-                                                      if($reserve[$i][0]['order_pending']=="confirmed"){
+                                                      if($reserve[$i][0]['order_statusnew']=="confirmed"){
                                                      $ddate1=strtotime($reserve[$i][0]['service_date']);
                                                      $ddate=date("F j, Y",$ddate1 );
                                              
@@ -290,12 +290,12 @@
                                                      echo '          <td>'.$date = $ddate.'</td>';
                                                      echo '          <td>'.$name = $usrcompletename2.'</td>';         
                                                      echo '          <td class="hidden">'.$tname = $order_ID.'  cake</td>';
-                                                     echo '          <td>'.$diagnosis = $reserve[$i][0]['cake_theme'].'</td>';   
-                                                     echo '          <td>'.$service = $reserve[$i][0]['cake_price'].'</td>';  
+                                                     echo '          <td>'.$diagnosis = $reserve[$i][0]['shirt_typenew'].'</td>';   
+                                                     echo '          <td>'.$service = $reserve[$i][0]['pricenew'].'</td>';  
                                                      echo '          <td>'.$name = $usrcompletename3.'</td>';    ?>
                                     <td><a href="customer_search.php?order=<?php echo $order;?>"  class="btndashboard" style="background: #227da0;">view</a></td>
                                     <?php
-                                       if($reserve[$i][0]['order_pending']=="confirmed"){
+                                       if($reserve[$i][0]['order_statusnew']=="confirmed"){
                                        ?>
                                     <?php echo '<td>';?>
                                     <form method=POST id="form2_<?php echo $i;?>" action="results.php">

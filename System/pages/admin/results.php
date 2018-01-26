@@ -399,14 +399,14 @@ echo $getdate;*/
 
 }else if($url==7){
 
-$cake_ID = $_POST['cake_ID'];
+$o_idnew = $_POST['o_idnew'];
 	$usern = $_POST['usern'];
 
 
-	$order_pending="delivered";
+	$order_statusnew="delivered";
 
 
-	$query2 = "UPDATE `customized_cake` SET `order_pending`='$order_pending' WHERE `cake_ID`='$cake_ID'";
+	$query2 = "UPDATE `order_list` SET `order_statusnew`='$order_statusnew' WHERE `o_idnew`='$o_idnew'";
 	$r1 = @mysql_query($query2, $dbc); 
 
 	session_start();
@@ -529,14 +529,14 @@ $cake_ID = $_POST['cake_ID'];
 
 }else if($url==11){
 
-$cake_ID = $_POST['cake_ID'];
+$o_idnew = $_POST['o_idnew'];
 	$usern = $_POST['usern'];
 
 
-	$order_pending="cancelled";
+	$order_statusnew="cancelled";
 
 
-	$query2 = "UPDATE `customized_cake` SET `order_pending`='$order_pending' WHERE `cake_ID`='$cake_ID'";
+	$query2 = "UPDATE `order_list` SET `order_statusnew`='$order_statusnew' WHERE `o_idnew`='$o_idnew'";
 	$r1 = @mysql_query($query2, $dbc); 
 
 	session_start();
@@ -653,14 +653,14 @@ $date=date('Y-m-d');
 	Header("Location:alerts.php");
 }else if($url==15){
 
-$cake_ID = $_POST['cake_ID'];
+$o_idnew = $_POST['o_idnew'];
 	$usern = $_POST['usern'];
 
 
-	$order_pending="cancelled";
+	$order_statusnew="cancelled";
 
 
-	$query2 = "UPDATE `customized_cake` SET `order_pending`='$order_pending' WHERE `cake_ID`='$cake_ID'";
+	$query2 = "UPDATE `order_list` SET `order_statusnew`='$order_statusnew' WHERE `o_idnew`='$o_idnew'";
 	$r1 = @mysql_query($query2, $dbc); 
 
 	session_start();
@@ -676,14 +676,14 @@ $cake_ID = $_POST['cake_ID'];
 }else if($url==16){
 
 
-	$cake_ID = $_POST['cake_ID'];
+	$o_idnew = $_POST['o_idnew'];
 	$usern = $_POST['usern'];
 
 
-	$order_pending="approved";
+	$order_statusnew="approved";
 
 
-	$query2 = "UPDATE `customized_cake` SET `order_pending`='$order_pending' WHERE `cake_ID`='$cake_ID'";
+	$query2 = "UPDATE `order_list` SET `order_statusnew`='$order_statusnew' WHERE `o_idnew`='$o_idnew'";
 	$r1 = @mysql_query($query2, $dbc); 
 
 	session_start();
@@ -828,14 +828,14 @@ $usern = $_POST['usern'];
 }else if($url==20){
 
 
-	$cake_ID = $_POST['cake_ID'];
+	$o_idnew = $_POST['o_idnew'];
 	$usern = $_POST['usern'];
 
 
-	$order_pending="confirmed";
+	$order_statusnew="confirmed";
 
 
-	$query2 = "UPDATE `customized_cake` SET `order_pending`='$order_pending' WHERE `cake_ID`='$cake_ID'";
+	$query2 = "UPDATE `order_list` SET `order_statusnew`='$order_statusnew' WHERE `o_idnew`='$o_idnew'";
 	$r1 = @mysql_query($query2, $dbc); 
 
 $deviceID = 71106; // wag na rin galawin
@@ -861,13 +861,13 @@ $result = $smsGateway->sendMessageToNumber($number, $message, $deviceID);
 
 
 
-	$design_id = $_POST['cake_ID'];
+	$design_id = $_POST['o_idnew'];
 	$usern = $_POST['usern'];
 
 
 	$status="pending";
 
-	$query2 = "UPDATE `customized_cake` SET `order_pending`='$order_pending' WHERE `cake_ID`='$cake_ID'";
+	$query2 = "UPDATE `order_list` SET `order_statusnew`='$order_statusnew' WHERE `o_idnew`='$o_idnew'";
 	$r1 = @mysql_query($query2, $dbc); 
 
 	session_start();
@@ -1068,7 +1068,7 @@ if($check==1){
 	$frost_sugar_price = $_POST['form-one'];
 	$frost_bcream_price = $_POST['form-two'];
 	$frost_mmallow_price = $_POST['form-three'];
-	$frost_fondant_price = $_POST['form-four'];
+	$textilepaint = $_POST['form-four'];
 
 
 
@@ -1079,14 +1079,14 @@ if($check==1){
 	$tc1=explode(" ", $TCost);
 	$TCost=$tc1[0];
 
-		 $ai = mysql_query("SELECT `price_ID`, `frost_sugar_price`, `frost_bcream_price`, `frost_mmallow_price`, `frost_fondant_price` FROM `pricelist` WHERE '$price_ID'");
+		 $ai = mysql_query("SELECT `price_ID`, `frost_sugar_price`, `frost_bcream_price`, `frost_mmallow_price`, `textilepaint` FROM `pricelist` WHERE '$price_ID'");
 		$a1 = mysql_fetch_array($ai);
 
 	 $a2 = mysql_query("SELECT `price_ID`,`ownelec_price` FROM `pricelist` WHERE price_ID='$price_ID'");
 		$a2 = mysql_fetch_array($a2);
 
 
-	if($frost_sugar_price!=$a1['frost_sugar_price'] ||$frost_bcream_price!=$a1['frost_bcream_price'] || $frost_mmallow_price!=$a1['frost_mmallow_price'] || $frost_fondant_price!=$a1['frost_fondant_price']){
+	if($frost_sugar_price!=$a1['frost_sugar_price'] ||$frost_bcream_price!=$a1['frost_bcream_price'] || $frost_mmallow_price!=$a1['frost_mmallow_price'] || $textilepaint!=$a1['textilepaint']){
 			$check=1;
 		}else{
 			$check=2;
@@ -1094,7 +1094,7 @@ if($check==1){
 	      
 if($check==1){
 	
-	$query2 = "UPDATE `pricelist` SET `frost_sugar_price`='$frost_sugar_price',`frost_bcream_price`='$frost_bcream_price',`frost_mmallow_price`='$frost_mmallow_price',`frost_fondant_price`='$frost_fondant_price'";
+	$query2 = "UPDATE `pricelist` SET `frost_sugar_price`='$frost_sugar_price',`frost_bcream_price`='$frost_bcream_price',`frost_mmallow_price`='$frost_mmallow_price',`textilepaint`='$textilepaint'";
 	$r1 = @mysql_query($query2, $dbc); 
 
 
@@ -1133,12 +1133,12 @@ if($check==1){
 
 	$price_ID = $_POST['form-code'];
 	$usern = $_POST['usern'];
-	$flavor_vanilla_price = $_POST['form-one'];
-	$flavor_ube_price = $_POST['form-two'];
-	$flavor_rvelvet_price = $_POST['form-three'];
-	$flavor_coffee_price = $_POST['form-four'];
-	$flavor_bberry_price = $_POST['form-five'];
-	$flavor_strawberry_price = $_POST['form-six'];
+	$ordinaryrv = $_POST['form-one'];
+	$reflectorized = $_POST['form-two'];
+	$glowinthedark = $_POST['form-three'];
+	$gamuza = $_POST['form-four'];
+	$sublimation = $_POST['form-five'];
+	$transferpaper = $_POST['form-six'];
 
 
 
@@ -1150,14 +1150,14 @@ if($check==1){
 	$tc1=explode(" ", $TCost);
 	$TCost=$tc1[0];
 
-		 $ai = mysql_query("SELECT `price_ID`, `flavor_vanilla_price`, `flavor_ube_price`, `flavor_rvelvet_price`, `flavor_coffee_price`, `flavor_bberry_price`, `flavor_strawberry_price` FROM `pricelist` WHERE '$price_ID'");
+		 $ai = mysql_query("SELECT `price_ID`, `ordinaryrv`, `reflectorized`, `glowinthedark`, `gamuza`, `sublimation`, `transferpaper` FROM `pricelist` WHERE '$price_ID'");
 		$a1 = mysql_fetch_array($ai);
 
 	 $a2 = mysql_query("SELECT `price_ID`,`ownelec_price` FROM `pricelist` WHERE price_ID='$price_ID'");
 		$a2 = mysql_fetch_array($a2);
 
 
-	if($flavor_vanilla_price!=$a1['flavor_vanilla_price'] ||$flavor_ube_price!=$a1['flavor_ube_price'] || $flavor_rvelvet_price!=$a1['flavor_rvelvet_price'] || $flavor_coffee_price!=$a1['flavor_coffee_price'] || $flavor_bberry_price!=$a1['flavor_bberry_price'] || $flavor_strawberry_price!=$a1['flavor_strawberry_price']){
+	if($ordinaryrv!=$a1['ordinaryrv'] ||$reflectorized!=$a1['reflectorized'] || $glowinthedark!=$a1['glowinthedark'] || $gamuza!=$a1['gamuza'] || $sublimation!=$a1['sublimation'] || $transferpaper!=$a1['transferpaper']){
 			$check=1;
 		}else{
 			$check=2;
@@ -1165,7 +1165,7 @@ if($check==1){
 	      
 if($check==1){
 	
-	$query2 = "UPDATE `pricelist` SET `flavor_vanilla_price`='$flavor_vanilla_price',`flavor_ube_price`='$flavor_ube_price',`flavor_rvelvet_price`='$flavor_rvelvet_price',`flavor_coffee_price`='$flavor_coffee_price',`flavor_bberry_price`='$flavor_bberry_price',`flavor_strawberry_price`='$flavor_strawberry_price'";
+	$query2 = "UPDATE `pricelist` SET `ordinaryrv`='$ordinaryrv',`reflectorized`='$reflectorized',`glowinthedark`='$glowinthedark',`gamuza`='$gamuza',`sublimation`='$sublimation',`transferpaper`='$transferpaper'";
 	$r1 = @mysql_query($query2, $dbc); 
 
 
@@ -1201,7 +1201,7 @@ if($check==1){
 }else if($url==30){
 
 
-	$cake_ID = $_POST['form-code'];
+	$o_idnew = $_POST['form-code'];
 	$usern = $_POST['usern'];
 	$branch_name = $_POST['form-am'];
 	$payment_status = $_POST['form-stat'];
@@ -1215,7 +1215,7 @@ if($check==1){
 	$tc1=explode(" ", $TCost);
 	$TCost=$tc1[0];
 
-		 $ai = mysql_query("SELECT `cake_ID`, `branch_name`, `payment_status` FROM `customized_cake` WHERE '$cake_ID'");
+		 $ai = mysql_query("SELECT `o_idnew`, `branch_name`, `payment_status` FROM `order_list` WHERE '$o_idnew'");
 		$a1 = mysql_fetch_array($ai);
 
 	 $a2 = mysql_query("SELECT `price_ID`,`election_price`, `cotton_price`, `ownelec_price` FROM `pricelist` WHERE price_ID='$price_ID'");
@@ -1230,7 +1230,7 @@ if($check==1){
 	      
 if($check==1){
 	
-	$query2 = "UPDATE `customized_cake` SET `branch_name`='$branch_name',`payment_status`='$payment_status',`driver_name`='$driver_name',`plate_num`='$plate_num' WHERE `cake_ID`='$cake_ID'";
+	$query2 = "UPDATE `order_list` SET `branch_name`='$branch_name',`payment_status`='$payment_status',`driver_name`='$driver_name',`plate_num`='$plate_num' WHERE `o_idnew`='$o_idnew'";
 	$r1 = @mysql_query($query2, $dbc); 
 
 
@@ -1383,9 +1383,9 @@ if($check==1){
 }else if($url==34){
 
 
-	$cake_ID = $_POST['form-code'];
+	$o_idnew = $_POST['form-code'];
 	$usern = $_POST['usern'];
-	$cake_price = $_POST['form-am'];
+	$pricenew = $_POST['form-am'];
 
 
 
@@ -1396,14 +1396,14 @@ if($check==1){
 	$tc1=explode(" ", $TCost);
 	$TCost=$tc1[0];
 
-		 $ai = mysql_query("SELECT `cake_ID`, `cake_price` FROM `customized_cake` WHERE cake_ID='$cake_ID'");
+		 $ai = mysql_query("SELECT `o_idnew`, `pricenew` FROM `order_list` WHERE o_idnew='$o_idnew'");
 		$a1 = mysql_fetch_array($ai);
 
 	 $a2 = mysql_query("SELECT `price_ID`,`election_price`, `cotton_price`, `ownelec_price` FROM `pricelist` WHERE price_ID='$price_ID'");
 		$a2 = mysql_fetch_array($a2);
 
 
-	if($cake_price!=$a1['cake_price'] ){
+	if($pricenew!=$a1['pricenew'] ){
 			$check=1;
 		}else{
 			$check=2;
@@ -1411,7 +1411,7 @@ if($check==1){
 	      
 if($check==1){
 	
-	$query2 = "UPDATE `customized_cake` SET `cake_price`='$cake_price' WHERE `cake_ID`='$cake_ID'";
+	$query2 = "UPDATE `order_list` SET `pricenew`='$pricenew' WHERE `o_idnew`='$o_idnew'";
 	$r1 = @mysql_query($query2, $dbc); 
 
 
@@ -1449,7 +1449,7 @@ if($check==1){
 }else if($url==35){
 
 
-	$cake_ID = $_POST['form-code'];
+	$o_idnew = $_POST['form-code'];
 	$usern = $_POST['usern'];
 	$driver_name = $_POST['form-am'];
 	$plate_num = $_POST['form-stat'];
@@ -1463,7 +1463,7 @@ if($check==1){
 	$tc1=explode(" ", $TCost);
 	$TCost=$tc1[0];
 
-		 $ai = mysql_query("SELECT `cake_ID`, `driver_name`,`plate_num` FROM `customized_cake` WHERE '$cake_ID'");
+		 $ai = mysql_query("SELECT `o_idnew`, `driver_name`,`plate_num` FROM `order_list` WHERE '$o_idnew'");
 		$a1 = mysql_fetch_array($ai);
 
 	 $a2 = mysql_query("SELECT `price_ID`,`election_price`, `cotton_price`, `ownelec_price` FROM `pricelist` WHERE price_ID='$price_ID'");
@@ -1478,7 +1478,7 @@ if($check==1){
 	      
 if($check==1){
 	
-	$query2 = "UPDATE `customized_cake` SET `driver_name`='$driver_name', `plate_num`='$plate_num' WHERE `cake_ID`='$cake_ID'";
+	$query2 = "UPDATE `order_list` SET `driver_name`='$driver_name', `plate_num`='$plate_num' WHERE `o_idnew`='$o_idnew'";
 	$r1 = @mysql_query($query2, $dbc); 
 
 
@@ -1516,15 +1516,15 @@ if($check==1){
 }else if($url==36){
 
 
-	$cake_ID = $_POST['form-code'];
+	$o_idnew = $_POST['form-code'];
 	$usern = $_POST['usern'];
-	$cake_price = $_POST['form-am'];
+	$pricenew = $_POST['form-am'];
 
 	$figurine_select = $_POST['form-one'];
 	$branch_name = $_POST['form-two'];
-	$cake_duedate = $_POST['form-three'];
+	$d_datenew = $_POST['form-three'];
 	$dedicationT = $_POST['form-four'];
-	$cake_coat_color = $_POST['form-five'];
+	$shirt_colornew = $_POST['form-five'];
 	$cake_frost = $_POST['form-six'];
 	$candle_selection = $_POST['form-seven'];
 
@@ -1539,14 +1539,14 @@ if($check==1){
 	$tc1=explode(" ", $TCost);
 	$TCost=$tc1[0];
 
-		 $ai = mysql_query("SELECT `cake_ID`, `cake_price`, `figurine_select`,`branch_name`,`cake_duedate`, `dedicationT`, `cake_coat_color`,`cake_frost`,`candle_selection` FROM `customized_cake` WHERE '$cake_ID'");
+		 $ai = mysql_query("SELECT `o_idnew`, `pricenew`, `figurine_select`,`branch_name`,`d_datenew`, `dedicationT`, `shirt_colornew`,`cake_frost`,`candle_selection` FROM `order_list` WHERE '$o_idnew'");
 		$a1 = mysql_fetch_array($ai);
 
 	 $a2 = mysql_query("SELECT `price_ID`,`election_price`, `cotton_price`, `ownelec_price` FROM `pricelist` WHERE price_ID='$price_ID'");
 		$a2 = mysql_fetch_array($a2);
 
 
-	if($cake_price!=$a1['cake_price'] ||$figurine_select!=$a1['figurine_select'] ||$branch_name!=$a1['branch_name'] ||$cake_duedate!=$a1['cake_duedate'] ||$dedicationT!=$a1['dedicationT'] ||$cake_coat_color!=$a1['cake_coat_color'] ||$cake_frost!=$a1['cake_frost'] ||$candle_selection!=$a1['candle_selection']){
+	if($pricenew!=$a1['pricenew'] ||$figurine_select!=$a1['figurine_select'] ||$branch_name!=$a1['branch_name'] ||$d_datenew!=$a1['d_datenew'] ||$dedicationT!=$a1['dedicationT'] ||$shirt_colornew!=$a1['shirt_colornew'] ||$cake_frost!=$a1['cake_frost'] ||$candle_selection!=$a1['candle_selection']){
 			$check=1;
 		}else{
 			$check=2;
@@ -1554,7 +1554,7 @@ if($check==1){
 	      
 if($check==1){
 	
-	$query2 = "UPDATE `customized_cake` SET `cake_price`='$cake_price', `figurine_select`='$figurine_select', `branch_name`='$branch_name', `cake_duedate`='$cake_duedate',`dedicationT`='$dedicationT',`cake_coat_color`='$cake_coat_color',`cake_frost`='$cake_frost',`candle_selection`='$candle_selection' WHERE `cake_ID`='$cake_ID'";
+	$query2 = "UPDATE `order_list` SET `pricenew`='$pricenew', `figurine_select`='$figurine_select', `branch_name`='$branch_name', `d_datenew`='$d_datenew',`dedicationT`='$dedicationT',`shirt_colornew`='$shirt_colornew',`cake_frost`='$cake_frost',`candle_selection`='$candle_selection' WHERE `o_idnew`='$o_idnew'";
 	$r1 = @mysql_query($query2, $dbc); 
 
 
@@ -1590,7 +1590,7 @@ if($check==1){
 }else if($url==37){
 
 
-	$cake_ID = $_POST['form-code'];
+	$o_idnew = $_POST['form-code'];
 	$usern = $_POST['usern'];
 	$branch_name = $_POST['form-am'];
 	$del_venue = $_POST['form-stat'];
@@ -1605,7 +1605,7 @@ if($check==1){
 	$tc1=explode(" ", $TCost);
 	$TCost=$tc1[0];
 
-		 $ai = mysql_query("SELECT `cake_ID`, `branch_name`, `del_venue`,`driver_name`, `plate_num` FROM `customized_cake` WHERE '$cake_ID'");
+		 $ai = mysql_query("SELECT `o_idnew`, `branch_name`, `del_venue`,`driver_name`, `plate_num` FROM `order_list` WHERE '$o_idnew'");
 		$a1 = mysql_fetch_array($ai);
 
 	 $a2 = mysql_query("SELECT `price_ID`,`election_price`, `cotton_price`, `ownelec_price` FROM `pricelist` WHERE price_ID='$price_ID'");
@@ -1620,7 +1620,7 @@ if($check==1){
 	      
 if($check==1){
 	
-	$query2 = "UPDATE `customized_cake` SET `branch_name`='$branch_name',`del_venue`='$del_venue',`driver_name`='$driver_name',`plate_num`='$plate_num' WHERE `cake_ID`='$cake_ID'";
+	$query2 = "UPDATE `order_list` SET `branch_name`='$branch_name',`del_venue`='$del_venue',`driver_name`='$driver_name',`plate_num`='$plate_num' WHERE `o_idnew`='$o_idnew'";
 	$r1 = @mysql_query($query2, $dbc); 
 
 
@@ -1768,14 +1768,14 @@ if($check==1){
 
 	}else if($url==41){
 
-$cake_ID = $_POST['cake_ID'];
+$o_idnew = $_POST['o_idnew'];
 	$usern = $_POST['usern'];
 
 
-	$order_pending="cancelled";
+	$order_statusnew="cancelled";
 
 
-	$query2 = "UPDATE `customized_cake` SET `order_pending`='$order_pending' WHERE `cake_ID`='$cake_ID'";
+	$query2 = "UPDATE `order_list` SET `order_statusnew`='$order_statusnew' WHERE `o_idnew`='$o_idnew'";
 	$r1 = @mysql_query($query2, $dbc); 
 
 	session_start();
@@ -1793,14 +1793,14 @@ $cake_ID = $_POST['cake_ID'];
 }else if($url==42){
 
 
-	$cake_ID = $_POST['cake_ID'];
+	$o_idnew = $_POST['o_idnew'];
 	$usern = $_POST['usern'];
 
 
-	$order_pending="approved";
+	$order_statusnew="approved";
 
 
-	$query2 = "UPDATE `customized_cake` SET `order_pending`='$order_pending' WHERE `cake_ID`='$cake_ID'";
+	$query2 = "UPDATE `order_list` SET `order_statusnew`='$order_statusnew' WHERE `o_idnew`='$o_idnew'";
 	$r1 = @mysql_query($query2, $dbc); 
 
 	session_start();

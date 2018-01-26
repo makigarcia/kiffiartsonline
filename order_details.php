@@ -90,7 +90,7 @@
                       <div class="col-sm-10">
                         <h4><i class="fa fa-shopping-cart"></i> Cake Details </h4> 
                           <!-- <p> <label>Order ID</label> : ?php echo $data['order_ID'];?> </p> -->
-                          <br> <label>Cake Theme</label> : <?php echo $data['cake_theme'];?> </br>
+                          <br> <label>Cake Theme</label> : <?php echo $data['shirt_typenew'];?> </br>
                           <br> <label>Cake Shape and Size</label> : <?php echo $data['cake_shape'];?> <?php echo $data['cake_size'];?> </br>
                           <br> <label>Cake Layer/s</label> : <?php echo $data['cake_layer'];?>  <?php echo $data['cake_layer_add'];?> </br>
                           <br> <label>Cake Frost Type</label> : <?php echo $data['cake_frost'];?> </br>

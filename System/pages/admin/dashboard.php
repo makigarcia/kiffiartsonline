@@ -422,7 +422,7 @@
                               $link = mysql_connect("localhost", "root", "");
                               mysql_select_db("kiffiarts", $link);
                               
-                              $result = mysql_query("SELECT * FROM customized_cake WHERE order_pending='pending'", $link);
+                              $result = mysql_query("SELECT * FROM order_list WHERE order_statusnew='pending'", $link);
                               $num_rows = mysql_num_rows($result);
 
                               $resultadd = mysql_query("SELECT * FROM rmd_orderlist WHERE status='pending'", $link);
@@ -446,7 +446,7 @@
                               $link = mysql_connect("localhost", "root", "");
                               mysql_select_db("mrynas", $link);
                               
-                              $result = mysql_query("SELECT * FROM customized_cake WHERE order_pending='confirmed'", $link);
+                              $result = mysql_query("SELECT * FROM order_list WHERE order_statusnew='confirmed'", $link);
                               $num_rows = mysql_num_rows($result);
 
                               $resultadd = mysql_query("SELECT * FROM rmd_orderlist WHERE status='confirmed'", $link);
@@ -472,7 +472,7 @@
                               $link = mysql_connect("localhost", "root", "");
                               mysql_select_db("mrynas", $link);
                               
-                              $result = mysql_query("SELECT * FROM customized_cake WHERE order_pending='approved'", $link);
+                              $result = mysql_query("SELECT * FROM order_list WHERE order_statusnew='approved'", $link);
                               $num_rows = mysql_num_rows($result);
 
                               $resultadd = mysql_query("SELECT * FROM rmd_orderlist WHERE status='approved'", $link);
@@ -557,14 +557,14 @@ echo "Deliver/Pickup for " . date("F j, Y") . "<br>";
                                     
                                  </tr>
                               </thead>
-                              <?php      $ai = mysql_query("SELECT Count(`cake_ID`) FROM `customized_cake` WHERE `cake_duedate`=CURDATE()");
+                              <?php      $ai = mysql_query("SELECT Count(`o_idnew`) FROM `order_list` WHERE `d_datenew`=CURDATE()");
                $a1 = mysql_fetch_array($ai);
                $cnt=$a1[0];
                
                if($cnt!=0){
                
                                  
-                                       $query1 = "SELECT * FROM customized_cake ";
+                                       $query1 = "SELECT * FROM order_list ";
                      $r1 = @mysql_query($query1, $dbc); 
                      while ($row1 = mysql_fetch_array($r1)) {
                           $reserve[][] =  $row1;
@@ -572,7 +572,7 @@ echo "Deliver/Pickup for " . date("F j, Y") . "<br>";
                
                                  
                                        for($i=0;$i<$cnt; $i++){
-                                         $order=$reserve[$i][0]['cake_ID'];
+                                         $order=$reserve[$i][0]['o_idnew'];
                                          $id=$reserve[$i][0]['customer_ID'];
                                          $PA=$reserve[$i][0]['payment_amount'];
                                           $PS=$reserve[$i][0]['payment_status'];
@@ -584,9 +584,9 @@ echo "Deliver/Pickup for " . date("F j, Y") . "<br>";
 
 
                                           
-                                             $qtl = mysql_query("SELECT cake_ID FROM  customized_cake WHERE cake_ID='$order'");
+                                             $qtl = mysql_query("SELECT o_idnew FROM  order_list WHERE o_idnew='$order'");
                                          $t1 = mysql_fetch_array($qtl);
-                                         $cake_ID=$t1[0];
+                                         $o_idnew=$t1[0];
                                  
                                  
                                          $query2 = "SELECT fname, lname, phone_num  FROM customer WHERE customer_ID='$id'";
@@ -601,18 +601,18 @@ echo "Deliver/Pickup for " . date("F j, Y") . "<br>";
                                          $usrcompletename3 = $row2['phone_num'];
                                  
                                          
-                                          if($reserve[$i][0]['order_pending']=="approved"){
-                                         $ddate1=strtotime($reserve[$i][0]['cake_duedate']);
+                                          if($reserve[$i][0]['order_statusnew']=="approved"){
+                                         $ddate1=strtotime($reserve[$i][0]['d_datenew']);
                                          $ddate=date("F j, Y",$ddate1 );
                                  
                                          echo '          <tr>';
                                         
                                          echo '          <td>'.$date = $ddate.'</td>';
-                                          echo '          <td>'.$diagnosis = $reserve[$i][0]['cake_time'].'</td>';
+                                          echo '          <td>'.$diagnosis = $reserve[$i][0]['d_timenew'].'</td>';
                                          echo '          <td>'.$name = $usrcompletename2.'</td>';       
-                                         echo '          <td class="hidden">'.$tname = $cake_ID.'  cake</td>';
-                                         // echo '          <td>'.$diagnosis = $reserve[$i][0]['cake_theme'].'</td>';  
-                                         echo '          <td>'.$cake = $reserve[$i][0]['cake_price'].'</td>';   
+                                         echo '          <td class="hidden">'.$tname = $o_idnew.'  cake</td>';
+                                         // echo '          <td>'.$diagnosis = $reserve[$i][0]['shirt_typenew'].'</td>';  
+                                         echo '          <td>'.$cake = $reserve[$i][0]['pricenew'].'</td>';   
                                         
                                          echo '          <td>'.$service = $reserve[$i][0]['payment_amount'].'</td>';  
                                          echo '          <td>'.$name = $usrcompletename3.'</td>';   
@@ -620,14 +620,14 @@ echo "Deliver/Pickup for " . date("F j, Y") . "<br>";
 
                                            <?php echo '<td>';?>
                               <form method=POST id="form4_<?php echo $i;?>" action="secretary-prescription.php">
-                                 <?php echo '<input type="hidden" name="cake_ID" value="' .$cake_ID. '" >';?>
+                                 <?php echo '<input type="hidden" name="o_idnew" value="' .$o_idnew. '" >';?>
                                  <a href="#" class="btndashboard edittreat" 
                                     data-am="<?php echo $BN; ?>" 
                                     data-stat="<?php echo $DV;?>"
                                     data-one="<?php echo $DN;?>"
                                     data-two="<?php echo $PN;?>"
 
-                                    data-code="<?php echo $cake_ID; ?>"
+                                    data-code="<?php echo $o_idnew; ?>"
                                     style="background: #F39C12;" data-toggle="modal" data-target=".edit-treat"> Update</a></td>
                               </form>
                               <?php echo '</td>';?>
@@ -635,7 +635,7 @@ echo "Deliver/Pickup for " . date("F j, Y") . "<br>";
           
             <?php echo '<td>';?>
             <form method=POST id="form5_<?php echo $i;?>" action="results.php">
-            <?php echo '<input type="hidden" name="cake_ID" value="' .$order. '" >';?>
+            <?php echo '<input type="hidden" name="o_idnew" value="' .$order. '" >';?>
             <?php echo'<input type="hidden" name="usern" value="' .$usern. '" >'; ?>
             <?php echo'<input type="hidden" name="url" value="7" >'; ?>
             <a href="#" onclick="confirm_pres3(<?php echo $i;?>)" class="btndashboard" style="background: #DD4B39;"> Deliver</a></td>

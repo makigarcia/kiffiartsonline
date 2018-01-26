@@ -257,25 +257,25 @@
                                                 <th>Action</th>
                                              </tr>
                                           </thead>
-                                          <?php      $ai = mysql_query("SELECT Count(`cake_ID`) FROM `customized_cake`");
+                                          <?php      $ai = mysql_query("SELECT Count(`o_idnew`) FROM `order_list`");
                                              $a1 = mysql_fetch_array($ai);
                                              $cnt=$a1[0];
                                              
                                              if($cnt!=0){
                                              
-                                                   $query1 = "SELECT * FROM customized_cake";
+                                                   $query1 = "SELECT * FROM order_list";
                                                    $r1 = @mysql_query($query1, $dbc); 
                                                    while ($row1 = mysql_fetch_array($r1, MYSQL_ASSOC)) {
                                                         $reserve[][] =  $row1;
                                                    }
                                              
                                                    for($i=0;$i<$cnt; $i++){
-                                                     $order=$reserve[$i][0]['cake_ID'];
+                                                     $order=$reserve[$i][0]['o_idnew'];
                                                      $id=$reserve[$i][0]['customer_ID'];
                                                       
-                                                         $qtl = mysql_query("SELECT cake_ID FROM  customized_cake WHERE cake_ID='$order'");
+                                                         $qtl = mysql_query("SELECT o_idnew FROM  order_list WHERE o_idnew='$order'");
                                                      $t1 = mysql_fetch_array($qtl);
-                                                     $cake_ID=$t1[0];
+                                                     $o_idnew=$t1[0];
                                              
                                              
                                                      $query2 = "SELECT fname, lname, phone_num  FROM customer WHERE customer_ID='$id'";
@@ -290,24 +290,24 @@
                                                      $usrcompletename3 = $row2['phone_num'];
                                              
                                                      
-                                                      if($reserve[$i][0]['order_pending']=="pending"){
-                                                     $ddate1=strtotime($reserve[$i][0]['cake_duedate']);
+                                                      if($reserve[$i][0]['order_statusnew']=="pending"){
+                                                     $ddate1=strtotime($reserve[$i][0]['d_datenew']);
                                                      $ddate=date("F j, Y",$ddate1 );
                                              
                                                      echo '          <tr>';
                                                      echo '          <td>'.$date = $ddate.'</td>';
                                                      echo '          <td>'.$name = $usrcompletename2.'</td>';         
-                                                     echo '          <td class="hidden">'.$tname = $cake_ID.'  cake</td>';
-                                                     echo '          <td>'.$diagnosis = $reserve[$i][0]['cake_theme'].'</td>';   
-                                                     echo '          <td>'.$service = $reserve[$i][0]['cake_price'].'</td>';  
+                                                     echo '          <td class="hidden">'.$tname = $o_idnew.'  cake</td>';
+                                                     echo '          <td>'.$diagnosis = $reserve[$i][0]['shirt_typenew'].'</td>';   
+                                                     echo '          <td>'.$service = $reserve[$i][0]['pricenew'].'</td>';  
                                                      echo '          <td>'.$name = $usrcompletename3.'</td>';    ?>
                                           <td><a href="customer_search.php?order=<?php echo $order;?>"  class="btndashboard" style="background: #227da0;">view</a></td>
                                           <?php
-                                             if($reserve[$i][0]['order_pending']=="pending"){
+                                             if($reserve[$i][0]['order_statusnew']=="pending"){
                                              ?>
                                           <?php echo '<td>';?>
                                           <form method=POST id="form2_<?php echo $i;?>" action="results.php">
-                                             <?php echo '<input type="hidden" name="cake_ID" value="' .$cake_ID. '" >';?>
+                                             <?php echo '<input type="hidden" name="o_idnew" value="' .$o_idnew. '" >';?>
                                              <?php echo'<input type="hidden" name="usern" value="' .$usern. '" >'; ?>
                                              <?php echo'<input type="hidden" name="url" value="20" >'; ?>
                                              <a href="#" onclick="confirm_pres1(<?php echo $i;?>)" class="btndashboard" style="background: #e48e35;"> confirm</a>
@@ -318,7 +318,7 @@
                                              ?>
                                           <?php echo '<td>';?>
                                           <form method=POST id="form5_<?php echo $i;?>" action="results.php">
-                                             <?php echo '<input type="hidden" name="cake_ID" value="' .$cake_ID. '" >';?>
+                                             <?php echo '<input type="hidden" name="o_idnew" value="' .$o_idnew. '" >';?>
                                              <?php echo'<input type="hidden" name="usern" value="' .$usern. '" >'; ?>
                                              <?php echo'<input type="hidden" name="url" value="15" >'; ?>
                                              <a href="#" onclick="confirm_pres3(<?php echo $i;?>)" class="btndashboard" style="background: #DD4B39;"> delete</a>
