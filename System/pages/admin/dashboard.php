@@ -393,7 +393,7 @@
                   <i class="fa fa-angle-left pull-right"></i>
                   </span>
                   </a>
-                  <ul class=" active treeview-menu">
+                  <ul class="treeview-menu">
                      <li ><a href="daily_report.php"><i class="fa fa-circle-o"></i> Daily Succesful Report</a></li>
                      <li ><a href="daily_report1.php"><i class="fa fa-circle-o"></i> Daily Unsuccesful Report</a></li>
                      <li><a href="monthly_report.php"><i class="fa fa-circle-o"></i> Monthly Succesful Report</a></li>

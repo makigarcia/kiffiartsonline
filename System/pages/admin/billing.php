@@ -132,43 +132,44 @@
                <!-- sidebar menu: : style can be found in sidebar.less -->
                <ul class="sidebar-menu">
                   <li class="header">MAIN NAVIGATION</li>
-                  <li class=" treeview">
+                  <li class="treeview">
                      <a href="dashboard.php">
                      <i class="fa fa-dashboard"></i> <span>Dashboard</span>
                      </a>
                   </li>
                   <!--Account Information menu-->
-                  <li class=" treeview">
+                  <li class="treeview">
                      <a href="#">
                      <i class="fa fa-edit"></i> <span>Manage Orders</span>
                      <span class="pull-right-container">
                      <i class="fa fa-angle-left pull-right"></i>
                      </span>
                      </a>
-                     <ul class="treeview-menu">
-                        <li><a href="pending-orders.php"><i class="fa fa-circle-o"></i> Pending Orders</a></li>
+                       <ul class="treeview-menu">
+                        
+                        <li ><a href="pending-orders.php"><i class="fa fa-circle-o"></i> Pending Orders</a></li>
                         <li ><a href="deliver-orders.php"><i class="fa fa-circle-o"></i> Confirmed Orders</a></li>
-                        <li ><a href="approved-orders.php"><i class="fa fa-circle-o"></i> Confirmed Orders</a></li>
+                        <li ><a href="approved-orders.php"><i class="fa fa-circle-o"></i> Approved Orders</a></li>
                      </ul>
                   </li>
-                  <li class=" treeview">
+                  <li class="treeview">
                      <a href="customer-files.php">
                      <i class="fa fa-files-o"></i><span>Customer Files</span>
                      </a>
                   </li>
-                  <li class=" active treeview">
+                    <li class="active treeview">
                      <a href="billing.php">
                      <i class="fa  fa-shopping-cart"></i><span>Delivered/Picked-up Orders</span>
                      </a>  
                   </li>
-                  <li class=" treeview">
+                  <li class="treeview">
                      <a href="pricelist.php">
-                     <i class="fa fa-user-md"></i><span>Price List</span>
+                     <i class="fa fa-user-md"></i><span>Price List</span>  
                      </a>  
                   </li>
                   <li class=" treeview">
                      <a href="#">
-                     <i class="fa fa-edit"></i> <span>Manage Ready-Made Designs</span>
+                     <i class="fa fa-edit"></i> <span>Manage Ready-Made Design</span>
                      <span class="pull-right-container">
                      <i class="fa fa-angle-left pull-right"></i>
                      </span>
@@ -178,14 +179,14 @@
                         <li><a href="edit-readymade.php"><i class="fa fa-circle-o"></i> Edit Ready-Made Design</a></li>
                      </ul>
                   </li>
-                    <li class="treeview">
+                     <li class="treeview">
                   <a href="#">
                   <i class="fa fa-edit"></i> <span>Report List</span>
                   <span class="pull-right-container">
                   <i class="fa fa-angle-left pull-right"></i>
                   </span>
                   </a>
-                  <ul class=" active treeview-menu">
+                  <ul class="treeview-menu">
                      <li ><a href="daily_report.php"><i class="fa fa-circle-o"></i> Daily Succesful Report</a></li>
                      <li ><a href="daily_report1.php"><i class="fa fa-circle-o"></i> Daily Unsuccesful Report</a></li>
                      <li><a href="monthly_report.php"><i class="fa fa-circle-o"></i> Monthly Succesful Report</a></li>
@@ -373,7 +374,7 @@
                        $row5['lname'] = ucwords($row5['lname']);
                        $usrcompletename4 = $row4['fname']." ".$row5['lname'];
                        
-                       if($reserves[$c][0]['catalog_status']=="pick-uped"){
+                       if($reserves[$c][0]['status']=="pick-uped"){
                        $ddate1=strtotime($reserves[$c][0]['d_date']);
                        $ddate=date("F j, Y",$ddate1 );
                

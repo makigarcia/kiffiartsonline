@@ -173,7 +173,7 @@ return $ip;
                <!-- sidebar menu: : style can be found in sidebar.less -->
                <ul class="sidebar-menu">
                   <li class="header">MAIN NAVIGATION</li>
-                  <li class=" treeview">
+                  <li class="treeview">
                      <a href="dashboard.php">
                      <i class="fa fa-dashboard"></i> <span>Dashboard</span>
                      </a>
@@ -186,56 +186,57 @@ return $ip;
                      <i class="fa fa-angle-left pull-right"></i>
                      </span>
                      </a>
-                     <ul class="treeview-menu">
-                        <li ><a href="approved-orders.php"><i class="fa fa-circle-o"></i> Approve Orders</a></li>
-                        <li class="active"><a href="pending-orders.php"><i class="fa fa-circle-o"></i> Pending Orders</a></li>
-                        <li ><a href="deliver-orders.php"><i class="fa fa-circle-o"></i> Deliver Orders</a></li>
+                       <ul class="treeview-menu">
+                        
+                        <li ><a href="pending-orders.php"><i class="fa fa-circle-o"></i> Pending Orders</a></li>
+                        <li ><a href="deliver-orders.php"><i class="fa fa-circle-o"></i> Confirmed Orders</a></li>
+                        <li ><a href="approved-orders.php"><i class="fa fa-circle-o"></i> Approved Orders</a></li>
                      </ul>
                   </li>
-                  <li class=" treeview">
+                  <li class="treeview">
                      <a href="customer-files.php">
                      <i class="fa fa-files-o"></i><span>Customer Files</span>
                      </a>
                   </li>
-                   <li class="treeview">
+                    <li class="treeview">
                      <a href="billing.php">
-                     <i class="fa  fa-shopping-cart"></i><span>Delivered Orders</span>
+                     <i class="fa  fa-shopping-cart"></i><span>Delivered/Picked-up Orders</span>
                      </a>  
                   </li>
                   <li class="treeview">
                      <a href="pricelist.php">
-                     <i class="fa fa-user-md"></i><span>Price List</span>
+                     <i class="fa fa-user-md"></i><span>Price List</span>  
                      </a>  
                   </li>
                   <li class=" treeview">
                      <a href="#">
-                     <i class="fa fa-edit"></i> <span>Manage Cake Catalog</span>
+                     <i class="fa fa-edit"></i> <span>Manage Ready-Made Design</span>
                      <span class="pull-right-container">
                      <i class="fa fa-angle-left pull-right"></i>
                      </span>
                      </a>
                      <ul class="treeview-menu">
-                        <li><a href="readymade-designs.php"><i class="fa fa-circle-o"></i> Add Cake Catalog</a></li>
-                        <li><a href="forms/advanced.html"><i class="fa fa-circle-o"></i> Edit Cake Catalog</a></li>
+                        <li><a href="readymade-designs.php"><i class="fa fa-circle-o"></i> Add Ready-Made Design</a></li>
+                        <li><a href="edit-readymade.php"><i class="fa fa-circle-o"></i> Edit Ready-Made Design</a></li>
                      </ul>
                   </li>
-                    <li class="treeview">
+                     <li class="treeview">
                   <a href="#">
                   <i class="fa fa-edit"></i> <span>Report List</span>
                   <span class="pull-right-container">
                   <i class="fa fa-angle-left pull-right"></i>
                   </span>
                   </a>
-                  <ul class=" active treeview-menu">
+                  <ul class="treeview-menu">
                      <li ><a href="daily_report.php"><i class="fa fa-circle-o"></i> Daily Succesful Report</a></li>
                      <li ><a href="daily_report1.php"><i class="fa fa-circle-o"></i> Daily Unsuccesful Report</a></li>
                      <li><a href="monthly_report.php"><i class="fa fa-circle-o"></i> Monthly Succesful Report</a></li>
                      <li><a href="monthly_report1.php"><i class="fa fa-circle-o"></i> Monthly Unsuccesful Report</a></li>
                   </ul>
                </li>
-                        <li class="active treeview">
+                  <li class="active treeview">
                      <a href="system_log.php">
-                     <i class="fa fa-users"></i><span>System Log</span>
+                     <i class="fa  fa-cog"></i><span>System log</span>
                      </a>  
                   </li>
                </ul>
