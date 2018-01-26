@@ -513,7 +513,7 @@
                 <div class="row">
                     <div id="myWidget" class="ui-widget">
                         <div class="left column">
-                            <div class="ui-widget-header ui-corner-top">Logos</div>
+                            <div class="ui-widget-header ui-corner-top">Logos (Drag and drop)</div>
                             <div class="ui-widget-content ui-corner-bottom">
                                 <ul id="fig_list">
                                     
@@ -544,7 +544,7 @@
                             </div>
 
 
-                            <div class="ui-widget-header ui-corner-top"> Images <!-- <input type="text" size="20" id="other_figurine" name="figurine_other" placeholder="Others please specify"> --></div> 
+                            <div class="ui-widget-header ui-corner-top"> Images (Drag and drop) <!-- <input type="text" size="20" id="other_figurine" name="figurine_other" placeholder="Others please specify"> --></div> 
 
                             <div class="ui-widget-content ui-corner-bottom">
                                 <ul id="fig_list">

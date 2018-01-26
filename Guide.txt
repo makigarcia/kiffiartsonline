@@ -1,0 +1,40 @@
+PHP files used
+
+1.
+START DESIGNING module
+localhost/kiffiarts/customization/index.php
+
+Submit order ("ORDER NOW" button) at the end of customization
+localhost/kiffiarts/customization/ordersent.php
+
+Calculation of tentative amount
+localhost/kiffiarts/customization/js/calcudisplaycake.php
+
+(nandun na yung detailed instructions sa pics na sinend ko sa messenger)
+
+--kahit wag na sundin yung codes nina reese yung paano kinuha yung prices. if magawa mo own style mo, please.
+
+-----
+
+2.
+Customer registration
+localhost/kiffiarts/index.php
+
+After registration, submits to
+localhost/kiffiarts/kiffiarts_registrationresults.php
+--dito ko tinry ilagay yung verify email codes namin na hindi nagwowork
+--eto ang gamitin na account
+Username: kiffiartsprintshop@gmail.com
+Password: kAratekid3?
+
+-----
+
+3.
+Add to Cart
+--wala pa kame nito, hindi namin alam paano
+
+-----
+
+--hindi na ako nagdelete ng files kasi baka connected pa sila. yan lang naman ata yung files na gagamitin mo.
+
+THANK YOU!
