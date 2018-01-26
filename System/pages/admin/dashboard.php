@@ -425,7 +425,7 @@
                               $result = mysql_query("SELECT * FROM customized_cake WHERE order_pending='pending'", $link);
                               $num_rows = mysql_num_rows($result);
 
-                              $resultadd = mysql_query("SELECT * FROM rmd_orderlist WHERE rmd_status='pending'", $link);
+                              $resultadd = mysql_query("SELECT * FROM rmd_orderlist WHERE status='pending'", $link);
                               $num_rowsadd = mysql_num_rows($resultadd);
                               
                               ?>                   
@@ -449,7 +449,7 @@
                               $result = mysql_query("SELECT * FROM customized_cake WHERE order_pending='confirmed'", $link);
                               $num_rows = mysql_num_rows($result);
 
-                              $resultadd = mysql_query("SELECT * FROM rmd_orderlist WHERE rmd_status='confirmed'", $link);
+                              $resultadd = mysql_query("SELECT * FROM rmd_orderlist WHERE status='confirmed'", $link);
                               $num_rowsadd = mysql_num_rows($resultadd);
                               
                               
@@ -475,7 +475,7 @@
                               $result = mysql_query("SELECT * FROM customized_cake WHERE order_pending='approved'", $link);
                               $num_rows = mysql_num_rows($result);
 
-                              $resultadd = mysql_query("SELECT * FROM rmd_orderlist WHERE rmd_status='approved'", $link);
+                              $resultadd = mysql_query("SELECT * FROM rmd_orderlist WHERE status='approved'", $link);
                               $num_rowsadd = mysql_num_rows($resultadd);
                               
                               

@@ -353,7 +353,7 @@
                                                 
                                                 if($cnt!=0){
                                                 
-                                                $query1 = "SELECT * FROM rmd_orderlist ORDER BY `rmdo_date` ASC";
+                                                $query1 = "SELECT * FROM rmd_orderlist ORDER BY `o_date` ASC";
                                                    $r1 = @mysql_query($query1, $dbc); 
                                                 while ($row1 = mysql_fetch_array($r1, MYSQL_ASSOC)) {
                                                  $reserves[][] =  $row1;
@@ -387,8 +387,8 @@
                                                 $usrcompletename4 = $row4['fname']." ".$row5['lname'];
                                                 $num = $row7['phone_num'];
                                                 
-                                                if($reserves[$c][0]['rmd_status']=="pending"){
-                                                $ddate1=strtotime($reserves[$c][0]['rmdo_date']);
+                                                if($reserves[$c][0]['status']=="pending"){
+                                                $ddate1=strtotime($reserves[$c][0]['o_date']);
                                                                     $ddate=date("F j, Y",$ddate1 );
                                                  
                                                       echo '          <tr>';
@@ -396,11 +396,11 @@
                                                       echo '          <td>'.$name = $usrcompletename4.'</td>';         
                                                       echo '          <td class="hidden">'.$tname = $orderrmd_id.'  cake</td>';
                                                       // echo '          <td>'.$diagnosis = $reserves[$c][0]['design_code'].'</td>';   
-                                                      echo '          <td>'.$service = $reserves[$c][0]['rmd_price'].'</td>';  
+                                                      echo '          <td>'.$service = $reserves[$c][0]['shirt_price'].'</td>';  
                                                       echo '          <td>'.$name = $num.'</td>';    ?>
                                              <td><a href="readymade_search.php?orderrmd_id=<?php echo $orderrmd_id;?>"  class="btndashboard" style="background: #227da0;">view</a></td>
                                              <?php
-                                                if($reserves[$c][0]['rmd_status']=="pending"){
+                                                if($reserves[$c][0]['status']=="pending"){
                                                 ?>
                                              <?php echo '<td>';?>
                                              <form method=POST id="form2_<?php echo $c;?>" action="results.php">
