@@ -300,7 +300,7 @@
                                     <p> <label>Shirt Color</label> : <?php echo $rowa['shirtcolor'];?> </p>
                                     <p> <label>Shirt Size</label> : <?php echo $rowa['shirtsize'];?> </p>
                      
-                                     <p> <label>Shirt Amount</label> : <?php echo $rowa['shirt_price'] * $rowa['dedi_catalog'] . '.00' ;?>  
+                                     <p> <label>Shirt Amount</label> : <?php echo $rowa['shirt_price'] ;?>  
                                        <!--form method=POST id="form4_<?php echo $i;?>" action="secretary-prescription.php">
                                           <?php echo '<input type="hidden" name="orderrmd_id" value="' .$value. '" >';?>
                                           <a href="#" class="btndashboard edittreat" 

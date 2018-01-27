@@ -1,73 +1,11 @@
-<?php   
- session_start();  
- $connect = mysqli_connect("localhost", "root", "", "kiffiarts");  
- if(isset($_POST["add_to_cart"]))  
- {  
-      if(isset($_SESSION["shopping_cart"]))  
-      {  
-           $item_array_id = array_column($_SESSION["shopping_cart"], "item_id");  
-           if(!in_array($_GET["id"], $item_array_id))  
-           {  
-                $count = count($_SESSION["shopping_cart"]);  
-                $item_array = array(  
-                     'item_id'               =>     $_GET["id"],  
-                     'order'               =>     $_POST["hidden_number"], 
-                     'item_size'               =>     $_POST["shirtsize"],
-                     'item_color'               =>     $_POST["shirtcolor"],  
-                     'item_name'               =>     $_POST["hidden_name"],  
-                     'item_price'          =>     $_POST["hidden_price"],  
-                     'item_quantity'          =>     $_POST["quantity"],
-                     'sesh'          =>     $_SESSION['customer_ID']  
-                );  
-                $_SESSION["shopping_cart"][$count] = $item_array;  
-           }  
-           else  
-           {  
-                $count = count($_SESSION["shopping_cart"]);  
-                $item_array = array(  
-                     'item_id'               =>     $_GET["id"],  
-                     'order'               =>     $_POST["hidden_number"],
-                     'item_size'               =>     $_POST["shirtsize"],
-                     'item_color'               =>     $_POST["shirtcolor"],   
-                     'item_name'               =>     $_POST["hidden_name"],  
-                     'item_price'          =>     $_POST["hidden_price"],  
-                     'item_quantity'          =>     $_POST["quantity"],
-                     'sesh'          =>     $_SESSION['customer_ID']   
-                );  
-                $_SESSION["shopping_cart"][$count] = $item_array;  
-           }  
-      }  
-      else  
-      {  
-           $item_array = array(  
-                'item_id'               =>     $_GET["id"],  
-                'order'               =>     $_POST["hidden_number"],  
-                'item_size'               =>     $_POST["shirtsize"],
-                     'item_color'               =>     $_POST["shirtcolor"], 
-                'item_name'               =>     $_POST["hidden_name"],  
-                'item_price'          =>     $_POST["hidden_price"],  
-                'item_quantity'          =>     $_POST["quantity"],
-                'sesh'          =>     $_SESSION['customer_ID']   
-           );  
-           $_SESSION["shopping_cart"][0] = $item_array;  
-      }  
- }  
- if(isset($_GET["action"]))  
- {  
-      if($_GET["action"] == "delete")  
-      {  
-           foreach($_SESSION["shopping_cart"] as $keys => $values)  
-           {  
-                if($values["item_id"] == $_GET["id"])  
-                {  
-                     unset($_SESSION["shopping_cart"][$keys]);  
-                     echo '<script>alert("Item Removed")</script>';  
-                     echo '<script>window.location="gallery.php"</script>';  
-                }  
-           }  
-      }  
- }  
- ?>
+<?php
+
+  $connect = mysql_connect("localhost", "root", "", "kiffiarts");
+  $query = "SELECT * FROM readymadedesigns";
+  $result = mysql_query($connect, $query);
+
+  session_start();
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -119,129 +57,8 @@
     </div> <!-- #Header Starts -->
 
 
-<!-- cart -->
 
-<br />  
-           <div class="container" style="width:1000px;"> 
-           <h5 align="center"></h5><br />   
-                <h3 align="center"><strong>READY-MADE DESIGNS</strong></h3><br /> 
-                 
-                <?php  
-                $query = "SELECT * FROM readymadedesigns ORDER BY design_id ASC";  
-                $result = mysqli_query($connect, $query);
-
-                $order_number = mt_rand(1,100000);;
-
-                if(mysqli_num_rows($result) > 0)  
-                {  
-                     while($row = mysqli_fetch_array($result))  
-                     {  
-                      if ($row ['status']=="Available")
-                      {
-                ?>  
-                <div class="col-md-4">  
-                     <form method="post" action="gallery.php?action=add&id=<?php echo $order_number; ?>">  
-                          <div style="border:1px solid #333; background-color:#f1f1f1; border-radius:5px; padding:16px;" align="center">  
-                               <img src=System/pages/admin/uploads/<?php echo $row['picture']; ?> class="img-responsive" /><br />  
-                               <h4 class="text-info"><?php echo $row["design_code"]; ?></h4>  
-                               <h4 class="text-danger">P <?php echo $row["shirt_price"]; ?></h4>  
-                               <input type="text" name="quantity" class="form-control" placeholder="Quantity" required/>  
-                               <select id="shirtsize" name="shirtsize" placeholder="Size">
-                                  <option value="XS">XS</option>
-                                  <option value="S">S</option>
-                                  <option value="M">M</option>
-                                  <option value="L">L</option>
-                                  <option value="XL">XL</option>
-                                  <option value="XXL">XXL</option>
-                                </select> </td>
-                                <?php if($row['shirt_color']=='Any'){
-                                  echo "
-                                  <select id='shirtcolor' name='shirtcolor'>
-                                    <option value='White'>White</option>
-                                    <option value='Black'>Black</option>
-                                    <option value='Blue'>Blue</option>
-                                    <option value='Red'>Red</option>
-                                  </select>"; }
-                                  else{
-                                    echo "<select id='shirtcolor' name='shirtcolor'>
-                                    <option value='Black'>Black Only</option>
-                                  </select>";
-                                  } ?>
-                                <input type="hidden" name="hidden_number" value="<?php echo $order_number; ?>" /> 
-                               <input type="hidden" name="hidden_name" value="<?php echo $row["design_code"]; ?>" />  
-                               <input type="hidden" name="hidden_price" value="<?php echo $row["shirt_price"]; ?>" />
-                               <input type="hidden" name="hidden_sesh" value="<?php echo $_SESSION['customer_ID']; ?>" />  
-                               <input type="submit" name="add_to_cart" style="margin-top:5px;" class="btn btn-success" value="Add to Cart" />  
-                          </div>  
-                     </form>  
-                </div>  
-                <?php  
-                      }
-                     }  
-                }  
-                ?>  
-                <div style="clear:both"></div>  
-                <br />  
-                <h3>Order Details</h3>  
-                <div class="table-responsive">  
-                     <table class="table table-bordered">  
-                          <tr>  
-                               
-                               <!--th width="10%">Order Number</th-->
-                               <th width="30%">Item Name</th>
-                               <th width="10%">Size</th>  
-                               <th width="10%">Color</th>  
-                               <th width="10%">Quantity</th>  
-                               <th width="20%">Price</th>  
-                               <th width="15%">Total</th>  
-                               <th width="5%">Action</th>  
-                          </tr>  
-                          <?php   
-                          if(!empty($_SESSION["shopping_cart"]))  
-                          {  
-                               $total = 0;  
-                               foreach($_SESSION["shopping_cart"] as $keys => $values)  
-                               {  
-                                if($values["sesh"]==$_SESSION['customer_ID'] ){
-                          ?>  
-                          <tr>  
-                               
-                               <!--td><?php echo $values["order"]; ?></td-->  
-                               <td><?php echo $values["item_name"]; ?></td>  
-                               <td><?php echo $values["item_size"]; ?></td> 
-                               <td><?php echo $values["item_color"]; ?></td> 
-                               <td><?php echo $values["item_quantity"]; ?></td>  
-                               <td>P <?php echo $values["item_price"]; ?></td>  
-                               <td>P <?php echo number_format($values["item_quantity"] * $values["item_price"], 2); ?></td>  
-                               <td><a href="gallery.php?action=delete&id=<?php echo $values["item_id"]; ?>"><span class="text-danger">Remove</span></a></td>  
-                          </tr>  
-                          <?php  
-                                    $total = $total + ($values["item_quantity"] * $values["item_price"]);  
-                                  }
-                               }  
-                          ?>  
-                          <tr>  
-                               <td colspan="5" align="right">Total</td>  
-                               <td align="right">P <?php echo number_format($total, 2); ?></td>  
-                               <td></td>  
-                          </tr>  
-                          <?php  
-                          }  
-                          ?>  
-                     </table>  
-                </div>  
-
-           </div>  
-           <form role="form" id="catalog_order" name="catalog_order" method="POST" action="process/catalog_ordersent.php">
-            <center><input type="submit" id="submit" class="btn btn-orange" value="Order Now" disabled /></center>
-           </form>
-
-
-<!-- end of cart -->
-
-
-
-<!-- <div id="foods"  class=" clearfix grid">
+<div id="foods"  class=" clearfix grid">
 
     <p> <h2 class="text-center  wowload fadeInUp"> READY-MADE DESIGNS </h2> </p>
 
@@ -274,7 +91,7 @@
 
 
     
-  </div> -->
+  </div>
 
 
     <!-- <div class="row">
@@ -450,79 +267,6 @@
 <script src="assets/respond/respond.js"></script>
 <script src="assets/gallery/jquery.blueimp-gallery.min.js"></script> <!-- gallery -->
 <!-- <script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js'></script>  -->
-
-
-
-
-
-<script type="text/javascript">
-    function submit_order(design_id, design_code, shirt_price, $form) {
-    $.ajax({
-      url   : "process/catalog_ordersent.php", 
-      type  : "POST",
-      cache : false,
-      data  : $form.serialize() + '&design_id=' + design_id + '&design_code=' + design_code + '&shirt_price=' + shirt_price,
-      success: function(response) {
-
-        swal(response);
-        if(response == "ORDER SENT! <p> Thank You for Ordering! </p>")  {
-          } 
-      }
-    });
-  }
-
-
-      $('#submit').click(function(){ /* when the submit button in the modal is clicked, submit the form */
-        swal({
-          title: "Are you sure?",
-          type: "warning",
-          showCancelButton: true,
-          confirmButtonColor: "#ff5c33",
-          confirmButtonText: "Order Now!",
-          closeOnConfirm: false
-        },
-
-        
-        function(isConfirm){
-          if (isConfirm) {
-            // console.log($('#shirt_price').html());
-            submit_order($('#design_id').html(), $('#design_code').html(), $('#shirt_price').html(), $('#catalog_order'));
-            //swal("Deleted!", "Your imaginary file has been deleted.", "success");
-          } 
-        });
-
-        return false;
-      });
-  </script>
-
-  <script type="text/javascript">
-
-$(function(){
-     $("#schedule").datepicker({
-         minDate: 3, //1 week before
-         dateFormat: "yy-m-d",
-         changeMonth: true,
-         numberOfMonths: 1,
-         changeYear: true,         
-     }).on('change', function() {
-      if($('#schedule').val() != "")
-      {
-        $('#submit').prop('disabled', false);
-        //console.log("hello");
-      }
-      else 
-      {
-        $('#submit').prop('disabled', true);
-      }
-    });
- });
-
-</script>
-
-
-
-
-
 
 <!-- Start of LiveChat (www.livechatinc.com) code -->
 <script type="text/javascript">
