@@ -564,7 +564,7 @@ $(function(){
 <!-- Start of LiveChat (www.livechatinc.com) code -->
 <script type="text/javascript">
 window.__lc = window.__lc || {};
-window.__lc.license = 9327300;
+window.__lc.license = 9447515;
 (function() {
   var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
   lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';

@@ -6,7 +6,7 @@
 <html>
    <head>
       <?php
-            date_default_timezone_set("Canada/Pacific");
+            date_default_timezone_set("Asia/Manila");
          session_start();  
          if(!empty($_POST['customersearchid'])){
          
@@ -540,7 +540,7 @@ echo "Deliver/Pickup for " . date("F j, Y") . "<br>";
             <tr>
             <th class="hidden">Order Date</th>
                                     
-                                    <th>Order Date</th>
+                                    <th>Delivery Date</th>
                                     <th>Order Time </th>
                                     <th>Customer Name </th>
 
@@ -551,7 +551,7 @@ echo "Deliver/Pickup for " . date("F j, Y") . "<br>";
 
                                     <th>Contact Number</th>
                                     <th>Service Details</th>
-                                    <th>Update Service Details</th>
+                                    <th hidden>Update Service Details</th>
                                     <th>Action</th>
                                     <th>Action</th>
                                     
@@ -618,8 +618,8 @@ echo "Deliver/Pickup for " . date("F j, Y") . "<br>";
                                          echo '          <td>'.$name = $usrcompletename3.'</td>';   
                                           echo '          <td>'.$service = $reserve[$i][0]['branch_name'].' '.$service = $reserve[$i][0]['del_venue'].' </td>';  ?>
 
-                                           <?php echo '<td>';?>
-                              <form method=POST id="form4_<?php echo $i;?>" action="secretary-prescription.php">
+                                           <!--<?php echo '<td>';?>-->
+                              <!--form method=POST id="form4_<?php echo $i;?>" action="secretary-prescription.php">
                                  <?php echo '<input type="hidden" name="o_idnew" value="' .$o_idnew. '" >';?>
                                  <a href="#" class="btndashboard edittreat" 
                                     data-am="<?php echo $BN; ?>" 
@@ -629,7 +629,7 @@ echo "Deliver/Pickup for " . date("F j, Y") . "<br>";
 
                                     data-code="<?php echo $o_idnew; ?>"
                                     style="background: #F39C12;" data-toggle="modal" data-target=".edit-treat"> Update</a></td>
-                              </form>
+                              </form-->
                               <?php echo '</td>';?>
                               <td><a href="customer_search.php?order=<?php echo $order;?>"  class="btndashboard" style="background: #227da0;">View</a></td>
           

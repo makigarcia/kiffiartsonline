@@ -264,6 +264,7 @@
                                        
                                        for($c=0;  $c<$b1;$c++){
                                          $price_ID=$storeArray2[$c][0]['price_ID'];
+                                         $G=$storeArray2[$c][0]['textilepaint'];
                                          $A=$storeArray2[$c][0]['ordinaryrv'];
                                          $B = $storeArray2[$c][0]['reflectorized'];
                                          $C = $storeArray2[$c][0]['glowinthedark'];
@@ -274,6 +275,8 @@
                                        
                                        
                                        ?>
+
+
 
                                     <?php
                                 
@@ -433,7 +436,7 @@
       <div class="modal-content">
       <div class="modal-header">
       <button type="button" class="close" data-dismiss="modal">&times;</button>
-      <h4 class="modal-title" style="text-align:center;">Edit Flavor Price List</h4>
+      <h4 class="modal-title" style="text-align:center;">Edit Print Type Price List</h4>
       </div>
       <div class="modal-body">
       <!-- content goes here -->
@@ -442,33 +445,38 @@
       <label class="sr-only" for="form-code">price ID</label>
       <input type="hidden" name="form-code" placeholder="Treatment Code" class="form-code1 form-control" id="form-code">
       <div class="form-group">
-      Vanilla Flavor:
+      Textile Paint:
+      <label class="sr-only" for="form-zero">Wedding Price</label>
+      <input type="text" name="form-zero" placeholder="100.00" class="form-zero0 form-control" id="form-zero">
+      </div>
+      <div class="form-group">
+      Ordinary Rubber Vinyl:
       <label class="sr-only" for="form-one">Wedding Price</label>
       <input type="text" name="form-one" placeholder="price" class="form-one1 form-control" id="form-one">
       </div>        
        <div class="form-group">
-       Ube Flavor:
+      Reflectorized:
       <label class="sr-only" for="form-two">Wedding Price</label>
       <input type="text" name="form-two" placeholder="price" class="form-two1 form-control" id="form-two">
       </div>                     
        <div class="form-group">
-       Red Velvet Flavor:
+       Glow-in-the-Dark:
       <label class="sr-only" for="form-three">Wedding Price</label>
       <input type="text" name="form-three" placeholder="price" class="form-three1 form-control" id="form-three">
       </div>         
        <div class="form-group">
-       Coffee Flavor
+       Gamuza
       <label class="sr-only" for="form-four">Wedding Price</label>
       <input type="text" name="form-four" placeholder="price" class="form-four1 form-control" id="form-four">
       </div>     
           <div class="form-group">
-       Blueberry Flavor:
+      Sublimation:
       <label class="sr-only" for="form-five">Wedding Price</label>
       <input type="text" name="form-five" placeholder="price" class="form-five1 form-control" id="form-five">
       </div>  
 
       <div class="form-group">
-       Strawberry Flavor:
+      Transfer Paper:
       <label class="sr-only" for="form-six">Wedding Price</label>
       <input type="text" name="form-six" placeholder="price" class="form-six1 form-control" id="form-six">
       </div>        
@@ -560,6 +568,7 @@
          $(document).on( "click", '.edittreat',function(e) {
          
                  var code = $(this).data('code');
+                 var zero = $(this).data('zero');
                  var one = $(this).data('one');
                  var two = $(this).data('two');
                  var three = $(this).data('three');
@@ -571,6 +580,7 @@
                  var price = $(this).data('price');
          
                  $(".form-code1").val(code);
+                 $(".form-zero0").val(zero);
                  $(".form-one1").val(one);
                  $(".form-two1").val(two);
                  $(".form-three1").val(three);

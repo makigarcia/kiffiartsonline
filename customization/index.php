@@ -90,13 +90,16 @@
                                         <p>Election Shirt <span id="wedding_id"> <?php  echo "₱".$record['election_price']."";  ?>  </p>
                                     </td>
                                     
-                                    <td><div class="button"><input type="radio" id="theme2" name="shirt_typenew" onchange="updateTotal()"  value="Cotton Shirt =<?php echo $record['cotton_price']; ?>" />   <label for="theme2"> <!-- <img src="images/buttons/bday.png" alt="wed_icon"/> --> </label> </div> 
+                                    <td><div class="button"><input type="radio" id="theme2" name="shirt_typenew" onchange="updateTotal()"  value="Cotton Shirt =<?php echo $record['cotton_price']; ?>" />
+                                      <label for="theme2"> <!-- <img src="images/buttons/bday.png" alt="wed_icon"/> --> </label> </div> 
                                       <p> Cotton Shirt <span id="birthday_id"> <?php echo "₱".$record['cotton_price'].""; ?> </span></p></td>
                                     
-                                    <td><div class="button"> <input type="radio" id="theme3" name="shirt_typenew" onchange="updateTotal()" value="Election Shirt (Own) =<?php echo $record['ownelec_price']; ?>" />  <label for="theme3"> <!-- <img src="images/buttons/dedi.png" alt="wed_icon"/> --> </label> </div>
+                                    <td><div class="button"> <input type="radio" id="theme3" name="shirt_typenew" onchange="updateTotal()" value="Election Shirt (Own) =<?php echo $record['ownelec_price']; ?>" />
+                                      <label for="theme3"> <!-- <img src="images/buttons/dedi.png" alt="wed_icon"/> --> </label> </div>
                                       <p> Own (Election Shirt) <span id="dedi_id"> <?php echo "₱".$record['ownelec_price'].""; ?> </span> </p></td>
                                     
-                                    <td><div class="button"> <input type="radio" id="theme4" name="shirt_typenew" onchange="updateTotal()" value="Cotton Shirt (Own) =<?php echo $record['owncot_price']; ?>" /> <label for="theme4"> <!-- <img src="images/buttons/occ.png" alt="wed_icon"/> --> </label> </div>
+                                    <td><div class="button"> <input type="radio" id="theme4" name="shirt_typenew" onchange="updateTotal()" value="Cotton Shirt (Own) =<?php echo $record['owncot_price']; ?>" />
+                                      <label for="theme4"> <!-- <img src="images/buttons/occ.png" alt="wed_icon"/> --> </label> </div>
                                       <p> Own (Cotton Shirt) <span id="occ_id"> <?php echo "₱".$record['owncot_price'].""; ?> </span></p>  
                                     </td>
                                 </tr>
@@ -104,6 +107,11 @@
                         </table>
 
                     </div>
+
+
+
+
+
                     <div class="form-group">
                         <table class="table">
                             <tbody>
@@ -112,7 +120,7 @@
                                 <div class="col-xs-5">
 
                                   <div class="button">
-                                <input type="radio" id="shape0" name="cake_shape" value="circle" onchange="updateTotal()" />
+                                <input type="radio" id="shape0" name="cake_shape" value="<?php echo $record['circle_default_price']; ?>" onchange="updateTotal()" />
                                     <label for="shape0">Textile Paint <!-- <img src="images/buttons/circle.png" alt="circle_icon"/> --> </label> </div>
 
 

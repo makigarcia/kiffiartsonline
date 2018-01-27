@@ -960,7 +960,7 @@ if($check==1){
 
 	$_SESSION['usern']=$usern;
 	$_SESSION['alert']=1;
-	$_SESSION['goto']="occasion_price.php";
+	$_SESSION['goto']="shirt_price.php";
 	$_SESSION['text']="Service Details Update Done";
 	Header("Location:alerts.php");
 
@@ -1176,7 +1176,7 @@ if($check==1){
 
 	$_SESSION['usern']=$usern;
 	$_SESSION['alert']=1;
-	$_SESSION['goto']="flavor_price.php";
+	$_SESSION['goto']="printtype_price.php";
 	$_SESSION['text']="Service Details Update Done";
 	Header("Location:alerts.php");
 

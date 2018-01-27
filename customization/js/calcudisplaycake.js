@@ -69,6 +69,15 @@ function cakeSizeCirclePrice(){
     }
 }
 
+function textilePaintPrice(){
+    if (document.getElementById('shape0').checked) {
+        setShapeAndColor();
+        price = ($('#shape0').val() == null)? 0 : $('#shape0').val();
+        optionprice += parseFloat(price);
+        var_Shape = "Circle";
+    }
+}
+
 
 function cakeSizeRectPrice(){
     if (document.getElementById('shape2').checked) {

@@ -38,11 +38,11 @@
 <div class="navbar-wrapper">
       <div class="container">
 
-        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="top-nav">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="top-nav" style="background-color: black">
           <div class="container">
             <div class="navbar-header">
               <!-- Logo Starts -->
-              <a class="navbar-brand" href="index.php"> <img src="images/logombh.png" alt="Smiley face"></a>
+              <a class="navbar-brand" href="index.php"> <img src="images/logoboth.jpg" alt="Smiley face" style="width: 50%"></a>
               <!-- #Logo Ends -->
 
 
@@ -73,11 +73,10 @@
 <div id="home">
 <!-- Slider Starts -->
 <div class="banner">
-          <img src="images/marshamallow_cake.jpg" alt="banner" class="img-responsive">
+          <img src="images/img2.jpg" alt="banner" class="img-responsive">
           <div class="caption">
             <div class="caption-wrapper">
-              <div class="caption-info">              
-              <i class="fa fa-birthday-cake fa-5x animated bounceInDown"></i>
+              <div class="caption-info">
 <?php
 include('kiffiarts_server.php');
 
@@ -233,12 +232,40 @@ else
 
 
 
-<!-- Footer Starts -->
-<div class="footer text-center spacer">
-<p class="wowload flipInX"><a href="#"><i class="fa fa-facebook fa-2x"></i></a> <a href="#"><i class="fa fa-instagram fa-2x"></i></a> <a href="#"><i class="fa fa-twitter fa-2x"></i></a> <a href="#"><i class="fa fa-flickr fa-2x"></i></a> </p>
-Copyright © Myrna's Bake House 2017. All rights reserved.
+<!-- ***********  Footer Starts *******************-->
+<div class="footer text-center spacer" style="background-color: black">
+  
+  <div class="row">
+<div class="col-md-1"> </div> <!-- extra space -->
+    
+    <div class="col-md-2"> 
+      <h3 class="text-center  wowload fadeInUp">Follow Us</h3>  <hr> </hr>
+        <p class="wowload flipInX">
+        <a href="https://www.facebook.com/Myrnasbakehouse.Zamboanga/info/?entry_point=page_nav_about_item"><i class="fa fa-facebook fa-2x"></i></a>
+        <a href="https://www.instagram.com"><i class="fa fa-instagram fa-2x"></i></a> 
+        <a href="https://www.twitter.com"><i class="fa fa-twitter fa-2x"></i></a>  
+    </div>
+   
+
+      <div class="col-md-3">
+        <h3 class="text-center  wowload fadeInUp">Branches</h3>  <hr> </hr>
+        <br> Suterville, Zamboanga City, Philippines</br>
+        <br> San Jose Gusu, Zamboanga City, Philippines</br>
+      </div>
+ 
+    <div class="col-md-5">
+      <h3 class="text-center  wowload fadeInUp">Visit Us</h3>  <hr> </hr>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.816130358435!2d122.05966685121865!3d6.912575594980798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x325041e76fdb1347%3A0x53653e623130adb4!2sKiffi+Arts+Print+Shop!5e0!3m2!1sen!2sph!4v1512716623020" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+<div class="col-md-1"> </div> <!-- extra space -->
+  </div> <!-- end of row -->
+
+  <p> </p> <hr> </hr>
+  <b> Copyright © Kiffi Arts Print Shop 2017. All rights reserved. </b>
 </div>
-<!-- # Footer Ends -->
+
+<!-- *****************# Footer Ends *******************-->
 <a href="#home" class="gototop "><i class="fa fa-angle-up  fa-3x"></i></a>
 
 
