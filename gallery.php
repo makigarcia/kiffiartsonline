@@ -89,6 +89,27 @@
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="assets/style.css"> <!-- other design , late -->
 <link rel="stylesheet" href="assets/bootstrap/css/orangepace.css">
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/jquery-ui.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+    <script>
+        jQuery(function($){ // wait until the DOM is ready
+            $("#pickdeldate").datepicker({minDate: 3}).on('change', function() {
+      if($('#pickdeldate').val() != "")
+      {
+        $('#submitcart').prop('disabled', false);
+        //console.log("hello");
+      }
+      else 
+      {
+        $('#submitcart').prop('disabled', true);
+      }
+    });
+        });
+    </script>
+
 </head>
 
 <body>
@@ -109,7 +130,7 @@
                  <li class="hidden"> <a href="#page-top"> </a> </li>
                  <li class="page-scroll"> <a href="home.php">Home</a> </li>
                  <li class="page-scroll"> <a href="profile.php">Profile</a> </li>
-                 <li class="current"> <a href="#foods">Gallery</a></li>
+                 <li class="current"> <a href="gallery.php">Gallery</a></li>
                  <li class="page-scroll"><a href="#" class="mb-control" data-box="#message-box-default">Log Out</a></li>
             </div>
             <!-- #Nav Ends -->
@@ -161,6 +182,13 @@
                                     <option value='Black'>Black</option>
                                     <option value='Blue'>Blue</option>
                                     <option value='Red'>Red</option>
+                                    <option value='Green'>Green</option>
+                                    <option value='Yellow'>Yellow</option>
+                                    <option value='Brown'>Brown</option>
+                                    <option value='Pink'>Pink</option>
+                                    <option value='Cream'>Cream</option>
+                                    <option value='Orange'>Orange</option>
+                                    <option value='Violet'>Violet</option>
                                   </select>"; }
                                   else{
                                     echo "<select id='shirtcolor' name='shirtcolor'>
@@ -181,8 +209,10 @@
                 }  
                 ?>  
                 <div style="clear:both"></div>  
-                <br />  
-                <h3>Order Details</h3>  
+                <br />
+                <center><h4 style="color: red;"><strong>Pick-up at Kiffi Arts Print Shop Suterville branch only. Pick-up time is from 9AM-5PM.</strong></h4></center>  
+                <h3>Order Details</h3>
+                  
                 <div class="table-responsive">  
                      <table class="table table-bordered">  
                           <tr>  
@@ -232,8 +262,9 @@
                 </div>  
 
            </div>  
-           <form role="form" id="catalog_order" name="catalog_order" method="POST" action="process/catalog_ordersent.php">
-            <center><input type="submit" id="submit" class="btn btn-orange" value="Order Now" disabled /></center>
+           <form role="form" id="catalog_order" name="catalog_order" method="POST" action="process/submitcart.php">
+            <center><label for="pickdeldate">Pick-up Date: <input type="text" name="pickdeldate" id="pickdeldate" placeholder="MM-DD-YYYY" /></label><center>
+            <center><input type="submit" id="submitcart" class="btn btn-orange" value="Order Now" disabled /></center>
            </form>
 
 
@@ -498,14 +529,14 @@
   <script type="text/javascript">
 
 $(function(){
-     $("#schedule").datepicker({
+     $("#pickdeldate").datepicker({
          minDate: 3, //1 week before
          dateFormat: "yy-m-d",
          changeMonth: true,
          numberOfMonths: 1,
          changeYear: true,         
      }).on('change', function() {
-      if($('#schedule').val() != "")
+      if($('#pickdeldate').val() != "")
       {
         $('#submit').prop('disabled', false);
         //console.log("hello");
