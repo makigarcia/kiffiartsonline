@@ -23,7 +23,8 @@
                 $count = count($_SESSION["shopping_cart"]);  
                 $item_array = array(  
                      'item_id'               =>     $_GET["id"],  
-                     'order'               =>     $_POST["hidden_number"], 
+                     'order'               =>     $_POST["hidden_number"],
+                     'hideid'               =>     $_POST["hide_id"], 
                      'item_size'               =>     $_POST["shirtsize"],
                      'item_color'               =>     $_POST["shirtcolor"],  
                      'item_name'               =>     $_POST["hidden_name"],  
@@ -39,6 +40,7 @@
                 $item_array = array(  
                      'item_id'               =>     $_GET["id"],  
                      'order'               =>     $_POST["hidden_number"],
+                     'hideid'               =>     $_POST["hide_id"],
                      'item_size'               =>     $_POST["shirtsize"],
                      'item_color'               =>     $_POST["shirtcolor"],   
                      'item_name'               =>     $_POST["hidden_name"],  
@@ -53,7 +55,8 @@
       {  
            $item_array = array(  
                 'item_id'               =>     $_GET["id"],  
-                'order'               =>     $_POST["hidden_number"],  
+                'order'               =>     $_POST["hidden_number"],
+                'hideid'               =>     $_POST["hide_id"],  
                 'item_size'               =>     $_POST["shirtsize"],
                      'item_color'               =>     $_POST["shirtcolor"], 
                 'item_name'               =>     $_POST["hidden_name"],  
@@ -102,6 +105,7 @@
 
 
                                   $cart_id = $values["order"];
+                                  $hide_id = $values["hideid"];
                                   $design_code = $values["item_name"];
                                   $sizecart = $values["item_size"];
                                   $colorcart = $values["item_color"];
@@ -124,7 +128,7 @@
                           <?php  
                                     $total = $total + ($values["item_quantity"] * $values["item_price"]);
 
-                                    $query0 = "INSERT INTO cart (customer_ID, cart_id, design_code, sizecart, colorcart, quantitycart, pricecart, totalcart, pickdeldatecart, orderdatecart, grandtotalcart) VALUES ('$customer_ID', '$cart_id', '$design_code', '$sizecart', '$colorcart', '$quantitycart', '$pricecart', '$totalcart', '$d_date', '$o_date', '$total')";
+                                    $query0 = "INSERT INTO cart (customer_ID, design_id, cart_id, design_code, sizecart, colorcart, quantitycart, pricecart, totalcart, pickdeldatecart, orderdatecart, grandtotalcart) VALUES ('$customer_ID', '$hide_id', '$cart_id', '$design_code', '$sizecart', '$colorcart', '$quantitycart', '$pricecart', '$totalcart', '$d_date', '$o_date', '$total')";
                                   }
                                }  
                           ?>  

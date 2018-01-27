@@ -11,7 +11,8 @@
                 $count = count($_SESSION["shopping_cart"]);  
                 $item_array = array(  
                      'item_id'               =>     $_GET["id"],  
-                     'order'               =>     $_POST["hidden_number"], 
+                     'order'               =>     $_POST["hidden_number"],
+                     'hideid'               =>     $_POST["hide_id"], 
                      'item_size'               =>     $_POST["shirtsize"],
                      'item_color'               =>     $_POST["shirtcolor"],  
                      'item_name'               =>     $_POST["hidden_name"],  
@@ -27,6 +28,7 @@
                 $item_array = array(  
                      'item_id'               =>     $_GET["id"],  
                      'order'               =>     $_POST["hidden_number"],
+                     'hideid'               =>     $_POST["hide_id"],
                      'item_size'               =>     $_POST["shirtsize"],
                      'item_color'               =>     $_POST["shirtcolor"],   
                      'item_name'               =>     $_POST["hidden_name"],  
@@ -41,7 +43,8 @@
       {  
            $item_array = array(  
                 'item_id'               =>     $_GET["id"],  
-                'order'               =>     $_POST["hidden_number"],  
+                'order'               =>     $_POST["hidden_number"],
+                'hideid'               =>     $_POST["hide_id"],  
                 'item_size'               =>     $_POST["shirtsize"],
                      'item_color'               =>     $_POST["shirtcolor"], 
                 'item_name'               =>     $_POST["hidden_name"],  
@@ -195,7 +198,8 @@
                                     <option value='Black'>Black Only</option>
                                   </select>";
                                   } ?>
-                                <input type="hidden" name="hidden_number" value="<?php echo $order_number; ?>" /> 
+                                <input type="hidden" name="hidden_number" value="<?php echo $order_number; ?>" />
+                                <input type="hidden" name="hide_id" value="<?php echo $row["design_id"]; ?>" /> 
                                <input type="hidden" name="hidden_name" value="<?php echo $row["design_code"]; ?>" />  
                                <input type="hidden" name="hidden_price" value="<?php echo $row["shirt_price"]; ?>" />
                                <input type="hidden" name="hidden_sesh" value="<?php echo $_SESSION['customer_ID']; ?>" />  
@@ -218,6 +222,7 @@
                           <tr>  
                                
                                <!--th width="10%">Order Number</th-->
+                               <!--th width="10%">Item ID</th-->
                                <th width="30%">Item Name</th>
                                <th width="10%">Size</th>  
                                <th width="10%">Color</th>  
@@ -236,7 +241,8 @@
                           ?>  
                           <tr>  
                                
-                               <!--td><?php echo $values["order"]; ?></td-->  
+                               <!--td><?php echo $values["order"]; ?></td-->
+                               <!--td><?php echo $values["hideid"]; ?></td-->  
                                <td><?php echo $values["item_name"]; ?></td>  
                                <td><?php echo $values["item_size"]; ?></td> 
                                <td><?php echo $values["item_color"]; ?></td> 
