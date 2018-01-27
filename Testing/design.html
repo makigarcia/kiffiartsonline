@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://cdn.rawgit.com/konvajs/konva/1.7.6/konva.min.js"></script>
+</head>
+
+<body>
+    <div id="container"></div>
+    <script>
+        var width = window.innerWidth;
+        var height = 2000;
+
+        var stage = new Konva.Stage({
+            container: 'container',
+            width: width,
+            height: height
+        });
+
+        var layer = new Konva.Layer();
+        stage.add(layer);
+        var layer2 = new Konva.Layer();
+        stage.add(layer2);
+        var leftimage = new Image();
+        var frontimage = new Image();
+        var backimage = new Image();
+        var rightimage = new Image();
+
+
+        leftimage.onload = function() {
+
+            var left = new Konva.Image({
+                x: 450,
+                y: 1,
+                image: leftimage,
+                width: 400,
+                height: 500,
+                preventDefault: false
+            });
+
+            // add the shape to the layer
+            layer.add(left);
+            left.moveToBottom();
+
+            // add the layer to the stage
+            stage.add(layer);
+        };
+        frontimage.onload = function() {
+
+            var front = new Konva.Image({
+                x: 450,
+                y: 500,
+                image: frontimage,
+                width: 400,
+                height: 500,
+                preventDefault: false
+            });
+
+            // add the shape to the layer
+            layer.add(front);
+            front.moveToBottom();
+
+            // add the layer to the stage
+            stage.add(layer);
+        };
+        backimage.onload = function() {
+
+            var back = new Konva.Image({
+                x: 450,
+                y: 1000,
+                image: backimage,
+                width: 400,
+                height: 500,
+                preventDefault: false
+            });
+
+            // add the shape to the layer
+            layer.add(back);
+            back.moveToBottom();
+            // add the layer to the stage
+            stage.add(layer);
+        };
+        rightimage.onload = function() {
+
+            var right = new Konva.Image({
+                x: 450,
+                y: 1500,
+                image: rightimage,
+                width: 400,
+                height: 500,
+                preventDefault: false
+
+            });
+
+            // add the shape to the layer
+            layer.add(right);
+            right.moveToBottom();
+            // add the layer to the stage
+            stage.add(layer);
+        };
+
+        leftimage.src = 'assets/left.png';
+        frontimage.src = 'assets/center.png';
+        backimage.src = 'assets/center.png';
+        rightimage.src = 'assets/right.png';
+
+
+        function update(activeAnchor) {
+            var group = activeAnchor.getParent();
+
+            var topLeft = group.get('.topLeft')[0];
+            var topRight = group.get('.topRight')[0];
+            var bottomRight = group.get('.bottomRight')[0];
+            var bottomLeft = group.get('.bottomLeft')[0];
+            var image = group.get('Image')[0];
+
+            var anchorX = activeAnchor.getX();
+            var anchorY = activeAnchor.getY();
+
+            // update anchor positions
+            switch (activeAnchor.getName()) {
+                case 'topLeft':
+                    topRight.setY(anchorY);
+                    bottomLeft.setX(anchorX);
+                    break;
+                case 'topRight':
+                    topLeft.setY(anchorY);
+                    bottomRight.setX(anchorX);
+                    break;
+                case 'bottomRight':
+                    bottomLeft.setY(anchorY);
+                    topRight.setX(anchorX);
+                    break;
+                case 'bottomLeft':
+                    bottomRight.setY(anchorY);
+                    topLeft.setX(anchorX);
+                    break;
+            }
+
+            image.position(topLeft.position());
+
+            var width = topRight.getX() - topLeft.getX();
+            var height = bottomLeft.getY() - topLeft.getY();
+            if (width && height) {
+                image.width(width);
+                image.height(height);
+            }
+        }
+
+        function addAnchor(group, x, y, name) {
+            var stage = group.getStage();
+            var layer = group.getLayer();
+
+            var anchor = new Konva.Circle({
+                x: x,
+                y: y,
+                //stroke: '#666',
+                //fill: '#ddd',
+                strokeWidth: 2,
+                radius: 6,
+                name: name,
+                draggable: true,
+                dragOnTop: false
+            });
+
+            anchor.on('dragmove', function() {
+                update(this);
+                layer.draw();
+            });
+            anchor.on('mousedown touchstart', function() {
+                group.setDraggable(false);
+                this.moveToTop();
+            });
+            anchor.on('dragend', function() {
+                group.setDraggable(true);
+                layer.draw();
+            });
+            // add hover styling
+            anchor.on('mouseover', function() {
+                var layer = this.getLayer();
+                document.body.style.cursor = 'crosshair';
+                this.setStrokeWidth(4);
+                layer.draw();
+            });
+            anchor.on('mouseout', function() {
+                var layer = this.getLayer();
+                document.body.style.cursor = 'default';
+                this.setStrokeWidth(2);
+                layer.draw();
+            });
+
+            group.add(anchor);
+        }
+        // cake
+        var cakeimg = new Konva.Image({
+            width: 93,
+            height: 104
+        });
+
+        var cakegroup = new Konva.Group({
+            x: 20,
+            y: 110,
+            draggable: true
+        });
+        layer.add(cakegroup);
+        cakegroup.add(cakeimg);
+        addAnchor(cakegroup, 0, 0, 'topLeft');
+        addAnchor(cakegroup, 93, 0, 'topRight');
+        addAnchor(cakegroup, 93, 104, 'bottomRight');
+        addAnchor(cakegroup, 0, 104, 'bottomLeft');
+
+        var cakeObj = new Image();
+        cakeObj.onload = function() {
+            cakeimg.image(cakeObj);
+            layer.draw();
+        };
+        cakeObj.src = 'assets/cake.png';
+    </script>
+
+
+
+</body>
+</html>
