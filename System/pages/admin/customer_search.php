@@ -261,7 +261,7 @@
                                  $rowa = mysql_fetch_assoc($search_reviewee); 
                                  // $picture = $rowa['picture'];
                                  $o_idnew= $rowa['o_idnew'];
-                                 $CP= $rowa['cake_price'];
+                                 $CP= $rowa['pricenew'];
                               
                               
                               
@@ -290,13 +290,13 @@
                                        <!-- <p> <label>Cake Shape and Size</label> : <?php echo $rowa['cake_shape'];?> <?php echo $rowa['cake_size'];?> </p>
                                        <p> <label>Cake Layer/s</label> : <?php echo $rowa['cake_layer'];?> </p>
                                        <p> <label>Cake Frost Type</label> : <?php echo $rowa['cake_frost'];?> </p> -->
-                                       <p> <label>Shirt Color</label> : <?php echo $rowa['cake_coat_color'];?> </p>
+                                       <p> <label>Shirt Color</label> : <?php echo $rowa['shirt_colornew'];?> </p>
                                        <!-- <p> <label>Cake Flavor</label> : <?php echo $rowa['cake_flavor'];?> </p>
                                        <p> <label>Cake Designs</label> : <?php echo $rowa['candle_selection'];?>  , <?php echo $rowa['figurine_other'];?>  </p>
                                        <p> <label>Dedication Text</label> : <?php echo $rowa['dedicationT'];?> </p> -->
-                                       <p> <label>Quantity</label> : <?php echo $rowa['cake_quant'];?> </p>
+                                       <p> <label>Quantity</label> : <?php echo $rowa['shirt_quantitynew'];?> </p>
                                        <p> <label>Other Concerns</label> : <?php echo $rowa['other_concerns'];?> </p>
-                                       <p> <label>Amount</label> : <?php echo $rowa['cake_price'];?>  
+                                       <p> <label>Amount</label> : <?php echo $rowa['pricenew'];?>  
                                        <!--form method=POST id="form4_<?php echo $i;?>" action="secretary-prescription.php">
                                           <?php echo '<input type="hidden" name="o_idnew" value="' .$value. '" >';?>
                                           <a href="#" class="btndashboard edittreat" 
@@ -311,8 +311,8 @@
                                        <p> <label>Payment Status</label> : <?php echo $rowa['payment_status'];?>  </p>
                                        <br>
                                        <h4><i class="fa fa-shopping-cart"></i> Service Details </h4>
-                                       <p> <label>Service Time</label> : <?php echo $rowa['cake_time'];?> </p>
-                                       <p> <label>Service Date</label> : <?php echo $rowa['cake_duedate'];?> </p>
+                                       <p> <label>Service Time</label> : <?php echo $rowa['d_timenew'];?> </p>
+                                       <p> <label>Service Date</label> : <?php echo $rowa['d_datenew'];?> </p>
                                        <p> <label>Pick-Up Info</label> : <?php echo $rowa['branch_name'];?>  </p>
                                        <p> <label>Delivery Venue</label> : <?php echo $rowa['del_venue'];?>  </p>
                                        <p> <label>Driver Name:</label> : <?php echo $rowa['driver_name'];?>  </p>

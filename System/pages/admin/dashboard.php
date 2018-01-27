@@ -540,7 +540,7 @@ echo "Deliver/Pickup for " . date("F j, Y") . "<br>";
             <tr>
             <th class="hidden">Order Date</th>
                                     
-                                    <th>Order Date To Be Pick-Up/Deliver</th>
+                                    <th>Order Date</th>
                                     <th>Order Time </th>
                                     <th>Customer Name </th>
 

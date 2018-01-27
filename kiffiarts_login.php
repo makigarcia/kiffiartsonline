@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>Myrna's Bake House</title>
+<title>Kiffi Arts Print Shop</title>
 
 <!-- Google fonts -->
 <link href='assets/font/roboto1.css' rel='stylesheet'>
