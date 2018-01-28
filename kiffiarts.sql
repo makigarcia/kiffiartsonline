@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 27, 2018 at 08:05 PM
+-- Generation Time: Jan 28, 2018 at 04:06 PM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 5.6.23
 
@@ -393,7 +393,16 @@ INSERT INTO `logs` (`log_id`, `date`, `user`, `action`, `ip`, `usern`) VALUES
 (365, '2018-01-27 22:07:20', '1', 'Maki logged in', '::1', ''),
 (366, '2018-01-27 22:07:24', '1', 'Maki logged in', '::1', ''),
 (367, '2018-01-28 02:21:41', '1', 'Maki logged in', '::1', ''),
-(368, '2018-01-28 02:56:56', '1', 'Maki logged in', '::1', '');
+(368, '2018-01-28 02:56:56', '1', 'Maki logged in', '::1', ''),
+(369, '2018-01-28 13:32:26', '1', 'Maki logged in', '::1', ''),
+(370, '2018-01-28 21:07:23', '1', 'Maki logged in', '::1', ''),
+(371, '2018-01-28 21:09:44', '1', 'Maki logged in', '::1', ''),
+(372, '2018-01-28 21:39:15', '1', 'Maki logged in', '::1', ''),
+(373, '2018-01-28 21:39:20', '1', 'Maki logged in', '::1', ''),
+(374, '2018-01-28 22:05:00', '1', 'Maki logged in', '::1', ''),
+(375, '2018-01-28 22:05:46', '1', 'Maki logged in', '::1', ''),
+(376, '2018-01-28 22:24:19', '1', 'Maki logged in', '::1', ''),
+(377, '2018-01-28 23:06:14', '1', 'Maki logged in', '::1', '');
 
 -- --------------------------------------------------------
 
@@ -726,7 +735,7 @@ ALTER TABLE `customer`
 -- AUTO_INCREMENT for table `logs`
 --
 ALTER TABLE `logs`
-  MODIFY `log_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=369;
+  MODIFY `log_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=378;
 
 --
 -- AUTO_INCREMENT for table `newdesignprice`
