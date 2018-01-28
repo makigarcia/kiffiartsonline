@@ -120,8 +120,8 @@
                                 <div class="col-xs-5">
 
                                   <div class="button">
-                                <input type="radio" id="shape0" name="cake_shape" value="<?php echo $record['circle_default_price']; ?>" onchange="updateTotal()" />
-                                    <label for="shape0">Textile Paint - 100.00 <!-- <img src="images/buttons/circle.png" alt="circle_icon"/> --> </label> </div>
+                                <input type="radio" id="shape0" name="cake_shape" value="<?php echo $record['textilepaint']; ?>" onchange="updateTotal()" />
+                                    <label for="shape0">Textile Paint = <?php echo $record['textilepaint']; ?> <!-- <img src="images/buttons/circle.png" alt="circle_icon"/> --> </label> </div>
 
                               
 
@@ -131,11 +131,11 @@
                                     <!-- DROP DOWN OPTIONS -->
                                     <select class="form-control circle_select off" id="size_select_C" name="cake_size" onchange="updateTotal()">
                                         <!-- <option selected name=" "  placeholder="choose circle size" value="<?php //echo $record['blank_price']; ?>">Select One</option> -->
-                                        <option name="Default Size 1 = 14 dm x 2.5 =<?php echo $record['circle_default_price']; ?>" value="<?php echo $record['circle_default_price']; ?>">Ordinary Rubber Vinyl = <?php echo $record['circle_default_price']; ?>
+                                        <option name="Default Size 1 = 14 dm x 2.5 =<?php echo $record['circle_default_price']; ?>" value="<?php echo $record['ordinaryrv']; ?>">Ordinary Rubber Vinyl = <?php echo $record['ordinaryrv']; ?>
                                         </option>
-                                        <option name="Small Size 1 =  9 diameter x 2.5 =<?php echo $record['circle_small1_price']; ?>" value="<?php echo $record['circle_small1_price']; ?>">Reflectorized = <?php echo $record['circle_small1_price']; ?>
+                                        <option name="Small Size 1 =  9 diameter x 2.5 =<?php echo $record['circle_small1_price']; ?>" value="<?php echo $record['reflectorized']; ?>">Reflectorized = <?php echo $record['reflectorized']; ?>
                                         </option>
-                                        <option name="Small Size 2 = 7 diameter x 3.5 =<?php echo $record['circle_small2_price']; ?>" value="<?php echo $record['circle_small2_price']; ?>">Glow-in-the-Dark = <?php echo $record['circle_small2_price']; ?>
+                                        <option name="Small Size 2 = 7 diameter x 3.5 =<?php echo $record['circle_small2_price']; ?>" value="<?php echo $record['glowinthedark']; ?>">Glow-in-the-Dark = <?php echo $record['glowinthedark']; ?>
                                         </option>
 
                                         <!-- <option name="Semi-Double Size=16 diameter x 2.5 =<?php echo $record['circle_semi1_price']; ?>" value="<?php echo $record['circle_semi1_price']; ?>">Semi-Double Size=16" dm x 2.5"= <?php echo $record['circle_semi1_price']; ?>
@@ -159,13 +159,13 @@
                                     </script>
 
                                     <div class="button">
-                                <input type="radio" id="sublimation" name="cake_shape" value="<?php echo $record['rect_default_price']; ?>" onchange="updateTotal()" />
-                                    <label for="sublimation">Sublimation  - 250.00 <!-- <img src="images/buttons/circle.png" alt="circle_icon"/> --> </label> </div>
+                                <input type="radio" id="sublimation" name="cake_shape" value="<?php echo $record['sublimation']; ?>" onchange="updateTotal()" />
+                                    <label for="sublimation">Sublimation = <?php echo $record['sublimation']; ?> <!-- <img src="images/buttons/circle.png" alt="circle_icon"/> --> </label> </div>
 
 
                                     <div class="button">
-                                <input type="radio" id="transfer" name="cake_shape" value="<?php echo $record['heart_price']; ?>" onchange="updateTotal()" />
-                                    <label for="transfer">Transfer  - 300.00 <!-- <img src="images/buttons/circle.png" alt="circle_icon"/> --> </label> </div>
+                                <input type="radio" id="transfer" name="cake_shape" value="<?php echo $record['transferpaper']; ?>" onchange="updateTotal()" />
+                                    <label for="transfer">Transfer = <?php echo $record['transferpaper']; ?> <!-- <img src="images/buttons/circle.png" alt="circle_icon"/> --> </label> </div>
 
 
 
