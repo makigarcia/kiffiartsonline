@@ -78,33 +78,6 @@ function textilePaintPrice(){
     }
 }
 
-function rubbervinylPrice(){
-    if (document.getElementById('rubbervinyl').checked) {
-        setShapeAndColor();
-        price = ($('#rubbervinyl').val() == null)? 0 : $('#rubbervinyl').val();
-        optionprice += parseFloat(price);
-        var_Shape = "Circle";
-    }
-}
-
-function sublimationPrice(){
-    if (document.getElementById('sublimation').checked) {
-        setShapeAndColor();
-        price = ($('#sublimation').val() == null)? 0 : $('#sublimation').val();
-        optionprice += parseFloat(price);
-        var_Shape = "Rectangle";
-    }
-}
-
-function transferPrice(){
-    if (document.getElementById('transfer').checked) {
-        setShapeAndColor();
-        price = ($('#transfer').val() == null)? 0 : $('#transfer').val();
-        optionprice += parseFloat(price);
-        var_Shape = "Heart";
-    }
-}
-
 
 function cakeSizeRectPrice(){
     if (document.getElementById('shape2').checked) {
@@ -131,7 +104,6 @@ function cakeSizeHeartPrice(){
 
 // }
 
-// This is where the shape and color will appear depends on the user's choice
 function setShapeAndColor() {
     var shape_src = "";
     var shapecolor;
@@ -249,14 +221,6 @@ function cakeFlavorPrice() { //lahat na dito para madetermine nya anong shape si
         optionprice += parseFloat(price);    
     } 
 
-    // NEW FOR PRICE CALCULATION
-
-    if(document.getElementById('flavorblue').checked) {
-        //strawberry
-        price = $('#strawberry_id').html().replace("₱", "");
-        optionprice += parseFloat(price);    
-    } 
-
     if(document.getElementById('flavor7').checked) {
         //redvelvet
         price = $('#redvelvet_id').html().replace("₱", "");
@@ -310,11 +274,8 @@ function cakeFrostPrice() {
 layerAmount();
 cakeThemePrice();
 cakeSizeCirclePrice();
-textilePaintPrice();
-sublimationPrice();
-transferPrice();
-//cakeSizeRectPrice();
-//cakeSizeHeartPrice();
+cakeSizeRectPrice();
+cakeSizeHeartPrice();
 cakeFlavorPrice();
 cakeFrostPrice();
 //cakeCoating();

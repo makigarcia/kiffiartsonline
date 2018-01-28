@@ -121,30 +121,26 @@
 
                                   <div class="button">
                                 <input type="radio" id="shape0" name="cake_shape" value="<?php echo $record['circle_default_price']; ?>" onchange="updateTotal()" />
-                                    <label for="shape0">Textile Paint - 100.00 <!-- <img src="images/buttons/circle.png" alt="circle_icon"/> --> </label> </div>
+                                    <label for="shape0">Textile Paint <!-- <img src="images/buttons/circle.png" alt="circle_icon"/> --> </label> </div>
 
-                              
 
                                 <div class="button">
                                 <input type="radio" id="shape1" name="cake_shape" value="circle" onchange="updateTotal()" />
-                                    <label for="shape1">Rubber Vinyl  <!-- <img src="images/buttons/circle.png" alt="circle_icon"/> --> </label> </div>
-                                    <!-- DROP DOWN OPTIONS -->
+                                    <label for="shape1">Rubber Vinyl <!-- <img src="images/buttons/circle.png" alt="circle_icon"/> --> </label> </div>
                                     <select class="form-control circle_select off" id="size_select_C" name="cake_size" onchange="updateTotal()">
-                                        <!-- <option selected name=" "  placeholder="choose circle size" value="<?php //echo $record['blank_price']; ?>">Select One</option> -->
+                                        <option selected name=" "  placeholder="choose circle size" value="<?php //echo $record['blank_price']; ?>">Select One</option>
                                         <option name="Default Size 1 = 14 dm x 2.5 =<?php echo $record['circle_default_price']; ?>" value="<?php echo $record['circle_default_price']; ?>">Ordinary Rubber Vinyl = <?php echo $record['circle_default_price']; ?>
                                         </option>
                                         <option name="Small Size 1 =  9 diameter x 2.5 =<?php echo $record['circle_small1_price']; ?>" value="<?php echo $record['circle_small1_price']; ?>">Reflectorized = <?php echo $record['circle_small1_price']; ?>
                                         </option>
                                         <option name="Small Size 2 = 7 diameter x 3.5 =<?php echo $record['circle_small2_price']; ?>" value="<?php echo $record['circle_small2_price']; ?>">Glow-in-the-Dark = <?php echo $record['circle_small2_price']; ?>
                                         </option>
-
                                         <!-- <option name="Semi-Double Size=16 diameter x 2.5 =<?php echo $record['circle_semi1_price']; ?>" value="<?php echo $record['circle_semi1_price']; ?>">Semi-Double Size=16" dm x 2.5"= <?php echo $record['circle_semi1_price']; ?>
                                         </option>
                                         <option name="Semi-Double Size=16 diameter x 3 =<?php echo $record['circle_semi2_price']; ?>" value="<?php echo $record['circle_semi2_price']; ?>">Semi-Double Size=16" dm x 3"= <?php echo $record['circle_semi2_price']; ?>
                                         </option>
                                         <option name="Semi-Double Size= 16 =<?php echo $record['circle_semi3_price']; ?>" value="<?php echo $record['circle_semi3_price']; ?>">Semi-Double Size= 16"= <?php echo $record['circle_semi3_price']; ?>
                                         </option> -->
-
                                     </select>
                                     <script>
                                       $(document).ready(function() {
@@ -158,23 +154,11 @@
                                       });
                                     </script>
 
-                                    <div class="button">
-                                <input type="radio" id="sublimation" name="cake_shape" value="<?php echo $record['rect_default_price']; ?>" onchange="updateTotal()" />
-                                    <label for="sublimation">Sublimation  - 250.00 <!-- <img src="images/buttons/circle.png" alt="circle_icon"/> --> </label> </div>
 
 
                                     <div class="button">
-                                <input type="radio" id="transfer" name="cake_shape" value="<?php echo $record['heart_price']; ?>" onchange="updateTotal()" />
-                                    <label for="transfer">Transfer  - 300.00 <!-- <img src="images/buttons/circle.png" alt="circle_icon"/> --> </label> </div>
-
-
-
-
-                                    
-                                    
-                                    <!--div class="button">
                                 <input type="radio" id="shape2" name="cake_shape" value="rectangle" onchange="updateTotal()" />
-                                    <label for="shape2">Sublimation   </label> </div>
+                                    <label for="shape2">Sublimation <!-- <img src="images/buttons/rectangle.png" alt="rect_icon"/> --> </label> </div>
                                     <select class="form-control rect_select off hidden" id="size_select_R" name="cake_size" onchange="updateTotal()" hidden>
                                         <option name=" "  placeholder="choose rectangle size" value="<?php //echo $record['blank_price']; ?>"> </option>
                                         <option name="Default Size = 14 x 10 x 2.5 =<?php echo $record['rect_default_price']; ?>" value="<?php echo $record['rect_default_price']; ?>">Sublimation = <?php echo $record['rect_default_price']; ?> 
@@ -191,8 +175,7 @@
                                         </option>
                                         <option name="Double Full 2X=28 x 20 x2.5 or 3 (full) = <?php echo $record['rect_double3_price']; ?>" value="<?php echo $record['rect_double3_price']; ?>" >Double Full 2X=28” x 20” x  2.5”= <?php echo $record['rect_double3_price']; ?>
                                         </option>
-                                    </select-->
-
+                                    </select>
                                     <script>
                                         $(function(){
                                             $(':radio').on('change', function() {
@@ -206,16 +189,14 @@
                                         });
                                     </script>
 
-                                    <!-- div class="button">
+                                    <div class="button">
                                 <input type="radio" id="shape3" name="cake_shape" value="heart" onchange="updateTotal()" />
-                                    <label for="shape3">Transfer Paper  </label> </div>
+                                    <label for="shape3">Transfer Paper <!-- <img src="images/buttons/heart.png" alt="heart_icon"/> -->  </label> </div>
                                     <select class="form-control heart_select off hidden" id="size_heart" name="cake_size" onchange="updateTotal()">
-                                        <option name=" " placeholder="choose heart size" value="<?php //echo $record['blank_price']; ?>"> </option>
+                                        <<option name=" " placeholder="choose heart size" value="<?php //echo $record['blank_price']; ?>"> </option>
                                         <option name="Default Size =13.5 x 12.5 = <?php echo $record['heart_price']; ?>" value="<?php echo $record['heart_price']; ?>" >Transfer Paper = <?php echo $record['heart_price']; ?> 
                                         </option>
-                                    </select-->
-                                    
-                                    <!-- Don't comment out this Jquery script-->
+                                    </select>
                                     <script>
                                         $(function(){
                                           $(':radio').on('change', function() {
@@ -770,8 +751,6 @@
                       <type id="cake_size_C" name="cake_size"> </type> 
                       <type id="cake_size_R" name="cake_size"> </type> 
                       <type id="cake_size_heart" name="cake_size"> </type> 
-
-                      <type id="cake_flavor" name="cake_flavor"> </type>
                     </td></tr>
 
                     <!-- <tr> <td> Cake Layer/s </td><td> <type id="cake_layer_num" name="cake_layer_num"> </type> </td></tr> -->

@@ -465,7 +465,7 @@
                               <li class="active"><a data-toggle="tab" href="#profile"><i class="fa fa-user"></i>&nbsp;View Profile</a></li>
                             
                               <!-- <li><a data-toggle="tab" href="#past"><i class="fa fa-file-text"></i>&nbsp;Past Orders</a></li> -->
-                              <li><a data-toggle="tab" href="#billing"><i class="fa fa-file-text"></i>&nbsp;Update Customer Order</a></li>
+                              <!--li><a data-toggle="tab" href="#billing"><i class="fa fa-file-text"></i>&nbsp;Update Customer Order</a></li-->
                            </ul>
                            <div class="tab-content">
                               <div id="profile" class="tab-pane fade in active">
