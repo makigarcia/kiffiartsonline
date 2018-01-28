@@ -376,6 +376,7 @@
                                   <center> <form method=POST id="form4_<?php echo $c;?>" action="secretary-prescription.php">
                                        <?php echo '<input type="hidden" name="price_ID" value="' .$price_ID. '" >';?>
                                        <a href="#" 
+                                       data-zero="<?php echo $G; ?>"
                                        data-one="<?php echo $A; ?>" 
                                           data-two="<?php echo $B; ?>"
                                           data-three="<?php echo $C; ?>" 
@@ -389,6 +390,7 @@
                                      <td> <form method=POST id="form4_<?php echo $c;?>" action="secretary-prescription.php">
                                        <?php echo '<input type="hidden" name="price_ID" value="' .$price_ID. '" >';?>
                                        <a href="#" class="btndashboard edittreat" 
+                                       data-zero="<?php echo $G; ?>"
                                        data-one="<?php echo $A; ?>" 
                                           data-two="<?php echo $B; ?>"
                                           data-three="<?php echo $C; ?>" 
@@ -447,7 +449,7 @@
       <div class="form-group">
       Textile Paint:
       <label class="sr-only" for="form-zero">Wedding Price</label>
-      <input type="text" name="form-zero" placeholder="100.00" class="form-zero0 form-control" id="form-zero">
+      <input type="text" name="form-zero" placeholder="price" class="form-zero0 form-control" id="form-zero">
       </div>
       <div class="form-group">
       Ordinary Rubber Vinyl:

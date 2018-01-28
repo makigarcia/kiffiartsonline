@@ -1133,6 +1133,7 @@ if($check==1){
 
 	$price_ID = $_POST['form-code'];
 	$usern = $_POST['usern'];
+	$textilepaint = $_POST['form-zero'];
 	$ordinaryrv = $_POST['form-one'];
 	$reflectorized = $_POST['form-two'];
 	$glowinthedark = $_POST['form-three'];
@@ -1150,14 +1151,14 @@ if($check==1){
 	$tc1=explode(" ", $TCost);
 	$TCost=$tc1[0];
 
-		 $ai = mysql_query("SELECT `price_ID`, `ordinaryrv`, `reflectorized`, `glowinthedark`, `gamuza`, `sublimation`, `transferpaper` FROM `pricelist` WHERE '$price_ID'");
+		 $ai = mysql_query("SELECT `price_ID`, `textilepaint`, `ordinaryrv`, `reflectorized`, `glowinthedark`, `gamuza`, `sublimation`, `transferpaper` FROM `pricelist` WHERE '$price_ID'");
 		$a1 = mysql_fetch_array($ai);
 
 	 $a2 = mysql_query("SELECT `price_ID`,`ownelec_price` FROM `pricelist` WHERE price_ID='$price_ID'");
 		$a2 = mysql_fetch_array($a2);
 
 
-	if($ordinaryrv!=$a1['ordinaryrv'] ||$reflectorized!=$a1['reflectorized'] || $glowinthedark!=$a1['glowinthedark'] || $gamuza!=$a1['gamuza'] || $sublimation!=$a1['sublimation'] || $transferpaper!=$a1['transferpaper']){
+	if($textilepaint!=$a1['textilepaint'] ||$ordinaryrv!=$a1['ordinaryrv'] ||$reflectorized!=$a1['reflectorized'] || $glowinthedark!=$a1['glowinthedark'] || $gamuza!=$a1['gamuza'] || $sublimation!=$a1['sublimation'] || $transferpaper!=$a1['transferpaper']){
 			$check=1;
 		}else{
 			$check=2;
@@ -1165,7 +1166,7 @@ if($check==1){
 	      
 if($check==1){
 	
-	$query2 = "UPDATE `pricelist` SET `ordinaryrv`='$ordinaryrv',`reflectorized`='$reflectorized',`glowinthedark`='$glowinthedark',`gamuza`='$gamuza',`sublimation`='$sublimation',`transferpaper`='$transferpaper'";
+	$query2 = "UPDATE `pricelist` SET `textilepaint`='$textilepaint', `ordinaryrv`='$ordinaryrv',`reflectorized`='$reflectorized',`glowinthedark`='$glowinthedark',`gamuza`='$gamuza',`sublimation`='$sublimation',`transferpaper`='$transferpaper'";
 	$r1 = @mysql_query($query2, $dbc); 
 
 
